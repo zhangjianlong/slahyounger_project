@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.dialog.label.LabelViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_gray_1111"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/App.Theme.TextAppearance.ww.normal.black333"
+            android:layout_marginTop="@dimen/app.margin.large"
+            android:layout_marginBottom="@dimen/app.margin.large"
+            android:textSize="@dimen/app.text.large"
+            android:text="@string/app.label.new"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/app.margin.large"
+            android:layout_marginRight="@dimen/app.margin.large"
+            android:padding="@dimen/app.margin.normal"
+            android:text="@={viewModel.content}"
+            android:hint="@string/app.label.new.hint"
+            android:layout_marginBottom="@dimen/app.margin.large"
+            android:textColor="@color/app.text.black333"
+            android:textColorHint="@color/app.text.hint"
+            android:background="@drawable/selector_white_1111_0_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_dialog_offline_bg2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn1"
+                android:gravity="center"
+                app:clickCommand="@{viewModel.cancel}"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="@string/app.label.new.cancel"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn2"
+                android:gravity="center"
+                app:clickCommand="@{viewModel.confim}"
+                android:paddingLeft="50dp"
+                android:layout_marginLeft="30dp"
+                android:paddingRight="50dp"
+                android:text="@string/app.label.new.confim"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

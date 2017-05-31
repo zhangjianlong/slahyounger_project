@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.main.order.OrderTabViewModel" />
+
+    </data>
+
+    <LinearLayout
+        style="@style/App.Theme.Linear"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@android:id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/app.padding.normal"
+            android:paddingTop="@dimen/app.padding.large"
+            android:text="@{viewModel.title}"
+            android:textColor="@color/selector_text_color"
+            android:textSize="@dimen/app.text.normal"
+            android:textStyle="bold"
+            tools:text="任务" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/app.padding.normal"
+            android:src="@mipmap/icon_mine_dot"
+            android:visibility="@{viewModel.dotVisible}" />
+    </LinearLayout>
+</layout>

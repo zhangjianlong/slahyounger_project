@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.base.list.more.BaseMoreViewModel" />
+
+        <import type="com.core.op.bindingadapter.common.LayoutManagers" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app.theme.background_edf1f2">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            app:itemView="@{viewModel.itemView}"
+            app:items="@{viewModel.itemViewModels}"
+            app:layoutManager="@{LayoutManagers.linear()}"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:onLoadMoreCommand="@{viewModel.onLoadMoreCommand}">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="@{viewModel.errorVisible}">
+
+            <com.core.op.lib.weight.EmptyLayout
+                android:id="@+id/el_error"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/app.margin.xxxlarge"
+                app:errorClickCommand="@{viewModel.errorClick}"
+                app:errorType="@{viewModel.errorType}" />
+
+        </android.support.v4.widget.NestedScrollView>
+    </FrameLayout>
+</layout>

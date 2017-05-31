@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.message.list.MListItemViewModel" />
+
+        <import type="android.view.View" />
+    </data>
+
+
+    <com.core.op.lib.weight.SwipeMenuLayout
+        android:id="@+id/sl_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:enable="@{viewModel.enable}"
+        app:ios="false"
+        app:leftSwipe="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_bg_white"
+                android:orientation="horizontal"
+                app:clickCommand="@{viewModel.click}">
+
+                <RelativeLayout
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="10dp">
+
+                    <com.core.op.lib.weight.ShapedImageView
+                        android:id="@+id/iv_info_conversation_avatar"
+                        style="@style/App.Theme.Image"
+                        android:layout_centerVertical="true"
+                        android:src="@{viewModel.drawable}"
+                        app:uri="@{viewModel.uri}" />
+
+                    <TextView
+                        android:id="@+id/tv_info_unread_msg_count"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/shape_circle_news_count"
+                        android:gravity="center"
+                        android:text="@{viewModel.unRead}"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp"
+                        android:visibility="@{viewModel.unReadVisible}" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="12dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/app.margin.small">
+
+                        <TextView
+                            android:id="@+id/tv_item_home_info_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@{viewModel.name}"
+                            android:textColor="#333333"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="7dp"
+                            android:src="@mipmap/add_v"
+                            android:visibility="@{viewModel.data.isAuth==1?View.VISIBLE:View.GONE}" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:text="@{viewModel.company}"
+                            android:textColor="#999999"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/tv_conversation_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{viewModel.time}"
+                            android:textColor="#CCCCCC"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:text="@{viewModel.lastMsg}"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:orientation="horizontal"
+                        android:visibility="@{viewModel.taskVisible}">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="相关任务-"
+                            android:textColor="#31C5E4"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@{viewModel.taskTitle}"
+                            android:textColor="#999999"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/app.line" />>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#ff4a57"
+            android:text="删除"
+            android:textColor="@android:color/white"
+            app:clickCommand="@{viewModel.delClick}" />
+    </com.core.op.lib.weight.SwipeMenuLayout>
+</layout>

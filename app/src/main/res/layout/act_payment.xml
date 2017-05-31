@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.payment.PaymentViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app.theme.background_f3f3f3"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/include_white_toolbar_alpha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorPrimary="@color/app.text.black.alpha.66"
+            app:toolTitle="@{viewModel.title}" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app.theme.background_31C5E4"
+            android:paddingBottom="@dimen/app.padding.large"
+            android:paddingTop="@dimen/app.padding.large">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/App.Theme.TextAppearance.ww.normal"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/app.margin.large"
+                android:layout_marginRight="@dimen/app.margin.large"
+                android:drawableLeft="@mipmap/payment_top_coin_icon"
+                android:drawablePadding="@dimen/app.padding.large"
+                android:gravity="center"
+                android:padding="@dimen/app.padding.large"
+                android:text="@string/app.payment.hint" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app.theme.background"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/App.Theme.TextAppearance.mw.normal"
+                    android:gravity="center"
+                    android:padding="@dimen/app.padding.large"
+                    android:text="@string/app.payment.task.type"
+                    android:textColor="@color/app.text.black666" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/App.Theme.TextAppearance.mw.normal"
+                    android:gravity="center"
+                    android:text="@string/app.pub.detail.type"
+                    android:textColor="@color/app.text.black666" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/App.Theme.TextAppearance.mw.normal"
+                    android:gravity="center"
+                    android:padding="@dimen/app.padding.large"
+                    android:text="@string/app.payment.task.amount"
+                    android:textColor="@color/app.text.black666" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/App.Theme.TextAppearance.mw.normal"
+                    android:gravity="center"
+                    android:text="@string/app.pub.detail.type"
+                    android:textColor="@color/app.text.black666" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/app.margin.large"
+            android:background="@color/app.theme.background"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/App.Theme.TextAppearance.mw.normal"
+                android:gravity="left"
+                android:padding="@dimen/app.padding.large"
+                android:text="@string/app.payment.pay.type"
+                android:textColor="@color/app.text.black666" />
+
+            <include layout="@layout/include_line_h" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/app.padding.normal">
+
+                <ImageView
+                    android:id="@+id/payment_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/payment_balance_icon" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/payment_balance_tv"
+                    style="@style/App.Theme.TextAppearance.mw.normal"
+                    android:layout_marginLeft="@dimen/app.margin.normal"
+                    android:layout_toRightOf="@+id/payment_balance"
+                    android:text="@string/app.payment.pay.balance"
+                    android:textColor="@color/app.text.black666" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/App.Theme.TextAppearance.mw.normal"
+                    android:layout_below="@+id/payment_balance_tv"
+                    android:layout_marginLeft="@dimen/app.margin.normal"
+                    android:layout_marginTop="@dimen/app.margin.small"
+                    android:layout_toRightOf="@+id/payment_balance"
+                    android:text="@string/app.payment.pay.balance"
+                    android:textColor="@color/app.text.black666" />
+
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/pay_cb_bg" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_line_h" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/app.padding.normal">
+
+                <ImageView
+                    android:id="@+id/payment_alipay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/payment_alipay_icon" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/payment_alipay_tv"
+                    style="@style/App.Theme.TextAppearance.mw.normal"
+                    android:layout_marginLeft="@dimen/app.margin.normal"
+                    android:layout_toRightOf="@+id/payment_alipay"
+                    android:text="@string/app.payment.pay.alipay"
+                    android:textColor="@color/app.text.black666" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/App.Theme.TextAppearance.mw.normal"
+                    android:layout_below="@+id/payment_alipay_tv"
+                    android:layout_marginLeft="@dimen/app.margin.normal"
+                    android:layout_marginTop="@dimen/app.margin.small"
+                    android:layout_toRightOf="@+id/payment_alipay"
+                    android:text="@string/app.payment.pay.balance"
+                    android:textColor="@color/app.text.black666" />
+
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/pay_cb_bg" />
+            </RelativeLayout>
+
+            <include layout="@layout/include_line_h" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/app.padding.normal">
+
+                <ImageView
+                    android:id="@+id/payment_webchat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/payment_weixin_icon" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/payment_webchat_tv"
+                    style="@style/App.Theme.TextAppearance.mw.normal"
+                    android:layout_marginLeft="@dimen/app.margin.normal"
+                    android:layout_toRightOf="@+id/payment_webchat"
+                    android:text="@string/app.payment.pay.webchat"
+                    android:textColor="@color/app.text.black666" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/App.Theme.TextAppearance.mw.normal"
+                    android:layout_below="@+id/payment_webchat_tv"
+                    android:layout_marginLeft="@dimen/app.margin.normal"
+                    android:layout_marginTop="@dimen/app.margin.small"
+                    android:layout_toRightOf="@+id/payment_webchat"
+                    android:text="@string/app.payment.pay.balance"
+                    android:textColor="@color/app.text.black666" />
+
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/pay_cb_bg" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

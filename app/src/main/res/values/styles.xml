@@ -1,0 +1,138 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="App.Theme.Splash" parent="App.Theme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@mipmap/splash</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="WarpLinearLayoutDefault">
+        <item name="grivate">left</item>
+        <item name="horizontal_Space">20dp</item>
+        <item name="vertical_Space">20dp</item>
+        <item name="isFull">false</item>
+    </style>
+
+    <!--进度条-->
+    <style name="StyleProgressBarMini_fans" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">50dip</item>
+        <item name="android:minHeight">10dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        　
+        <item name="android:progressDrawable">@drawable/shape_progressbar_mini
+        </item><!-- progress_horizontal -->
+    </style>
+
+    <style name="StyleProgressBarMini_task" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">50dip</item>
+        <item name="android:minHeight">10dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        　
+        <item name="android:progressDrawable">@drawable/shape_progressbar_mini_task
+        </item><!-- progress_horizontal -->
+    </style>
+
+    <style name="StyleProgressBarMini_service" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">50dip</item>
+        <item name="android:minHeight">10dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        　
+        <item name="android:progressDrawable">@drawable/shape_progressbar_mini_service
+        </item><!-- progress_horizontal -->
+    </style>
+
+    <style name="NoBackGroundDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+
+    <style name="App.Theme.RelativeLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/app.margin.large12</item>
+        <item name="android:layout_marginLeft">@dimen/app.margin.large12</item>
+    </style>
+
+    <style name="App.Theme.EditText">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColorHint">@color/app.text.blackCCC</item>
+        <item name="android:textColor">@color/app.text.black</item>
+        <item name="android:textSize">@dimen/app.text.normal</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">@dimen/app.padding.large13</item>
+        <item name="android:layout_marginBottom">@dimen/app.margin.normal</item>
+        <item name="android:layout_marginLeft">@dimen/app.margin.large12</item>
+        <item name="android:layout_marginTop">@dimen/app.margin.normal</item>
+    </style>
+
+    <style name="App.Theme.TextView">
+        <item name="android:padding">@dimen/app.padding.large13</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/app.text.blackCCC</item>
+        <item name="android:textSize">@dimen/app.text.normal</item>
+
+    </style>
+
+    <style name="App.Theme.Button">
+        <item name="android:background">@drawable/btn_background</item>
+        <item name="android:textColorHint">@color/app.text</item>
+        <item name="android:textColor">@color/app.text</item>
+        <item name="android:textSize">@dimen/app.text.normal</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">@dimen/app.padding.large13</item>
+        <item name="android:layout_marginBottom">@dimen/app.margin.normal</item>
+        <item name="android:layout_marginLeft">@dimen/app.margin.large12</item>
+        <item name="android:layout_marginRight">@dimen/app.margin.large12</item>
+        <item name="android:layout_marginTop">@dimen/app.margin.large12</item>
+    </style>
+
+
+    <!--toolbar style-->
+    <style name="App.Theme.Widget.Toolbar.Back">
+        <!--<item name="android:homeAsUpIndicator">@mipmap/nav_back</item>-->
+    </style>
+
+    <style name="App.Theme.RatinBar" parent="@android:style/Widget.RatingBar">
+        <!-- 定义星星图片 -->
+        <item name="android:progressDrawable">@drawable/layer_ratinbar</item>
+        <!-- 根据自定义星星图片的大小,设置相应的值,否则可能显示不全 -->
+        <item name="android:numColumns">5</item>
+    </style>
+
+    <style name="App.Theme.Linear.padding">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingTop">@dimen/app.padding.large</item>
+        <item name="android:paddingLeft">@dimen/app.padding.large</item>
+        <item name="android:paddingBottom">@dimen/app.padding.large</item>
+    </style>
+
+</resources>

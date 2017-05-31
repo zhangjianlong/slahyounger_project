@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.label.LabelFItemViewModel" />
+
+        <import type="android.view.View" />
+
+        <import type="com.core.op.bindingadapter.common.LayoutManagers" />
+    </data>
+
+    <TextView
+        style="@style/App.Theme.TextAppearance.ww.small.blue"
+        android:background="@drawable/selector_bg_white_1111_0_blue"
+        app:clickCommand="@{viewModel.click}"
+        android:layout_margin="@dimen/app.margin.normal"
+        android:paddingLeft="@dimen/app.padding.normal"
+        android:paddingRight="@dimen/app.padding.normal"
+        android:paddingTop="@dimen/app.padding.small"
+        android:paddingBottom="@dimen/app.padding.small"
+        android:drawablePadding="@dimen/app.padding.normal"
+        android:text="@{viewModel.data.tag}"
+        tools:text="平面设计"
+        android:drawableRight="@mipmap/icon_label_delete"/>
+</layout>

@@ -1,0 +1,294 @@
+<resources>
+    <string name="app_name">斜杠青年</string>
+    <string name="searchNeed">热搜需求</string>
+    <string name="searchService">热搜服务</string>
+    <string name="searchPerson">搜人</string>
+    <string name="search">搜索</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="head">这里是HeadView</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+
+    <string name="app.bottom.menu.find">发现</string>
+    <string name="app.bottom.menu.task">任务</string>
+    <string name="app.bottom.menu.mine">我的</string>
+
+    <string name="dispute_handling"><Data><![CDATA[<p><strong>1、平台处理规则</strong></p><p><span style="color:#666666;">需求方满意后，资金付给需求方；否则，不付给需求方。</span></p><p><strong>2、协商处理规则</strong></p><p><span style="color:#666666;">由交易双方协商处理的规则，详见“帮助 - 常见问题”。</span></p>]]></Data></string>
+
+
+    <string name="securityRulesContent" formatted="false"><Data><![CDATA[<p><strong>斜杠青年通过顺利成交保证金、预支付、分期到账等一系列规则来保障双方的顺利成交。</strong></p><p><strong>1、顺利成交保证金规则</strong>
+</p><p><span style="color:#999999;">本服务平台将实际交易金额的5%计提为“顺利成交保证金”，任务顺利完成并且服务、需求双方评价分享后，平台将以交易金额的2.5%奖励形式返还给双方。"如果任务并未顺利成交，已经开始的“服务阶段”对应的“顺利成交保证金”将，不予退还，存放奖金池 用于活动基金；未开始“服务阶段”对应的“顺利成交保证金”将退还给需求方。上述“服务阶段”是指双方用户达成的“分期到账”后各期对应的服务阶段。</span>
+</p><p><strong>2、预支付与分期到账规则</strong></p>
+<p><strong>2.1预支付：</strong></p><p><span style="color:#999999;">为了保障交易双方的权益，双方确认交易意向后，应支付的全部款项将会一次性预支付且托管在斜杠平台。</span>
+</p><p><strong>2.2分期到帐：</strong>
+</p><p><span style="color:#999999;">基于任务的阶段性特征，若双方将任务划分成若干个阶段，预支付的资金也将会被划分成对应的若干个部分，在需求方确认服务方提交的某阶段的服务时，该阶段的资金将被划转给服务方。</span>
+</p><p><strong>3、到账与冻结规则</strong></p><p><strong>3.1到账：</strong>
+</p><p><span style="color:#999999;">在没有开启分期付功能的情况下，任务顺利完成后，需求方确认服务后款项立即到账，即可提现；在开启分期付功能后，非尾期账款在需求方确认服务后款项立即到账，暂时处于冻结状态；尾期账款在需求方确认服务后款项立即到账，全部资金可提现。</span>
+</p><p><strong>3.2冻结：</strong></p><p><span style="color:#999999;">为了保障交易双方的权益，服务期间，涉及到当前任务的已到账资金处于冻结状态。冻结是暂时的，在全部任务顺利完成后，资金将解冻，服务方可以用于提现或支付。如果没有顺利完成，将按照双方选择的平台处理规则或者双方协商的规则来处理，具体请见“帮助-常见问题”。</span>
+</p><p></p><p></p>]]></Data></string>
+
+    <string name="publishWayContent" formatted="false"><Data><![CDATA[<p><strong><span style="color:#000000;">1匿名发布任务是什么？</span></strong>
+</p><p><span style="color:#999999;">用户在自己不便于公开身份发布服务或者需求时，可使用匿名功能进行发布。当你匿名发布服务或者需求后，其他用户浏览该任务时，则无法查看你的姓名、头像等个人信息；通过搜索、点击头像等方式查看你的个人信息时，你匿名状态下发布的任务将会被隐藏。</span>
+</p><p><span style="color:#000000;"><strong>2匿名状态有什么影响？</strong></span>
+</p><p><span style="color:#999999;">匿名发布任务后，其他用户暂时看不到你的姓名、头像等个人信息。在合作意向达成后，匿名状态解除，交易双方恢复实名状态，可查看双方的个人信息。匿名发布不影响交易流程，但可能会降低其他用户对你发布服务或者需求的信任程度。</span>
+</p>]]></Data></string>
+    <string name="ecurity_rules" formatted="false"><Data><![CDATA[<p><span style="color:#999999;">1 已同意《斜杠青年顺利成交保障规则》；</span>
+</p><p><span style="color:#999999;">2 双方合作过程有问题，联系斜杠客服；</span></p><p><span style="color:#999999;"> 3 以上为发布者意向，双方可协商修改。</span>
+</p>
+]]></Data></string>
+    <string name="instalmentInfoContent" formatted="false"><Data><![CDATA[<span style="color:#999999;">基于任务的阶段性特征，若双方将任务划分成若干个阶段，预支付的资金也将会被划分成对应的若干个部分，在需求方确认服务方提交的某阶段的服务时，该阶段的资金将被划转给服务方。</span>]]></Data></string>
+
+
+    <string name="frozen_capital" formatted="false"><Data><![CDATA[<p>
+	<span style="color:#000000;"><strong>有两种原因可能导致您的资金暂时处于冻结状态：</strong></span> </p><p><span style="color:#000000;"><strong>第一种是分期到账：</strong></span>
+</p><p><span style="color:#999999;">为了保障需求方权益，需求方预支付的全部资金将被托管在平台。在需求方满意服务方提交的某阶段的服务时，该阶段的资金将被划转给服务方。此时，该资金处于冻结状态，所有阶段的服务均被需求方认可后，划转给服务方的资金才取消冻结，可用于提现或支付。</span>
+</p><p><strong><span style="color:#000000;">第二种是提现后的转账状态：</span></strong> </p>
+<p><span style="color:#999999;">当您提现后，财务人员根据您的提现申请进行转账操作，期间由于支付宝、微信等支付规定导致的提现和到账间的时间差，在该时间差内，资金处于冻结状态。</span> </p>
+]]></Data></string>
+
+    <string name="app.manager">发布管理</string>
+    <string name="app.loadmore">加载更多...</string>
+    <string name="app.loadmore.complate">加载完成</string>
+    <string name="float_win_title">温馨提示</string>
+    <string name="float_win_msg">为了该软件的正常使用，请前往设置/应用管理/斜杠青年，打开该软件的悬浮框权限</string>
+
+
+    <string name="app.menu.userinfo">更多</string>
+    <string name="app.userinfo.relation">人脉:%1$2s</string>
+    <string name="app.userinfo.relationprogress">超过平台%1$d%%的用户</string>
+
+    <string name="app.userinfo.task">顺利成交:%1$2d单</string>
+    <string name="app.userinfo.taskprogress">共%1$d单任务</string>
+
+    <string name="app.userinfo.service">服务力:%1$2s星</string>
+    <string name="app.userinfo.serviceprogress">平台平均为%1$s星</string>
+    <string name="app.userinfo.task.title">最新任务(%1$s)</string>
+    <string name="app.userinfo.evaluate.title">评论(%1$s)</string>
+
+    <array name="userinfo_tabs">
+        <item>个人简介</item>
+        <item>评价</item>
+        <item>最新任务</item>
+    </array>
+
+    <array name="order_tabs">
+        <item>任务</item>
+        <item>订单</item>
+        <item>历史</item>
+    </array>
+
+
+    <array name="user_grades">
+        <item>少侠</item>
+        <item>大侠</item>
+        <item>宗师</item>
+        <item>至尊</item>
+    </array>
+
+
+    <array name="hot_citys">
+        <item>北京</item>
+        <item>深圳</item>
+        <item>广州</item>
+        <item>上海</item>
+        <item>杭州</item>
+        <item>成都</item>
+        <item>重庆</item>
+        <item>武汉</item>
+        <item>苏州</item>
+    </array>
+
+    <array name="hot_provinces">
+        <item></item>
+        <item>广东</item>
+        <item>广东</item>
+        <item></item>
+        <item>浙江</item>
+        <item>四川</item>
+        <item></item>
+        <item>湖北</item>
+        <item>江苏</item>
+    </array>
+
+    <string name="app.error.customservice">获取客服UID失败</string>
+
+    <string name="app.login.help">遇到问题</string>
+    <string name="app.login.phone">输入您的手机号</string>
+    <string name="app.login.verify.edit">输入验证码</string>
+    <string name="app.login.verify">验证码</string>
+    <string name="app.login.login">进入</string>
+    <string name="app.login.agredd">同意《用户协议》</string>
+    <string name="app.login.third">同第三方登录</string>
+    <string name="app.login.weixin">微信登录</string>
+    <string name="app.login.qq">QQ登录</string>
+
+    <!--BindingAct-->
+    <string name="app.binding.verify">获取验证码</string>
+    <string name="app.binding.account.binding">该手机号已注册，确认需要绑定么？</string>
+    <string name="app.binding.account.already.binding">该手机号已绑定，请更换其他手机号</string>
+    <string name="app.binding.account.check.fail">查询失败，请稍后再试</string>
+
+    <string name="app.login.phone.error">手机号不能为空!</string>
+    <string name="app.login.phone.num.error">请输入正确的11位手机号码!</string>
+    <string name="app.login.verify.code.suc">验证码已发送，请查收</string>
+    <string name="app.login.verify.code.fail">验证码发送失败</string>
+    <string name="app.login.verify.code.error">验证码发送失败</string>
+    <string name="app.logig.verify.code.error">验证码不能为空!</string>
+    <string name="app.login.user.agreement">请同意用户协议</string>
+    <string name="app.login.fail">登录失败</string>
+    <string name="app.binding.phone">绑定手机号</string>
+    <string name="app.binding.risk.hint">为了您的交易安全,请绑定手机号</string>
+    <string name="app.binding.get.verify.code">获取验证码</string>
+
+    <!--CommonDialog-->
+    <string name="app.common.dialog.title">温馨提示</string>
+    <string name="app.common.dialog.hint">确定退出么？</string>
+    <string name="app.userinfo.evaluate.item.title">服务:《%1$s》</string>
+    <string name="app.userinfo.company.none">暂未填写职务信息</string>
+    <string name="app.userinfo.chat">聊一聊</string>
+    <string name="app.userinfo.recommend">推荐</string>
+    <string name="app.userinfo.title.edit">编辑</string>
+    <string name="app.userinfo.report">举报Ta</string>
+    <!--TextCopyDialog-->
+    <string name="app.text.copy.dialog.copy">复制</string>
+    <string name="app.text.copy.dialog.cal">取消</string>
+    <!--ProocolAct-->
+    <string name="app.procol.title">斜杠青年服务协议</string>
+    <string name="app.label.title">定位城市</string>
+    <!--MySettingAct-->
+    <string name="app.setting.personal.setting">以下三项设置针对个人信息页面</string>
+    <string name="app.setting.company.show">显示公司</string>
+    <string name="app.setting.evaluate.show">显示评价</string>
+    <string name="app.setting.service.show">显示服务力</string>
+    <string name="app.setting.find.psd">找回交易密码</string>
+    <string name="app.setting.set.psd">设置交易密码</string>
+    <string name="app.setting.psd.find">密码找回在审核中，请等待审核</string>
+    <string name="app.setting.psd.remind">密码设置在审核中，请等待审核</string>
+    <string name="app.setting.bind">去绑定</string>
+    <string name="app.setting.unbind">解绑</string>
+    <string name="app.setting.title">设置</string>
+    <string name="app.setting.logout">真的要退出登录吗？</string>
+    <!--MySettingAct-->
+    <string name="app.personal.edit.hint">完善个人信息，可以让大家更了解你哦</string>
+    <string name="app.personal.title">编辑个人信息</string>
+    <string name="app.personal.edit.head">头像</string>
+    <string name="app.personal.edit.real.name">真实姓名</string>
+    <string name="app.personal.edit.gender">性别</string>
+    <string name="app.personal.edit.phone.number">手机号码</string>
+    <string name="app.personal.edit.occupation">职业类型</string>
+    <string name="app.personal.edit.company">所在公司</string>
+    <string name="app.personal.edit.company.hint">请填写(您可在“设置”中选择隐藏)</string>
+    <string name="app.personal.edit.write">请填写</string>
+    <string name="app.personal.edit.select">请选择</string>
+    <string name="app.personal.edit">编辑</string>
+    <string name="app.personal.edit.position">公司职位</string>
+    <string name="app.personal.edit.need">我需要</string>
+    <string name="app.personal.edit.provide">能提供</string>
+    <string name="app.personal.edit.area">区域</string>
+    <string name="app.personal.edit.profile">个人简介</string>
+    <string name="app.personal.edit.man">男</string>
+    <string name="app.personal.edit.woman">女</string>
+    <string name="app.personal.edit.job">职场人士</string>
+    <string name="app.personal.edit.self.employed">自雇者</string>
+    <string name="app.personal.edit.save">保存</string>
+    <string name="app.pub.taskname">输入任务名称</string>
+    <string name="app.pub.title.numble">%1$s/15</string>
+    <string name="app.pub.top.text1">发布你公司的运营任务</string>
+    <string name="app.pub.top.text2">会有专业的运营小伙伴帮你完成哦</string>
+    <string name="app.pub.name.hint">例如:写一篇关于推广的文章</string>
+    <string name="app.pub.content.hint" formatted="false"><Data><![CDATA[<p><span style="color:#000000;">任务内容</span><span style="color:#CCCCCC;">详细描写你的任务内容，例如：需要运营小伙伴解决什么问题（不得少于10个字）</span>
+</p></span>]]></Data></string>
+
+    <string name="app.pub.accept.hint" formatted="false"><Data><![CDATA[<p><span style="color:#000000;">验收标准</span><span style="color:#CCCCCC;">将作为后续双方的成果交付标准。请认真填写</span>
+</p></span>]]></Data></string>
+    <string name="app.pub.type.select">请选择类别</string>
+    <string name="app.pub.local.select">请选择服务地点</string>
+    <string name="app.pub.unit.hint">单位</string>
+    <string name="app.pub.title">发布任务</string>
+    <string name="app.local.hotcity">热门城市</string>
+    <string name="app.local.location">定位城市</string>
+    <!--profileAct-->
+    <string name="app.profile.title">个人简介</string>
+    <string name="app.profile.empty">个人简介不能为空</string>
+    <string name="app.profile.template.reference">模板参考</string>
+    <string name="app.profile.template.limit">0/300</string>
+    <string name="app.profile.template.hint">本人从事UI设计行业，有八年的工作经验，对设计有升入研究，把握现有的流行设计趋势，有能级自助晚餐APP，UI等全套设计。 毕业于XX大学校，曾任职XX科技公司，为公司设计UI。另外为XX网络公司设计APP并协助公司完成A轮融资，用我的专业换你的认可</string>
+    <string name="app.profile.template.write.hint">个人简介可包含从事行业、从业年限、自身特长、毕业学校、职业简介、从业经历、代表作等</string>
+    <string name="app.profile.change">换一个</string>
+    <!--PubContent-->
+    <string name="app.pub.content.title">任务内容</string>
+    <string name="app.pub.content.empty">任务内容不能为空</string>
+    <string name="app.pub.content.remind">描述你的任务,建议你的任务描述要清晰直观，例如：写一篇关于推广的文章</string>
+    <string name="app.pub.content.use.template">调用该模板</string>
+    <!--PubAccept-->
+    <string name="app.pub.accept.title">验收标准</string>
+    <string name="app.pub.accept.empty">验收标准不能为空</string>
+    <!--ReleaseAct-->
+    <string name="app.menu.close">关闭</string>
+    <string name="app.menu.cancel">取消</string>
+    <string name="app.menu.modify">修改</string>
+    <string name="app.release.suc">提交成功</string>
+    <string name="app.release.title">发布结果</string>
+    <string name="app.release.review">查看详情</string>
+    <string name="app.release.suc.hint">您的任务已保存至发布管理，完善个人资料后可上架</string>
+    <string name="app.release.complete">完善资料</string>
+    <string name="app.userinfo.about.need">我需要</string>
+    <string name="app.userinfo.about.skill">能提供</string>
+    <string name="app.userinfo.about.area">区&#160;&#160;&#160;&#160;域</string>
+    <string name="app.userinfo.about.info">简&#160;&#160;&#160;&#160;介</string>
+    <string name="app.service.list">服务方列表</string>
+    <string name="app.servicedetail.step1">预约</string>
+    <string name="app.servicedetail.step2">预支付</string>
+    <string name="app.servicedetail.step3">服务中</string>
+    <string name="app.servicedetail.step4">完成</string>
+    <string name="app.servicedetail.price">任务价格</string>
+    <string name="app.servicedetail.time">完成时间</string>
+    <string name="app.servicedetail.addr">任务地点</string>
+    <string name="app.servicedetail.type">任务类型</string>
+    <string name="app.servicedetail.content">任务内容</string>
+    <string name="app.servicedetail.info">展开信息</string>
+    <string name="app.follow.name">任务名称:</string>
+    <string name="app.follow.requst.name">需求方:</string>
+    <string name="app.follow.service.name">服务方:</string>
+    <!--SearchAct-->
+    <string name="app.search.del.hint">清空历史投资记录</string>
+    <string name="app.search.more.task">查看更多任务</string>
+    <string name="app.search.more.user">查看更多用户</string>
+    <!--labelAct-->
+    <string name="app.label.selected">已选择%1$d个，还可以选择%2$d个。</string>
+    <string name="app.label.custom">自定义</string>
+    <string name="app.label.new">新建标签</string>
+    <string name="app.label.new.cancel">取消</string>
+    <string name="app.label.new.confim">确定</string>
+    <string name="app.label.new.hint">输入10个字以内</string>
+    <string name="app.refund.title">选择退款理由</string>
+
+    <!--PubDetaol-->
+    <string name="app.pub.detail.share">分享</string>
+    <string name="app.pub.detail.title">任务详情</string>
+    <string name="app.pub.detail.content">任务内容</string>
+    <string name="app.pub.detail.accept">考核标准</string>
+    <string name="app.pub.detail.base.case">基本情况</string>
+    <string name="app.pub.detail.type">任务类别</string>
+    <string name="app.pub.detail.price">任务价格</string>
+    <string name="app.pub.detail.location">任务地点</string>
+    <string name="app.pub.detail.time">任务时间</string>
+
+    <!--Payment-->
+    <string name="app.payment.title">预支付</string>
+    <string name="app.payment.hint">预支付款项将暂时托管在平台上，顺利完成服务后才打款给对方</string>
+    <string name="app.payment.task.type">任务类型:</string>
+    <string name="app.payment.task.amount">任务金额:</string>
+    <string name="app.payment.pay.type">请选择支付方式</string>
+    <string name="app.payment.pay.balance">余额支付</string>
+    <string name="app.payment.pay.alipay">支付宝支付</string>
+    <string name="app.payment.pay.webchat">微信支付</string>
+</resources>

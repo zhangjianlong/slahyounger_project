@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.chat.list.ChatListItemViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="11dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_chat_msg_read_status"
+                    android:layout_width="26dp"
+                    android:layout_height="17dp"
+                    android:background="@drawable/shape_chat_text_unreaded_marker_bg"
+                    android:gravity="center"
+                    android:text="送达"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/iv_chat_send_msg_again"
+                    android:layout_width="26dp"
+                    android:layout_height="17dp"
+                    android:background="@drawable/shape_chat_text_fail_marker_bg"
+                    android:gravity="center"
+                    android:text="失败"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp"
+                    android:visibility="gone"
+                    app:clickCommand="@{viewModel.sendVoiceMsgAgain}" />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@{viewModel.voiceDuration}"
+                android:textColor="#CCCCCC"
+                android:textSize="15sp" />
+
+            <!--android:layout_width="131dp"-->
+
+            <FrameLayout
+                android:id="@+id/fl_voice_box"
+                android:layout_width="70dp"
+                android:layout_height="39dp"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/chat_box_blue_bg"
+                android:paddingLeft="12dp"
+                android:paddingRight="16dp"
+                app:clickCommand="@{viewModel.playVoice}">
+
+                <ImageView
+                    android:id="@+id/iv_chat_voice_anim"
+                    android:layout_width="12dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:src="@mipmap/sound_bai3_icon" />
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/iv_chat_my_avatar"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="12dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/assistant_icon" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+</layout>

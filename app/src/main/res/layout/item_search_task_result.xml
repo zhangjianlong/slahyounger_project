@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.search.SeachItemViewModel" />
+    </data>
+
+    <LinearLayout
+        style="@style/App.Theme.Linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app.theme.background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/app.margin.large"
+        app:clickCommand="@{viewModel.moreTask}">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/task_name"
+                style="@style/App.Theme.TextAppearance.ww.normal"
+                android:layout_centerVertical="true"
+                android:text="做徐联网公司企业宣传测试方案"
+                android:textColor="@color/app.text.black333" />
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/App.Theme.TextAppearance.ww.small"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/app.margin.normal"
+                android:layout_toRightOf="@+id/task_name"
+                android:background="@drawable/btn_white_background"
+                android:padding="@dimen/app.padding.small"
+                android:text="苏州"
+                android:textColor="@color/app.text.black333" />
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/App.Theme.TextAppearance.ww.small"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_white_background"
+                android:padding="@dimen/app.padding.small"
+                android:text="300元/偏"
+                android:textColor="@color/app.text.blackb6b6b6" />
+        </RelativeLayout>
+
+
+        <com.core.op.lib.weight.FlowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/app.margin.large"
+            android:layout_marginTop="@dimen/app.margin.large">
+
+        </com.core.op.lib.weight.FlowLayout>
+
+        <include layout="@layout/include_line_h" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/app.margin.large"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/App.Theme.TextAppearance.ww.small"
+                android:layout_marginRight="@dimen/app.margin.normal"
+                android:text=""
+                android:textColor="@color/app.text.blackb6b6b6" />
+
+            <include layout="@layout/include_line_v" />
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/App.Theme.TextAppearance.ww.small"
+                android:layout_marginLeft="@dimen/app.margin.normal"
+                android:text="许三多"
+                android:textColor="@color/app.text.blackb6b6b6" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</layout>

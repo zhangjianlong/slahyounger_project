@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.core.op.lib">
+
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        tools:node="replace">
+
+        <activity
+            android:name=".weight.imgselector.MultiImageSelectorActivity"
+            android:configChanges="orientation|screenSize" />
+
+        <activity
+            android:name=".weight.crop.UCropActivity"
+            android:configChanges="orientation|screenSize" />
+    </application>
+
+</manifest>

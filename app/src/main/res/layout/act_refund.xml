@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.refund.RefundViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/include_white_toolbar_alpha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorPrimary="@color/app.text.black666"
+            app:toolTitle="@{viewModel.title}" />
+
+        <include layout="@layout/include_line_h" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/app.text.black999"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/app.padding.normal"
+                android:paddingLeft="@dimen/app.padding.normal"
+                android:text="没有在规定时间达到约定地点"
+                android:textColor="@color/app.text.black666" />
+
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/app.padding.normal"
+                android:paddingLeft="@dimen/app.padding.normal"
+                android:text="能力水平与任务要求不符"
+                android:textColor="@color/app.text.black666" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/app.padding.normal"
+                android:paddingLeft="@dimen/app.padding.normal"
+                android:text="服务态度恶劣"
+                android:textColor="@color/app.text.black666" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/app.padding.normal"
+                android:paddingLeft="@dimen/app.padding.normal"
+                android:text="服务者临时有事不能提供服务"
+                android:textColor="@color/app.text.black666" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/app.padding.normal"
+                android:paddingLeft="@dimen/app.padding.normal"
+                android:text="需求变更"
+                android:textColor="@color/app.text.black666" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/app.padding.normal"
+                android:paddingLeft="@dimen/app.padding.normal"
+                android:text="其他"
+                android:textColor="@color/app.text.black666" />
+
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app.padding.large"
+            android:background="@color/app.theme.background_f3f3f3"/>
+
+        <TextView
+            style="@style/App.Theme.TextAppearance.ww.normal.black666"
+            android:padding="@dimen/app.padding.normal"
+            android:text="补充说明"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/app.margin.normal"
+            android:background="@drawable/selector_gray_1111_0_gray"
+            android:orientation="vertical"
+            android:padding="@dimen/app.padding.normal">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:maxHeight="100dp"
+                android:gravity="top"
+                android:maxLines="3"
+                android:textSize="@dimen/app.text.normal"
+                android:textColorHint="@color/app.text.black999"
+                android:hint="请补充说明100字以内"
+                android:background="@color/cmbkb_transparent" />
+
+            <TextView
+                style="@style/App.Theme.TextAppearance.ww.normal.black999"
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:padding="@dimen/app.padding.normal"
+                android:text="0/100" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app.theme.background_f3f3f3"/>
+    </LinearLayout>
+</layout>

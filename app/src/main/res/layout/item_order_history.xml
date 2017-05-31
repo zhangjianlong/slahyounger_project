@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.main.order.history.HistoryItemViewModel" />
+
+    </data>
+
+    <LinearLayout
+        style="@style/App.Theme.Linear"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app.padding.large"
+            android:background="@color/app.theme.background_f3f3f3" />
+
+    <LinearLayout
+        style="@style/App.Theme.Linear"
+        android:orientation="vertical">
+        <LinearLayout
+            style="@style/App.Theme.Linear"
+            android:padding="@dimen/app.padding.normal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.core.op.lib.weight.ShapedImageView
+                style="@style/App.Theme.Image.Small"/>
+            
+            <LinearLayout
+                style="@style/App.Theme.Linear"
+                android:paddingLeft="@dimen/app.padding.normal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/App.Theme.Linear"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        style="@style/App.Theme.TextAppearance.ww.normal.black333"
+                        android:maxLines="1"
+                        android:text="做互联网公司宣传方案" />
+
+                    <TextView
+                        style="@style/App.Theme.TextAppearance.ww.small.black999"
+                        android:text="苏州"
+                        android:background="@drawable/selector_white_1111_0_gray"
+                        android:paddingLeft="@dimen/app.padding.normal"
+                        android:paddingRight="@dimen/app.padding.normal"
+                        android:layout_marginLeft="@dimen/app.padding.normal"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        style="@style/App.Theme.TextAppearance.ww.small"
+                        android:layout_weight="1"
+                        android:drawableRight="@mipmap/icon_mine_dot"/>
+                    
+                </LinearLayout>
+                <TextView
+                    style="@style/App.Theme.TextAppearance.ww.small.black999"
+                    android:paddingTop="@dimen/app.padding.normal"
+                    android:text="张建龙|服务方"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/include_line_h_padding"/>
+
+        <TextView
+            style="@style/App.Theme.TextAppearance.ww.small.black999"
+            android:paddingTop="@dimen/app.padding.large"
+            android:paddingLeft="@dimen/app.padding.normal"
+            android:textColor="@color/app.text.red"
+            android:drawablePadding="@dimen/app.padding.normal"
+            android:drawableLeft="@mipmap/icon_order_history_cost"
+            android:text="3000元"/>
+
+        <LinearLayout
+            style="@style/App.Theme.Linear"
+            android:paddingTop="@dimen/app.padding.large"
+            android:paddingBottom="@dimen/app.padding.large"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/App.Theme.TextAppearance.ww.small.black999"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/icon_order_history_tag"
+                android:drawablePadding="@dimen/app.padding.normal"
+                android:paddingLeft="@dimen/app.padding.normal"
+                android:text="QQ社区资源" />
+
+            <TextView
+                style="@style/App.Theme.TextAppearance.ww.small.white"
+                android:background="@mipmap/icon_order_history_status"
+                android:paddingTop="@dimen/app.padding.normal"
+                android:gravity="center"
+                android:paddingLeft="@dimen/app.padding.normal"
+                android:paddingBottom="@dimen/app.padding.normal"
+                android:text="服务中"/>
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

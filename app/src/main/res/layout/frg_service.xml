@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.back.service.ServiceViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app.theme.background_f3f3f3"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_line_h" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="@dimen/app.padding.large">
+
+                <TextView
+                    style="@style/App.Theme.TextAppearance.ww.normal.black333"
+                    tools:text="订单名称：我需要一套ui设计" />
+
+                <TextView
+                    style="@style/App.Theme.TextAppearance.ww.tiny"
+                    android:paddingTop="@dimen/app.padding.normal"
+                    android:textColor="@color/app.text.red"
+                    tools:text="200元/促销" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingRight="@dimen/app.padding.large"
+                android:src="@mipmap/icon_arrow_right" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_service_jag" />
+
+        <TextView
+            style="@style/App.Theme.TextAppearance.ww.normal.black666"
+            android:drawableLeft="@mipmap/icon_service_party"
+            android:paddingBottom="@dimen/app.padding.small"
+            android:paddingLeft="@dimen/app.padding.normal"
+            android:paddingTop="@dimen/app.padding.large"
+            android:text="@string/app.service.list" />
+
+        <FrameLayout
+            android:id="@+id/fl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+    </LinearLayout>
+</layout>

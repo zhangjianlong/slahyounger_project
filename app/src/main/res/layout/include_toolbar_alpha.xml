@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="toolTitle"
+            type="java.lang.String" />
+    </data>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/App.Theme.Widget.Toolbar"
+        app:navigationIcon="@mipmap/nav_back"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/App.Theme.TextAppearance.ww.large"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            android:text="@{toolTitle}"
+            android:textColor="@color/app.text" />
+
+    </android.support.v7.widget.Toolbar>
+</layout>

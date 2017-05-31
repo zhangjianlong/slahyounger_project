@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.label.LabelViewModel" />
+
+        <import type="com.core.op.bindingadapter.common.LayoutManagers" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toobar"
+            layout="@layout/include_white_toolbar_alpha"
+            app:toolTitle="@{viewModel.title}" />
+
+        <include layout="@layout/include_line_h" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/app.theme.background_f3f3f3"
+                    android:fadingEdge="none"
+                    app:itemView="@{viewModel.itemView}"
+                    app:items="@{viewModel.itemViewModels}"
+                    app:layoutManager="@{LayoutManagers.linear()}" />
+
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/second_recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fadingEdge="none"
+                            app:itemView="@{viewModel.secondItemView}"
+                            app:items="@{viewModel.secondItemViewModels}"
+                            app:layoutManager="@{LayoutManagers.linear()}" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:clickCommand="@{viewModel.customClick}">
+
+                            <include layout="@layout/include_line_h" />
+
+                            <TextView
+                                style="@style/App.Theme.TextAppearance.ww.normal"
+                                android:drawablePadding="@dimen/app.padding.normal"
+                                android:drawableRight="@mipmap/icon_label_pluse"
+                                android:paddingBottom="@dimen/app.padding.large"
+                                android:paddingLeft="@dimen/app.padding.large30"
+                                android:paddingRight="@dimen/app.padding.large30"
+                                android:paddingTop="@dimen/app.padding.large"
+                                android:text="@string/app.label.custom"
+                                android:textColor="@color/app.text.black333"
+                                tools:text="苏州" />
+
+                            <include layout="@layout/include_line_h" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v4.widget.NestedScrollView>
+            </LinearLayout>
+
+            <include layout="@layout/include_line_h" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/App.Theme.TextAppearance.ww.small.black333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/app.padding.normal"
+                    android:text="@{viewModel.selectedText}" />
+
+                <TextView
+                    style="@style/App.Theme.TextAppearance.Button.ww.blue"
+                    android:layout_marginBottom="@dimen/app.margin.small"
+                    android:layout_marginRight="@dimen/app.margin.normal"
+                    android:layout_marginTop="@dimen/app.margin.small"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/app.padding.normal"
+                    android:paddingLeft="@dimen/app.padding.large"
+                    android:paddingRight="@dimen/app.padding.large"
+                    android:paddingTop="@dimen/app.padding.normal"
+                    android:text="确定" />
+
+            </LinearLayout>
+
+            <include layout="@layout/include_line_h" />
+
+            <com.core.op.lib.weight.FlowLayout
+                android:id="@+id/flowlayout"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:itemView="@{viewModel.flowItemView}"
+                app:items="@{viewModel.flowItemViewModels}">
+
+            </com.core.op.lib.weight.FlowLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

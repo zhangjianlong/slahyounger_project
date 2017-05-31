@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.local.LocalHotItemViewModel" />
+
+        <import type="android.view.View" />
+
+        <import type="com.core.op.bindingadapter.common.LayoutManagers" />
+    </data>
+
+    <LinearLayout
+        style="@style/App.Theme.layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:clickCommand="@{viewModel.click}">
+
+        <TextView
+            style="@style/App.Theme.TextAppearance.ww.normal"
+            android:drawablePadding="@dimen/app.padding.small"
+            android:paddingBottom="@dimen/app.padding.normal"
+            android:paddingLeft="@dimen/app.padding.large30"
+            android:paddingRight="@dimen/app.padding.large30"
+            android:paddingTop="@dimen/app.padding.normal"
+            android:text="@{viewModel.name}"
+            android:textColor="@color/app.text.black333"
+            tools:text="苏州" />
+    </LinearLayout>
+</layout>

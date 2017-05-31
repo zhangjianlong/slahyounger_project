@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.label.LabelSItemViewModel" />
+
+        <import type="android.view.View" />
+
+        <import type="com.core.op.bindingadapter.common.LayoutManagers" />
+    </data>
+
+    <LinearLayout
+        style="@style/App.Theme.Linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/App.Theme.TextAppearance.ww.normal"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/app.padding.large"
+            android:paddingLeft="@dimen/app.padding.large30"
+            android:paddingRight="@dimen/app.padding.large30"
+            android:paddingTop="@dimen/app.padding.large"
+            android:textColor="@color/app.text.black333"
+            android:text="@{viewModel.data.tag}"
+            tools:text="苏州" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/App.Theme.CheckBox"
+            android:layout_marginRight="@dimen/app.margin.large"
+            app:checkedChangeCommand="@{viewModel.checkedChangeCommand}"
+            android:checked="@{viewModel.checked}"/>
+    </LinearLayout>
+</layout>

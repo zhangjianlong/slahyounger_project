@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.search.SeachItemViewModel" />
+    </data>
+
+    <LinearLayout
+        style="@style/App.Theme.Linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app.theme.background"
+        android:gravity="center"
+        app:clickCommand = "@{viewModel.moreUser}"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/App.Theme.TextAppearance.ww.normal"
+            android:gravity="center"
+            android:padding="@dimen/app.padding.large"
+            android:text="@string/app.search.more.user"
+            android:textColor="@color/app.text.31C5E4" />
+
+        <include layout="@layout/include_line_h" />
+    </LinearLayout>
+</layout>

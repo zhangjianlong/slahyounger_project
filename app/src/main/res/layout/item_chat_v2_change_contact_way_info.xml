@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.chat.list.ChatListItemViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <FrameLayout
+            android:background="@drawable/cell_phone_bg"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="39dp"
+            android:layout_marginTop="11dp"
+            android:layout_width="140dp">
+
+            <FrameLayout
+                app:clickCommand="@{viewModel.callToOther}"
+                android:background="@drawable/shape_chat_phone_icon_bg"
+                android:layout_gravity="right|center_vertical"
+                android:layout_height="34dp"
+                android:layout_marginRight="3dp"
+                android:layout_width="33dp">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_height="19dp"
+                    android:layout_width="12dp"
+                    android:src="@mipmap/white_phone_icon" />
+            </FrameLayout>
+
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_width="90dp"
+                android:text="@{viewModel.otherContactInfo}"
+                android:textColor="@color/app.text.black333"
+                android:textSize="@dimen/app.text.tiny" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+</layout>

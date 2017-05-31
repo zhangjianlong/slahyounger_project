@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.local.LocalViewModel" />
+
+        <import type="com.core.op.bindingadapter.common.LayoutManagers" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toobar"
+            layout="@layout/include_white_toolbar_alpha"
+            app:toolTitle="@{viewModel.title}" />
+
+        <com.core.op.lib.weight.RecycleScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app.theme.background_edf1f2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/App.Theme.TextAppearance.ww.normal.black666"
+                        android:padding="@dimen/app.padding.large12"
+                        android:text="@string/app.local.location"
+                        android:textColor="@color/app.text.black666"
+                        tools:text="定位城市" />
+
+                    <LinearLayout
+                        style="@style/App.Theme.layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/App.Theme.TextAppearance.ww.normal"
+                            android:drawableLeft="@mipmap/icon_label_local_in"
+                            android:drawablePadding="@dimen/app.padding.small"
+                            android:paddingLeft="@dimen/app.padding.xlarge"
+                            android:paddingRight="@dimen/app.padding.xlarge"
+                            android:textColor="@color/app.text.black333"
+                            tools:text="苏州" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/App.Theme.TextAppearance.ww.normal.black666"
+                        android:padding="@dimen/app.padding.large12"
+                        android:text="@string/app.local.hotcity"
+                        android:textColor="@color/app.text.black666"
+                        tools:text="热门城市" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/hot_recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fadingEdge="none"
+                        android:paddingBottom="@dimen/app.padding.xlarge"
+                        android:paddingRight="@dimen/app.padding.xxlarge"
+                        app:itemView="@{viewModel.hotItemView}"
+                        app:items="@{viewModel.hotItemViewModels}"
+                        app:layoutManager="@{LayoutManagers.grid(3)}" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fadingEdge="none"
+                    app:itemView="@{viewModel.itemView}"
+                    app:items="@{viewModel.itemViewModels}"
+                    app:layoutManager="@{LayoutManagers.linear()}" />
+
+            </LinearLayout>
+        </com.core.op.lib.weight.RecycleScrollView>
+    </LinearLayout>
+</layout>

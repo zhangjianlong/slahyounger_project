@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.userinfo.UserInfoViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.core.op.lib.weight.swipe.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:addStatesFromChildren="true"
+            android:refreshing="@{viewModel.isRefreshing}"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:onSwipeRefreshCommand="@{viewModel.onRefreshCommand}">
+
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:fitsSystemWindows="false">
+
+                <android.support.design.widget.AppBarLayout
+                    android:id="@+id/appBarLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false">
+
+                    <android.support.design.widget.CollapsingToolbarLayout
+                        android:id="@+id/collapsing_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:contentScrim="?attr/colorPrimary"
+                        app:expandedTitleMarginEnd="64dp"
+                        app:expandedTitleMarginStart="48dp"
+                        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:minHeight="68dp"
+                            android:orientation="vertical"
+                            app:layout_collapseMode="parallax"
+                            app:layout_collapseParallaxMultiplier="0.7">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/ivImage"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerCrop"
+                                    android:src="@mipmap/icon_userinfo_bg" />
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:scaleType="fitXY"
+                                    android:src="@mipmap/icon_userinfo_bottom_bg" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical"
+                                    android:paddingTop="@dimen/app.padding.large">
+
+                                    <RelativeLayout
+                                        android:layout_width="@dimen/app.image.height.normal58"
+                                        android:layout_height="@dimen/app.image.height.normal58">
+
+                                        <com.core.op.lib.weight.ShapedImageView
+                                            style="@style/App.Theme.Image"
+                                            android:src="@mipmap/icon_userinfo__avatar"
+                                            app:uri="@{viewModel.uri}" />
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_alignParentRight="true"
+                                            android:src="@mipmap/tab_authentication"
+                                            android:visibility="@{viewModel.authVisible}" />
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/tv_name"
+                                            style="@style/App.Theme.TextAppearance.ww.normal"
+                                            android:layout_centerInParent="true"
+                                            android:layout_marginTop="@dimen/app.padding.normal"
+                                            android:drawablePadding="@dimen/app.padding.normal"
+                                            android:drawableRight="@{viewModel.sexIcon}"
+                                            android:text="@{viewModel.data.name}"
+                                            android:textColor="@color/white" />
+                                    </RelativeLayout>
+
+
+                                    <TextView
+                                        style="@style/App.Theme.TextAppearance.ww.small"
+                                        android:paddingTop="@dimen/app.padding.normal"
+                                        android:text="@{viewModel.company}"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="@dimen/app.padding.large"
+                                android:paddingTop="@dimen/app.padding.large">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/App.Theme.TextAppearance.ww.tiny"
+                                        android:drawableLeft="@mipmap/icon_mine_friends"
+                                        android:drawablePadding="@dimen/app.padding.small"
+                                        android:paddingBottom="@dimen/app.padding.normal"
+                                        android:paddingTop="@dimen/app.padding.normal"
+                                        android:text="@{viewModel.relationCount}"
+                                        android:textColor="@color/black_light"
+                                        tools:text="人脉：123" />
+
+                                    <TextView
+                                        style="@style/App.Theme.TextAppearance.ww.tiny10"
+                                        android:paddingBottom="@dimen/app.padding.normal"
+                                        android:text="@{viewModel.relationProgress}"
+                                        android:textColor="@color/app.text.black.alpha.45"
+                                        tools:text="超过%1的用户" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/App.Theme.TextAppearance.ww.tiny"
+                                        android:drawableLeft="@mipmap/icon_mine_task"
+                                        android:drawablePadding="@dimen/app.padding.small"
+                                        android:paddingBottom="@dimen/app.padding.normal"
+                                        android:paddingTop="@dimen/app.padding.normal"
+                                        android:text="@{viewModel.taskCount}"
+                                        android:textColor="@color/app.text.black"
+                                        tools:text="人脉：123" />
+
+                                    <TextView
+                                        style="@style/App.Theme.TextAppearance.ww.tiny10"
+                                        android:paddingBottom="@dimen/app.padding.normal"
+                                        android:text="@{viewModel.taskProgress}"
+                                        android:textColor="@color/app.text.black.alpha.45"
+                                        tools:text="超过%1的用户" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/App.Theme.TextAppearance.ww.tiny"
+                                        android:drawableLeft="@mipmap/icon_userinfo_service"
+                                        android:drawablePadding="@dimen/app.padding.small"
+                                        android:paddingBottom="@dimen/app.padding.normal"
+                                        android:paddingTop="@dimen/app.padding.normal"
+                                        android:text="@{viewModel.serviceCount}"
+                                        android:textColor="@color/app.text.black"
+                                        tools:text="人脉：123" />
+
+                                    <TextView
+                                        style="@style/App.Theme.TextAppearance.ww.tiny10"
+                                        android:paddingBottom="@dimen/app.padding.normal"
+                                        android:text="@{viewModel.serviceProgress}"
+                                        android:textColor="@color/app.text.black.alpha.45"
+                                        tools:text="超过%1的用户" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="15dp"
+                                android:background="@color/app.theme.background_edf1f2" />
+                        </LinearLayout>
+
+                        <android.support.v7.widget.Toolbar
+                            android:id="@+id/toolbar"
+                            style="@style/App.Theme.Widget.Toolbar.Back"
+                            android:visibility="@{viewModel.titleVisible}"
+                            app:layout_collapseMode="pin"
+                            app:navigationIcon="@mipmap/nav_back"
+                            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+                        <!--<include-->
+                        <!--layout="@layout/include_toolbar_alpha"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="?attr/actionBarSize"-->
+                        <!--app:layout_collapseMode="pin"-->
+                        <!--app:toolTitle="@{viewModel.title}" />-->
+                    </android.support.design.widget.CollapsingToolbarLayout>
+                </android.support.design.widget.AppBarLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"></FrameLayout>
+
+            </android.support.design.widget.CoordinatorLayout>
+
+        </com.core.op.lib.weight.swipe.SwipeRefreshLayout>
+
+        <include layout="@layout/include_line_h" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="@{viewModel.otherVisible}">
+
+            <TextView
+                style="@style/App.Theme.TextAppearance.ww.tiny"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="2"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:drawableTop="@mipmap/chat_icon"
+                android:gravity="center"
+                android:paddingTop="@dimen/app.margin.normal"
+                android:text="@string/app.userinfo.chat"
+                android:textColor="@color/app.text.black.alpha.66"
+                app:clickCommand="@{viewModel.chatClick}" />
+
+            <TextView
+                style="@style/App.Theme.TextAppearance.ww.tiny"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="2"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:drawableTop="@mipmap/attention_icon"
+                android:gravity="center"
+                android:paddingTop="@dimen/app.margin.normal"
+                android:text="@string/app.userinfo.recommend"
+                android:textColor="@color/app.text.black.alpha.66"
+                app:clickCommand="@{viewModel.share}" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@color/app.theme.background_31C5E4">
+
+                <TextView
+                    style="@style/App.Theme.TextAppearance.ww.normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:gravity="center"
+                    android:text="@{viewModel.removeFriend}"
+                    app:clickCommand="@{viewModel.addClick}" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

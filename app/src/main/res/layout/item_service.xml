@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.back.service.slist.SListItemViewModel" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout
+        style="@style/App.Theme.Linear"
+        android:layout_marginTop="@dimen/app.padding.large"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/app.padding.normal"
+        app:clickCommand="@{viewModel.click}">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/app.padding.small"
+            android:paddingTop="@dimen/app.padding.small">
+
+            <com.core.op.lib.weight.ShapedImageView
+                android:layout_width="@dimen/app.image.height.normal40"
+                android:layout_height="@dimen/app.image.height.normal40" />
+
+            <TextView
+                style="@style/App.Theme.TextAppearance.ww.normal.black333"
+                tools:text="张三丰" />
+
+
+        </LinearLayout>
+
+        <include layout="@layout/include_line_h" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/app.padding.large"
+            android:paddingLeft="@dimen/app.padding.normal"
+            android:paddingRight="@dimen/app.padding.normal"
+            android:paddingTop="@dimen/app.padding.large">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/App.Theme.TextAppearance.ww.normal"
+                    android:text="sdf"
+                    android:textColor="@color/app.text.red"
+                    tools:text="400" />
+
+                <TextView
+                    style="@style/App.Theme.TextAppearance.ww.tiny"
+                    android:paddingTop="@dimen/app.padding.small"
+                    android:textColor="@color/app.text.red"
+                    tools:text="报价" />
+
+            </LinearLayout>
+
+            <include layout="@layout/include_line_v" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/app.padding.normal">
+
+                <TextView
+                    style="@style/App.Theme.TextAppearance.ww.normal"
+                    android:text="sdf"
+                    android:textColor="@color/app.text.red"
+                    tools:text="400" />
+
+                <TextView
+                    style="@style/App.Theme.TextAppearance.ww.tiny"
+                    android:paddingTop="@dimen/app.padding.small"
+                    android:textColor="@color/app.text.red"
+                    tools:text="报价" />
+
+            </LinearLayout>
+
+            <include layout="@layout/include_line_v" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/app.padding.normal">
+
+                <TextView
+                    style="@style/App.Theme.TextAppearance.ww.normal"
+                    android:text="sdf"
+                    android:textColor="@color/app.text.red"
+                    tools:text="400" />
+
+                <TextView
+                    style="@style/App.Theme.TextAppearance.ww.tiny"
+                    android:paddingTop="@dimen/app.padding.small"
+                    android:textColor="@color/app.text.red"
+                    tools:text="报价" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

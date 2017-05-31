@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.bindingaccount.BindingViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app.theme.background_edf1f2"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/include_white_toolbar_alpha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textColorPrimary="@color/app.text.black.alpha.66"
+            app:toolTitle="@{viewModel.title}" />
+
+        <TextView
+            style="@style/App.Theme.TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app.theme.background_edf1f2"
+            android:text="@string/app.binding.risk.hint" />
+
+        <EditText
+            style="@style/App.Theme.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/app.margin.large12"
+            android:hint="@string/app.login.phone"
+            android:text="@={viewModel.phoneNum}" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/app.margin.large12"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/ed_verify_code"
+                style="@style/App.Theme.EditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:hint="@string/app.login.verify.edit"
+                android:text="@={viewModel.verifyCode}" />
+
+            <View
+                android:layout_width="0.1dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/app.line" />
+
+            <TextView
+                android:id="@+id/tv_get_verify_code"
+                style="@style/App.Theme.TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/ed_verify_code"
+                android:layout_alignParentRight="true"
+                android:layout_weight="2"
+                android:enabled="@{viewModel.sendVerifyEnable}"
+                android:gravity="center"
+                android:text="@{viewModel.sendVerifyText}"
+                app:clickCommand="@{viewModel.sendVerify}" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_binding"
+            style="@style/App.Theme.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="进入"
+            app:clickCommand="@{viewModel.binding}" />
+    </LinearLayout>
+</layout>

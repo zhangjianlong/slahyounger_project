@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.dialog.common.CopyTextViewModel" />
+    </data>
+
+    <LinearLayout
+        style="@style/App.Theme.Linear"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/app.margin.large12"
+        android:paddingTop="@dimen/app.margin.large12">
+
+        <TextView
+            style="@style/App.Theme.TextAppearance.mw.normal"
+            android:gravity="center"
+            android:padding="@dimen/app.margin.large12"
+            android:text="@string/app.text.copy.dialog.copy"
+            android:textColor="@color/app.text.black"
+            app:clickCommand="@{viewModel.copy}" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/app.text.black" />
+
+        <TextView
+            style="@style/App.Theme.TextAppearance.mw.normal"
+            android:gravity="center"
+            android:padding="@dimen/app.margin.large12"
+            android:text="@string/app.text.copy.dialog.cal"
+            android:textColor="@color/app.text.black"
+            app:clickCommand="@{viewModel.cal}" />
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,1309 @@
+Connected to daemon DaemonInfo{pid=14232, address=[8ec79e62-36ed-4719-92bb-4755a99d04e5 port:51772, addresses:[/127.0.0.1, /0:0:0:0:0:0:0:1]], idle=true, lastBusy=1489479176553, context=DefaultDaemonContext[uid=ad08503b-97dc-4886-9850-4e00127d1740,javaHome=E:\java\jdk1.8,daemonRegistryDir=C:\Users\jl\.gradle\daemon,pid=14232,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=512m,-Xmx2048m,-Dfile.encoding=GBK,-Duser.country=CN,-Duser.language=zh,-Duser.variant]}. Dispatching request Build{id=0ae25485-44f3-4baf-bcae-773fcf4b476c.1, currentDir=D:\workspace\androidProject\SlashCode_Android}.
+Received result org.gradle.launcher.daemon.protocol.BuildStarted@379614be from daemon DaemonInfo{pid=14232, address=[8ec79e62-36ed-4719-92bb-4755a99d04e5 port:51772, addresses:[/127.0.0.1, /0:0:0:0:0:0:0:1]], idle=true, lastBusy=1489479176553, context=DefaultDaemonContext[uid=ad08503b-97dc-4886-9850-4e00127d1740,javaHome=E:\java\jdk1.8,daemonRegistryDir=C:\Users\jl\.gradle\daemon,pid=14232,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=512m,-Xmx2048m,-Dfile.encoding=GBK,-Duser.country=CN,-Duser.language=zh,-Duser.variant]} (build should be starting).
+The client will now receive all logging from the daemon (pid: 14232). The daemon log file: C:\Users\jl\.gradle\daemon\2.14.1\daemon-14232.out.log
+Starting 9th build in daemon [uptime: 12 mins 6.48 secs, performance: 95%, no major garbage collections]
+Executing build with daemon context: DefaultDaemonContext[uid=ad08503b-97dc-4886-9850-4e00127d1740,javaHome=E:\java\jdk1.8,daemonRegistryDir=C:\Users\jl\.gradle\daemon,pid=14232,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=512m,-Xmx2048m,-Dfile.encoding=GBK,-Duser.country=CN,-Duser.language=zh,-Duser.variant]
+Starting Build
+Settings evaluated using settings file 'D:\workspace\androidProject\SlashCode_Android\settings.gradle'.
+Projects loaded. Root project using build file 'D:\workspace\androidProject\SlashCode_Android\build.gradle'.
+Included projects: [root project 'SlashCode_Android', project ':app', project ':data', project ':domain', project ':lib', project ':pingpplib', project ':pingpplib:pingpp']
+Parallel execution with configuration on demand is an incubating feature.
+Evaluating root project 'SlashCode_Android' using build file 'D:\workspace\androidProject\SlashCode_Android\build.gradle'.
+Evaluating project ':app' using build file 'D:\workspace\androidProject\SlashCode_Android\app\build.gradle'.
+Creating configuration compile
+Creating configuration apk
+Creating configuration provided
+Creating configuration wearApp
+Creating configuration annotationProcessor
+Creating configuration androidTestCompile
+Creating configuration androidTestApk
+Creating configuration androidTestProvided
+Creating configuration androidTestWearApp
+Creating configuration androidTestAnnotationProcessor
+Creating configuration testCompile
+Creating configuration testApk
+Creating configuration testProvided
+Creating configuration testWearApp
+Creating configuration testAnnotationProcessor
+Creating configuration debugCompile
+Creating configuration debugApk
+Creating configuration debugProvided
+Creating configuration debugWearApp
+Creating configuration debugAnnotationProcessor
+Creating configuration testDebugCompile
+Creating configuration testDebugApk
+Creating configuration testDebugProvided
+Creating configuration testDebugWearApp
+Creating configuration testDebugAnnotationProcessor
+Creating configuration releaseCompile
+Creating configuration releaseApk
+Creating configuration releaseProvided
+Creating configuration releaseWearApp
+Creating configuration releaseAnnotationProcessor
+Creating configuration testReleaseCompile
+Creating configuration testReleaseApk
+Creating configuration testReleaseProvided
+Creating configuration testReleaseWearApp
+Creating configuration testReleaseAnnotationProcessor
+WARNING: The `android.dexOptions.incremental` property is deprecated and it has no effect on the build process.
+Parsing the SDK, no caching allowed
+Evaluating project ':lib' using build file 'D:\workspace\androidProject\SlashCode_Android\lib\build.gradle'.
+Creating configuration compile
+Creating configuration publish
+Creating configuration provided
+Creating configuration wearApp
+Creating configuration annotationProcessor
+Creating configuration androidTestCompile
+Creating configuration androidTestPublish
+Creating configuration androidTestProvided
+Creating configuration androidTestWearApp
+Creating configuration androidTestAnnotationProcessor
+Creating configuration testCompile
+Creating configuration testPublish
+Creating configuration testProvided
+Creating configuration testWearApp
+Creating configuration testAnnotationProcessor
+Creating configuration debugCompile
+Creating configuration debugPublish
+Creating configuration debugProvided
+Creating configuration debugWearApp
+Creating configuration debugAnnotationProcessor
+Creating configuration testDebugCompile
+Creating configuration testDebugPublish
+Creating configuration testDebugProvided
+Creating configuration testDebugWearApp
+Creating configuration testDebugAnnotationProcessor
+Creating configuration releaseCompile
+Creating configuration releasePublish
+Creating configuration releaseProvided
+Creating configuration releaseWearApp
+Creating configuration releaseAnnotationProcessor
+Creating configuration testReleaseCompile
+Creating configuration testReleasePublish
+Creating configuration testReleaseProvided
+Creating configuration testReleaseWearApp
+Creating configuration testReleaseAnnotationProcessor
+Parsing the SDK, no caching allowed
+file or directory 'D:\workspace\androidProject\SlashCode_Android\lib\libs', not found
+file or directory 'D:\workspace\androidProject\SlashCode_Android\lib\libs', not found
+file or directory 'D:\workspace\androidProject\SlashCode_Android\lib\libs', not found
+file or directory 'D:\workspace\androidProject\SlashCode_Android\lib\libs', not found
+Incremental Java compilation disabled in variant debug as you are using an incompatible plugin
+Not using incremental javac compilation.
+file or directory 'D:\workspace\androidProject\SlashCode_Android\lib\libs', not found
+file or directory 'D:\workspace\androidProject\SlashCode_Android\lib\libs', not found
+Incremental Java compilation disabled in variant debugUnitTest as you are using an incompatible plugin
+Not using incremental javac compilation.
+Incremental Java compilation disabled in variant release as you are using an incompatible plugin
+Not using incremental javac compilation.
+file or directory 'D:\workspace\androidProject\SlashCode_Android\lib\libs', not found
+file or directory 'D:\workspace\androidProject\SlashCode_Android\lib\libs', not found
+Incremental Java compilation disabled in variant releaseUnitTest as you are using an incompatible plugin
+Not using incremental javac compilation.
+file or directory 'D:\workspace\androidProject\SlashCode_Android\lib\libs', not found
+file or directory 'D:\workspace\androidProject\SlashCode_Android\lib\libs', not found
+Incremental Java compilation disabled in variant debugAndroidTest as you are using an incompatible plugin
+Not using incremental javac compilation.
+extractDebugAnnotations is incompatible with java 8 sources and has been disabled.
+extractReleaseAnnotations is incompatible with java 8 sources and has been disabled.
+Evaluating project ':data' using build file 'D:\workspace\androidProject\SlashCode_Android\data\build.gradle'.
+Creating configuration compile
+Creating configuration publish
+Creating configuration provided
+Creating configuration wearApp
+Creating configuration annotationProcessor
+Creating configuration androidTestCompile
+Creating configuration androidTestPublish
+Creating configuration androidTestProvided
+Creating configuration androidTestWearApp
+Creating configuration androidTestAnnotationProcessor
+Creating configuration testCompile
+Creating configuration testPublish
+Creating configuration testProvided
+Creating configuration testWearApp
+Creating configuration testAnnotationProcessor
+Creating configuration debugCompile
+Creating configuration debugPublish
+Creating configuration debugProvided
+Creating configuration debugWearApp
+Creating configuration debugAnnotationProcessor
+Creating configuration testDebugCompile
+Creating configuration testDebugPublish
+Creating configuration testDebugProvided
+Creating configuration testDebugWearApp
+Creating configuration testDebugAnnotationProcessor
+Creating configuration releaseCompile
+Creating configuration releasePublish
+Creating configuration releaseProvided
+Creating configuration releaseWearApp
+Creating configuration releaseAnnotationProcessor
+Creating configuration testReleaseCompile
+Creating configuration testReleasePublish
+Creating configuration testReleaseProvided
+Creating configuration testReleaseWearApp
+Creating configuration testReleaseAnnotationProcessor
+Parsing the SDK, no caching allowed
+Evaluating project ':domain' using build file 'D:\workspace\androidProject\SlashCode_Android\domain\build.gradle'.
+file or directory 'D:\workspace\androidProject\SlashCode_Android\data\libs', not found
+file or directory 'D:\workspace\androidProject\SlashCode_Android\data\libs', not found
+file or directory 'D:\workspace\androidProject\SlashCode_Android\data\libs', not found
+file or directory 'D:\workspace\androidProject\SlashCode_Android\data\libs', not found
+Incremental Java compilation disabled in variant debug as you are using an incompatible plugin
+Not using incremental javac compilation.
+file or directory 'D:\workspace\androidProject\SlashCode_Android\data\libs', not found
+file or directory 'D:\workspace\androidProject\SlashCode_Android\data\libs', not found
+Incremental Java compilation disabled in variant debugUnitTest as you are using an incompatible plugin
+Not using incremental javac compilation.
+Incremental Java compilation disabled in variant release as you are using an incompatible plugin
+Not using incremental javac compilation.
+file or directory 'D:\workspace\androidProject\SlashCode_Android\data\libs', not found
+file or directory 'D:\workspace\androidProject\SlashCode_Android\data\libs', not found
+Incremental Java compilation disabled in variant releaseUnitTest as you are using an incompatible plugin
+Not using incremental javac compilation.
+file or directory 'D:\workspace\androidProject\SlashCode_Android\data\libs', not found
+file or directory 'D:\workspace\androidProject\SlashCode_Android\data\libs', not found
+Incremental Java compilation disabled in variant debugAndroidTest as you are using an incompatible plugin
+Not using incremental javac compilation.
+Evaluating project ':pingpplib:pingpp' using build file 'D:\workspace\androidProject\SlashCode_Android\pingpplib\pingpp\build.gradle'.
+Creating configuration compile
+Creating configuration publish
+Creating configuration provided
+Creating configuration wearApp
+Creating configuration annotationProcessor
+Creating configuration androidTestCompile
+Creating configuration androidTestPublish
+Creating configuration androidTestProvided
+Creating configuration androidTestWearApp
+Creating configuration androidTestAnnotationProcessor
+Creating configuration testCompile
+Creating configuration testPublish
+Creating configuration testProvided
+Creating configuration testWearApp
+Creating configuration testAnnotationProcessor
+Creating configuration debugCompile
+Creating configuration debugPublish
+Creating configuration debugProvided
+Creating configuration debugWearApp
+Creating configuration debugAnnotationProcessor
+Creating configuration testDebugCompile
+Creating configuration testDebugPublish
+Creating configuration testDebugProvided
+Creating configuration testDebugWearApp
+Creating configuration testDebugAnnotationProcessor
+Creating configuration releaseCompile
+Creating configuration releasePublish
+Creating configuration releaseProvided
+Creating configuration releaseWearApp
+Creating configuration releaseAnnotationProcessor
+Creating configuration testReleaseCompile
+Creating configuration testReleasePublish
+Creating configuration testReleaseProvided
+Creating configuration testReleaseWearApp
+Creating configuration testReleaseAnnotationProcessor
+Parsing the SDK, no caching allowed
+Not using incremental javac compilation.
+Not using incremental javac compilation.
+Not using incremental javac compilation.
+Not using incremental javac compilation.
+Not using incremental javac compilation.
+Incremental Java compilation disabled in variant debug as you are using an incompatible plugin
+Not using incremental javac compilation.
+Jack is disabled, but one of the plugins you are using supports Java 8 language features.
+Incremental Java compilation disabled in variant debugUnitTest as you are using an incompatible plugin
+Not using incremental javac compilation.
+Incremental Java compilation disabled in variant release as you are using an incompatible plugin
+Not using incremental javac compilation.
+Jack is disabled, but one of the plugins you are using supports Java 8 language features.
+Incremental Java compilation disabled in variant releaseUnitTest as you are using an incompatible plugin
+Not using incremental javac compilation.
+Incremental Java compilation disabled in variant debugAndroidTest as you are using an incompatible plugin
+Not using incremental javac compilation.
+file or directory 'D:\workspace\androidProject\SlashCode_Android\lib\libs', not found
+file or directory 'D:\workspace\androidProject\SlashCode_Android\data\libs', not found
+file or directory 'D:\workspace\androidProject\SlashCode_Android\domain\libs', not found
+file or directory 'D:\workspace\androidProject\SlashCode_Android\lib\libs', not found
+file or directory 'D:\workspace\androidProject\SlashCode_Android\data\libs', not found
+file or directory 'D:\workspace\androidProject\SlashCode_Android\domain\libs', not found
+No apt dependencies for configuration androidTestApt
+No apt dependencies for configuration testApt
+file or directory 'D:\workspace\androidProject\SlashCode_Android\lib\libs', not found
+file or directory 'D:\workspace\androidProject\SlashCode_Android\data\libs', not found
+file or directory 'D:\workspace\androidProject\SlashCode_Android\domain\libs', not found
+file or directory 'D:\workspace\androidProject\SlashCode_Android\lib\libs', not found
+file or directory 'D:\workspace\androidProject\SlashCode_Android\data\libs', not found
+file or directory 'D:\workspace\androidProject\SlashCode_Android\domain\libs', not found
+No apt dependencies for configuration testApt
+Evaluating project ':pingpplib' using build file 'D:\workspace\androidProject\SlashCode_Android\pingpplib\build.gradle'.
+Selected primary task 'assembleRelease' from project :
+All projects evaluated.
+Tasks to be executed: [task ':app:preBuild', task ':app:preReleaseBuild', task ':app:checkReleaseManifest', task ':app:greendaoPrepare', task ':app:greendao', task ':app:preDebugBuild', task ':data:preBuild', task ':data:preReleaseBuild', task ':data:checkReleaseManifest', task ':data:preDebugAndroidTestBuild', task ':data:preDebugBuild', task ':data:preDebugUnitTestBuild', task ':data:preReleaseUnitTestBuild', task ':domain:compileJava', task ':domain:compileRetrolambdaMain', task ':domain:processResources', task ':domain:classes', task ':domain:jar', task ':data:prepareComFacebookStethoStetho141Library', task ':data:prepareComFacebookStethoStethoOkhttp3141Library', task ':data:prepareComOrhanobutLogger115Library', task ':data:prepareIoReactivexRxandroid121Library', task ':data:prepareReleaseDependencies', task ':data:compileReleaseAidl', task ':data:compileReleaseNdk', task ':data:compileLint', task ':data:copyReleaseLint', task ':data:mergeReleaseShaders', task ':data:compileReleaseShaders', task ':data:generateReleaseAssets', task ':data:mergeReleaseAssets', task ':data:mergeReleaseProguardFiles', task ':data:packageReleaseRenderscript', task ':data:compileReleaseRenderscript', task ':data:generateReleaseResValues', task ':data:generateReleaseResources', task ':data:packageReleaseResources', task ':data:processReleaseManifest', task ':data:generateReleaseBuildConfig', task ':data:mergeReleaseResources', task ':data:processReleaseResources', task ':data:generateReleaseSources', task ':data:incrementalReleaseJavaCompilationSafeguard', task ':data:compileReleaseJavaWithJavac', task ':data:compileRetrolambdaRelease', task ':data:processReleaseJavaRes', task ':data:transformResourcesWithMergeJavaResForRelease', task ':data:transformClassesAndResourcesWithSyncLibJarsForRelease', task ':data:mergeReleaseJniLibFolders', task ':data:transformNative_libsWithMergeJniLibsForRelease', task ':data:transformNative_libsWithSyncJniLibsForRelease', task ':data:bundleRelease', task ':lib:preBuild', task ':lib:preReleaseBuild', task ':lib:checkReleaseManifest', task ':lib:preDebugAndroidTestBuild', task ':lib:preDebugBuild', task ':lib:preDebugUnitTestBuild', task ':lib:preReleaseUnitTestBuild', task ':lib:prepareComAndroidDatabindingAdapters121Library', task ':lib:prepareComAndroidDatabindingLibrary121Library', task ':lib:prepareComAndroidSupportAnimatedVectorDrawable2400Library', task ':lib:prepareComAndroidSupportAppcompatV72400Library', task ':lib:prepareComAndroidSupportCardviewV72311Library', task ':lib:prepareComAndroidSupportDesign2400Library', task ':lib:prepareComAndroidSupportRecyclerviewV72400Library', task ':lib:prepareComAndroidSupportSupportCompat2510Library', task ':lib:prepareComAndroidSupportSupportCoreUi2510Library', task ':lib:prepareComAndroidSupportSupportCoreUtils2510Library', task ':lib:prepareComAndroidSupportSupportFragment2510Library', task ':lib:prepareComAndroidSupportSupportMediaCompat2510Library', task ':lib:prepareComAndroidSupportSupportV42510Library', task ':lib:prepareComAndroidSupportSupportVectorDrawable2400Library', task ':lib:prepareComAurelhubertAhbottomnavigation133Library', task ':lib:prepareComJakewhartonRxbindingRxbinding040Library', task ':lib:prepareComJakewhartonTimberTimber412Library', task ':lib:prepareComMcxiaokeViewpagerindicatorLibrary241Library', task ':lib:prepareComTbruyelleRxpermissionsRxpermissions091Library', task ':lib:prepareComTrelloRxlifecycle061Library', task ':lib:prepareComTrelloRxlifecycleComponents061Library', task ':lib:prepareIoReactivexRxandroid110Library', task ':lib:prepareReleaseDependencies', task ':lib:compileReleaseAidl', task ':lib:compileReleaseNdk', task ':lib:compileLint', task ':lib:copyReleaseLint', task ':lib:compileReleaseRenderscript', task ':lib:generateReleaseResValues', task ':lib:generateReleaseResources', task ':lib:mergeReleaseResources', task ':lib:dataBindingProcessLayoutsRelease', task ':lib:generateReleaseBuildConfig', task ':lib:processReleaseManifest', task ':lib:processReleaseResources', task ':lib:generateReleaseSources', task ':lib:dataBindingExportBuildInfoRelease', task ':lib:incrementalReleaseJavaCompilationSafeguard', task ':lib:compileReleaseJavaWithJavac', task ':lib:compileRetrolambdaRelease', task ':lib:extractReleaseAnnotations', task ':lib:mergeReleaseShaders', task ':lib:compileReleaseShaders', task ':lib:generateReleaseAssets', task ':lib:mergeReleaseAssets', task ':lib:mergeReleaseProguardFiles', task ':lib:packageReleaseRenderscript', task ':lib:packageReleaseResources', task ':lib:processReleaseJavaRes', task ':lib:transformResourcesWithMergeJavaResForRelease', task ':lib:transformClassesAndResourcesWithSyncLibJarsForRelease', task ':lib:mergeReleaseJniLibFolders', task ':lib:transformNative_libsWithMergeJniLibsForRelease', task ':lib:transformNative_libsWithSyncJniLibsForRelease', task ':lib:bundleRelease', task ':pingpplib:pingpp:preBuild', task ':pingpplib:pingpp:preReleaseBuild', task ':pingpplib:pingpp:checkReleaseManifest', task ':pingpplib:pingpp:prepareReleaseDependencies', task ':pingpplib:pingpp:compileReleaseAidl', task ':pingpplib:pingpp:compileReleaseNdk', task ':pingpplib:pingpp:compileLint', task ':pingpplib:pingpp:copyReleaseLint', task ':pingpplib:pingpp:mergeReleaseShaders', task ':pingpplib:pingpp:compileReleaseShaders', task ':pingpplib:pingpp:generateReleaseAssets', task ':pingpplib:pingpp:mergeReleaseAssets', task ':pingpplib:pingpp:mergeReleaseProguardFiles', task ':pingpplib:pingpp:packageReleaseRenderscript', task ':pingpplib:pingpp:compileReleaseRenderscript', task ':pingpplib:pingpp:generateReleaseResValues', task ':pingpplib:pingpp:generateReleaseResources', task ':pingpplib:pingpp:packageReleaseResources', task ':pingpplib:pingpp:processReleaseManifest', task ':pingpplib:pingpp:generateReleaseBuildConfig', task ':pingpplib:pingpp:processReleaseResources', task ':pingpplib:pingpp:generateReleaseSources', task ':pingpplib:pingpp:incrementalReleaseJavaCompilationSafeguard', task ':pingpplib:pingpp:compileReleaseJavaWithJavac', task ':pingpplib:pingpp:processReleaseJavaRes', task ':pingpplib:pingpp:transformResourcesWithMergeJavaResForRelease', task ':pingpplib:pingpp:transformClassesAndResourcesWithSyncLibJarsForRelease', task ':pingpplib:pingpp:mergeReleaseJniLibFolders', task ':pingpplib:pingpp:transformNative_libsWithMergeJniLibsForRelease', task ':pingpplib:pingpp:transformNative_libsWithSyncJniLibsForRelease', task ':pingpplib:pingpp:bundleRelease', task ':app:prepareCnFinalteamGalleryfinal1487Library', task ':app:prepareCnFinalteamToolsfinal115Library', task ':app:prepareComAndroidDatabindingAdapters121Library', task ':app:prepareComAndroidDatabindingLibrary121Library', task ':app:prepareComAndroidSupportAnimatedVectorDrawable2400Library', task ':app:prepareComAndroidSupportAppcompatV72400Library', task ':app:prepareComAndroidSupportCardviewV72311Library', task ':app:prepareComAndroidSupportDesign2400Library', task ':app:preDebugAndroidTestBuild', task ':app:prepareComAndroidSupportMultidex101Library', task ':app:prepareComAndroidSupportRecyclerviewV72400Library', task ':app:prepareComAndroidSupportSupportCompat2510Library', task ':app:prepareComAndroidSupportSupportCoreUi2510Library', task ':app:prepareComAndroidSupportSupportCoreUtils2510Library', task ':app:prepareComAndroidSupportSupportFragment2510Library', task ':app:prepareComAndroidSupportSupportMediaCompat2510Library', task ':app:prepareComAndroidSupportSupportV42510Library', task ':app:prepareComAndroidSupportSupportVectorDrawable2400Library', task ':app:prepareComAurelhubertAhbottomnavigation133Library', task ':app:prepareComBlankjUtilcode121Library', task ':app:prepareComFacebookStethoStetho141Library', task ':app:prepareComFacebookStethoStethoOkhttp3141Library', task ':app:prepareComJakewhartonRxbindingRxbinding040Library', task ':app:prepareComJakewhartonTimberTimber412Library', task ':app:prepareComJunglyGridPasswordView03Library', task ':app:prepareComLaiWeaveyDialog11Library', task ':app:prepareComMcxiaokeViewpagerindicatorLibrary241Library', task ':app:prepareComOrhanobutLogger115Library', task ':app:prepareComTbruyelleRxpermissionsRxpermissions091Library', task ':app:prepareComTrelloRxlifecycle061Library', task ':app:prepareComTrelloRxlifecycleComponents061Library', task ':app:prepareIoReactivexRxandroid121Library', task ':app:prepareOrgXutilsXutils3336Library', task ':app:prepareSlashCode_AndroidDataUnspecifiedLibrary', task ':app:prepareSlashCode_AndroidLibUnspecifiedLibrary', task ':app:prepareSlashCode_AndroidPingpplibPingppUnspecifiedLibrary', task ':app:prepareReleaseDependencies', task ':app:compileReleaseRenderscript', task ':app:generateReleaseResValues', task ':app:generateReleaseResources', task ':app:mergeReleaseResources', task ':app:dataBindingProcessLayoutsRelease', task ':app:compileReleaseAidl', task ':app:generateReleaseBuildConfig', task ':app:processReleaseManifest', task ':app:processReleaseResources', task ':app:generateReleaseSources', task ':app:dataBindingExportBuildInfoRelease', task ':app:incrementalReleaseJavaCompilationSafeguard', task ':app:compileReleaseJavaWithJavac', task ':app:compileReleaseNdk', task ':app:compileRetrolambdaRelease', task ':app:compileReleaseSources', task ':app:lintVitalRelease', task ':app:mergeReleaseShaders', task ':app:compileReleaseShaders', task ':app:generateReleaseAssets', task ':app:mergeReleaseAssets', task ':app:transformClassesWithJarMergingForRelease', task ':app:collectReleaseMultiDexComponents', task ':app:transformClassesWithMultidexlistForRelease', task ':app:transformClassesWithDexForRelease', task ':app:mergeReleaseJniLibFolders', task ':app:transformNative_libsWithMergeJniLibsForRelease', task ':app:transformNative_libsWithStripDebugSymbolForRelease', task ':app:processReleaseJavaRes', task ':app:transformResourcesWithMergeJavaResForRelease', task ':app:validateSigningRelease', task ':app:packageRelease', task ':app:assembleRelease', task ':data:compileReleaseSources', task ':data:assembleRelease', task ':lib:compileReleaseSources', task ':lib:assembleRelease', task ':pingpplib:pingpp:compileReleaseSources', task ':pingpplib:pingpp:assembleRelease']
+In-memory cache of D:\workspace\androidProject\SlashCode_Android\.gradle\2.14.1\taskArtifacts\fileHashes.bin: Size{9238}, CacheStats{hitCount=60046, missCount=9238, loadSuccessCount=0, loadExceptionCount=0, totalLoadTime=0, evictionCount=0}
+In-memory cache of D:\workspace\androidProject\SlashCode_Android\.gradle\2.14.1\taskArtifacts\treeSnapshots.bin: Size{0}, CacheStats{hitCount=0, missCount=0, loadSuccessCount=0, loadExceptionCount=0, totalLoadTime=0, evictionCount=0}
+In-memory cache of D:\workspace\androidProject\SlashCode_Android\.gradle\2.14.1\taskArtifacts\treeSnapshotUsage.bin: Size{0}, CacheStats{hitCount=0, missCount=0, loadSuccessCount=0, loadExceptionCount=0, totalLoadTime=0, evictionCount=0}
+In-memory cache of D:\workspace\androidProject\SlashCode_Android\.gradle\2.14.1\taskArtifacts\fileSnapshotsToTreeSnapshotsIndex.bin: Size{111}, CacheStats{hitCount=0, missCount=111, loadSuccessCount=0, loadExceptionCount=0, totalLoadTime=0, evictionCount=0}
+In-memory cache of D:\workspace\androidProject\SlashCode_Android\.gradle\2.14.1\taskArtifacts\fileSnapshots.bin: Size{304}, CacheStats{hitCount=0, missCount=193, loadSuccessCount=0, loadExceptionCount=0, totalLoadTime=0, evictionCount=0}
+In-memory cache of D:\workspace\androidProject\SlashCode_Android\.gradle\2.14.1\taskArtifacts\taskArtifacts.bin: Size{146}, CacheStats{hitCount=584, missCount=146, loadSuccessCount=0, loadExceptionCount=0, totalLoadTime=0, evictionCount=0}
+Using 8 parallel executor threads
+:app:preBuild (Thread[Task worker,5,main]) started.
+:app:preBuild
+:data:preBuild (Thread[Daemon worker Thread 5,5,main]) started.
+:data:preBuild
+Skipping task ':app:preBuild' as it has no actions.
+:app:preBuild UP-TO-DATE
+Skipping task ':data:preBuild' as it has no actions.
+:data:preBuild UP-TO-DATE
+:domain:compileJava (Thread[Task worker Thread 4,5,main]) started.
+:lib:preBuild (Thread[Task worker Thread 5,5,main]) started.
+:domain:compileJava
+:pingpplib:pingpp:preBuild (Thread[Task worker Thread 2,5,main]) started.
+:pingpplib:pingpp:preBuild
+:app:preReleaseBuild (Thread[Task worker Thread 3,5,main]) started.
+:data:preReleaseBuild (Thread[Task worker Thread 6,5,main]) started.
+:app:preBuild (Thread[Task worker,5,main]) completed. Took 0.002 secs.
+:lib:preBuild
+Skipping task ':lib:preBuild' as it has no actions.
+:lib:preBuild UP-TO-DATE
+:lib:preBuild (Thread[Task worker Thread 5,5,main]) completed. Took 0.001 secs.
+:lib:preReleaseBuild (Thread[Task worker Thread 5,5,main]) started.
+:lib:preReleaseBuild
+Skipping task ':lib:preReleaseBuild' as it has no actions.
+:lib:preReleaseBuild UP-TO-DATE
+:lib:preReleaseBuild (Thread[Task worker Thread 5,5,main]) completed. Took 0.0 secs.
+:lib:checkReleaseManifest (Thread[Task worker Thread 5,5,main]) started.
+:lib:checkReleaseManifest
+Executing task ':lib:checkReleaseManifest' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+:lib:checkReleaseManifest (Thread[Task worker Thread 5,5,main]) completed. Took 0.001 secs.
+:lib:preDebugAndroidTestBuild (Thread[Task worker Thread 5,5,main]) started.
+:lib:preDebugAndroidTestBuild
+Skipping task ':lib:preDebugAndroidTestBuild' as it has no actions.
+:lib:preDebugAndroidTestBuild UP-TO-DATE
+:lib:preDebugAndroidTestBuild (Thread[Task worker Thread 5,5,main]) completed. Took 0.0 secs.
+:lib:preDebugBuild (Thread[Task worker Thread 5,5,main]) started.
+:lib:preDebugBuild
+Skipping task ':lib:preDebugBuild' as it has no actions.
+:lib:preDebugBuild UP-TO-DATE
+:lib:preDebugBuild (Thread[Task worker Thread 5,5,main]) completed. Took 0.0 secs.
+:lib:preDebugUnitTestBuild (Thread[Task worker Thread 5,5,main]) started.
+:lib:preDebugUnitTestBuild
+Skipping task ':lib:preDebugUnitTestBuild' as it has no actions.
+:lib:preDebugUnitTestBuild UP-TO-DATE
+:lib:preDebugUnitTestBuild (Thread[Task worker Thread 5,5,main]) completed. Took 0.001 secs.
+:lib:preReleaseUnitTestBuild (Thread[Task worker Thread 5,5,main]) started.
+:lib:preReleaseUnitTestBuild
+Skipping task ':lib:preReleaseUnitTestBuild' as it has no actions.
+:lib:preReleaseUnitTestBuild UP-TO-DATE
+:lib:preReleaseUnitTestBuild (Thread[Task worker Thread 5,5,main]) completed. Took 0.0 secs.
+:lib:prepareComAndroidDatabindingAdapters121Library (Thread[Task worker Thread 5,5,main]) started.
+:lib:prepareComAndroidDatabindingAdapters121Library
+:app:preReleaseBuild
+Skipping task ':app:preReleaseBuild' as it has no actions.
+:app:preReleaseBuild UP-TO-DATE
+:app:preReleaseBuild (Thread[Task worker Thread 3,5,main]) completed. Took 0.004 secs.
+:app:checkReleaseManifest (Thread[Task worker Thread 3,5,main]) started.
+:app:checkReleaseManifest
+Executing task ':app:checkReleaseManifest' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+:app:checkReleaseManifest (Thread[Task worker Thread 3,5,main]) completed. Took 0.0 secs.
+:app:greendaoPrepare (Thread[Task worker Thread 3,5,main]) started.
+:app:greendaoPrepare
+Skipping task ':pingpplib:pingpp:preBuild' as it has no actions.
+:pingpplib:pingpp:preBuild UP-TO-DATE
+:pingpplib:pingpp:preBuild (Thread[Task worker Thread 2,5,main]) completed. Took 0.005 secs.
+:pingpplib:pingpp:preReleaseBuild (Thread[Task worker Thread 2,5,main]) started.
+:pingpplib:pingpp:preReleaseBuild
+Skipping task ':pingpplib:pingpp:preReleaseBuild' as it has no actions.
+:pingpplib:pingpp:preReleaseBuild UP-TO-DATE
+:pingpplib:pingpp:preReleaseBuild (Thread[Task worker Thread 2,5,main]) completed. Took 0.001 secs.
+:pingpplib:pingpp:checkReleaseManifest (Thread[Task worker Thread 2,5,main]) started.
+:pingpplib:pingpp:checkReleaseManifest
+Executing task ':pingpplib:pingpp:checkReleaseManifest' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+:data:preReleaseBuild
+Skipping task ':data:preReleaseBuild' as it has no actions.
+:data:preReleaseBuild UP-TO-DATE
+:data:preReleaseBuild (Thread[Task worker Thread 6,5,main]) completed. Took 0.006 secs.
+:data:checkReleaseManifest (Thread[Task worker Thread 6,5,main]) started.
+:data:checkReleaseManifest
+Executing task ':data:checkReleaseManifest' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+:data:preBuild (Thread[Daemon worker Thread 5,5,main]) completed. Took 0.001 secs.
+Skipping task ':lib:prepareComAndroidDatabindingAdapters121Library' as it is up-to-date (took 0.004 secs).
+:lib:prepareComAndroidDatabindingAdapters121Library UP-TO-DATE
+:lib:prepareComAndroidDatabindingAdapters121Library (Thread[Task worker Thread 5,5,main]) completed. Took 0.005 secs.
+:lib:prepareComAndroidDatabindingLibrary121Library (Thread[Task worker Thread 5,5,main]) started.
+:lib:prepareComAndroidDatabindingLibrary121Library
+:data:checkReleaseManifest (Thread[Task worker Thread 6,5,main]) completed. Took 0.003 secs.
+:data:preDebugAndroidTestBuild (Thread[Task worker Thread 6,5,main]) started.
+:data:preDebugAndroidTestBuild
+Skipping task ':data:preDebugAndroidTestBuild' as it has no actions.
+:data:preDebugAndroidTestBuild UP-TO-DATE
+:data:preDebugAndroidTestBuild (Thread[Task worker Thread 6,5,main]) completed. Took 0.0 secs.
+:data:preDebugBuild (Thread[Task worker Thread 6,5,main]) started.
+:data:preDebugBuild
+Skipping task ':data:preDebugBuild' as it has no actions.
+:data:preDebugBuild UP-TO-DATE
+:data:preDebugBuild (Thread[Task worker Thread 6,5,main]) completed. Took 0.0 secs.
+:data:preDebugUnitTestBuild (Thread[Task worker Thread 6,5,main]) started.
+:data:preDebugUnitTestBuild
+Skipping task ':data:preDebugUnitTestBuild' as it has no actions.
+:data:preDebugUnitTestBuild UP-TO-DATE
+:data:preDebugUnitTestBuild (Thread[Task worker Thread 6,5,main]) completed. Took 0.0 secs.
+:data:preReleaseUnitTestBuild (Thread[Task worker Thread 6,5,main]) started.
+:data:preReleaseUnitTestBuild
+Skipping task ':data:preReleaseUnitTestBuild' as it has no actions.
+:data:preReleaseUnitTestBuild UP-TO-DATE
+:data:preReleaseUnitTestBuild (Thread[Task worker Thread 6,5,main]) completed. Took 0.001 secs.
+Skipping task ':lib:prepareComAndroidDatabindingLibrary121Library' as it is up-to-date (took 0.002 secs).
+:lib:prepareComAndroidDatabindingLibrary121Library UP-TO-DATE
+:data:compileReleaseNdk (Thread[Task worker Thread 6,5,main]) started.
+:data:compileReleaseNdk
+Skipping task ':data:compileReleaseNdk' as it has no source files.
+:data:compileReleaseNdk UP-TO-DATE
+:data:compileReleaseNdk (Thread[Task worker Thread 6,5,main]) completed. Took 0.0 secs.
+:data:compileLint (Thread[Task worker Thread 6,5,main]) started.
+:data:compileLint
+Skipping task ':data:compileLint' as it is up-to-date (took 0.0 secs).
+:data:compileLint UP-TO-DATE
+:data:compileLint (Thread[Task worker Thread 6,5,main]) completed. Took 0.0 secs.
+:data:copyReleaseLint (Thread[Task worker Thread 6,5,main]) started.
+:data:copyReleaseLint
+Skipping task ':data:copyReleaseLint' as it has no source files.
+:data:copyReleaseLint UP-TO-DATE
+:data:copyReleaseLint (Thread[Task worker Thread 6,5,main]) completed. Took 0.0 secs.
+:data:mergeReleaseShaders (Thread[Task worker Thread 6,5,main]) started.
+:data:mergeReleaseShaders
+Skipping task ':data:mergeReleaseShaders' as it is up-to-date (took 0.001 secs).
+:data:mergeReleaseShaders UP-TO-DATE
+:pingpplib:pingpp:checkReleaseManifest (Thread[Task worker Thread 2,5,main]) completed. Took 0.009 secs.
+:data:mergeReleaseShaders (Thread[Task worker Thread 6,5,main]) completed. Took 0.001 secs.
+:data:compileReleaseShaders (Thread[Task worker Thread 2,5,main]) started.
+:data:compileReleaseShaders
+:pingpplib:pingpp:prepareReleaseDependencies (Thread[Task worker Thread 7,5,main]) started.
+:pingpplib:pingpp:prepareReleaseDependencies
+Executing task ':pingpplib:pingpp:prepareReleaseDependencies' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+Skipping task ':data:compileReleaseShaders' as it is up-to-date (took 0.001 secs).
+:data:compileReleaseShaders UP-TO-DATE
+:data:compileReleaseShaders (Thread[Task worker Thread 2,5,main]) completed. Took 0.001 secs.
+:data:generateReleaseAssets (Thread[Task worker Thread 2,5,main]) started.
+:data:generateReleaseAssets
+Skipping task ':data:generateReleaseAssets' as it has no actions.
+:data:generateReleaseAssets UP-TO-DATE
+:data:generateReleaseAssets (Thread[Task worker Thread 2,5,main]) completed. Took 0.0 secs.
+:data:mergeReleaseProguardFiles (Thread[Task worker Thread 2,5,main]) started.
+:data:mergeReleaseProguardFiles
+Skipping task ':data:mergeReleaseProguardFiles' as it is up-to-date (took 0.0 secs).
+:data:mergeReleaseProguardFiles UP-TO-DATE
+:data:mergeReleaseProguardFiles (Thread[Task worker Thread 2,5,main]) completed. Took 0.0 secs.
+:data:packageReleaseRenderscript (Thread[Task worker Thread 2,5,main]) started.
+:data:packageReleaseRenderscript
+file or directory 'D:\workspace\androidProject\SlashCode_Android\domain\libs', not found
+Skipping task ':data:packageReleaseRenderscript' as it has no source files.
+:data:packageReleaseRenderscript UP-TO-DATE
+:data:packageReleaseRenderscript (Thread[Task worker Thread 2,5,main]) completed. Took 0.0 secs.
+:data:generateReleaseResValues (Thread[Task worker Thread 2,5,main]) started.
+:data:generateReleaseResValues
+:lib:prepareComAndroidSupportAnimatedVectorDrawable2400Library (Thread[Task worker,5,main]) started.
+:lib:prepareComAndroidDatabindingLibrary121Library (Thread[Task worker Thread 5,5,main]) completed. Took 0.011 secs.
+:lib:prepareComAndroidSupportAnimatedVectorDrawable2400Library
+Skipping task ':data:generateReleaseResValues' as it is up-to-date (took 0.0 secs).
+:data:generateReleaseResValues UP-TO-DATE
+:data:generateReleaseResValues (Thread[Task worker Thread 2,5,main]) completed. Took 0.001 secs.
+:data:generateReleaseBuildConfig (Thread[Task worker Thread 2,5,main]) started.
+:data:generateReleaseBuildConfig
+:pingpplib:pingpp:prepareReleaseDependencies (Thread[Task worker Thread 7,5,main]) completed. Took 0.005 secs.
+Skipping task ':lib:prepareComAndroidSupportAnimatedVectorDrawable2400Library' as it is up-to-date (took 0.002 secs).
+:lib:prepareComAndroidSupportAnimatedVectorDrawable2400Library UP-TO-DATE
+Skipping task ':data:generateReleaseBuildConfig' as it is up-to-date (took 0.001 secs).
+:data:generateReleaseBuildConfig UP-TO-DATE
+:pingpplib:pingpp:compileReleaseAidl (Thread[Task worker Thread 7,5,main]) started.
+:data:generateReleaseBuildConfig (Thread[Task worker Thread 2,5,main]) completed. Took 0.002 secs.
+:data:incrementalReleaseJavaCompilationSafeguard (Thread[Task worker Thread 2,5,main]) started.
+:pingpplib:pingpp:compileReleaseAidl
+Skipping task ':pingpplib:pingpp:compileReleaseAidl' as it is up-to-date (took 0.0 secs).
+:pingpplib:pingpp:compileReleaseAidl UP-TO-DATE
+:pingpplib:pingpp:compileReleaseAidl (Thread[Task worker Thread 7,5,main]) completed. Took 0.004 secs.
+:pingpplib:pingpp:compileReleaseNdk (Thread[Task worker Thread 7,5,main]) started.
+:pingpplib:pingpp:compileReleaseNdk
+Skipping task ':domain:compileJava' as it is up-to-date (took 0.026 secs).
+:domain:compileJava UP-TO-DATE
+Skipping task ':pingpplib:pingpp:compileReleaseNdk' as it has no source files.
+:domain:compileJava (Thread[Task worker Thread 4,5,main]) completed. Took 0.028 secs.
+:domain:compileRetrolambdaMain (Thread[Task worker Thread 4,5,main]) started.
+:domain:compileRetrolambdaMain
+:data:incrementalReleaseJavaCompilationSafeguard
+file or directory 'D:\workspace\androidProject\SlashCode_Android\domain\libs', not found
+:pingpplib:pingpp:compileReleaseNdk UP-TO-DATE
+Skipping task ':data:incrementalReleaseJavaCompilationSafeguard' as it is up-to-date (took 0.003 secs).
+:lib:prepareComAndroidSupportAnimatedVectorDrawable2400Library (Thread[Task worker,5,main]) completed. Took 0.015 secs.
+:pingpplib:pingpp:compileReleaseNdk (Thread[Task worker Thread 7,5,main]) completed. Took 0.009 secs.
+:data:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:lib:prepareComAndroidSupportAppcompatV72400Library (Thread[Task worker,5,main]) started.
+:lib:prepareComAndroidSupportAppcompatV72400Library
+:pingpplib:pingpp:compileLint (Thread[Task worker Thread 7,5,main]) started.
+:pingpplib:pingpp:compileLint
+Skipping task ':app:greendaoPrepare' as it is up-to-date (took 0.033 secs).
+:app:greendaoPrepare UP-TO-DATE
+Skipping task ':pingpplib:pingpp:compileLint' as it is up-to-date (took 0.0 secs).
+:pingpplib:pingpp:compileLint UP-TO-DATE
+Skipping task ':domain:compileRetrolambdaMain' as it is up-to-date (took 0.011 secs).
+:domain:compileRetrolambdaMain UP-TO-DATE
+:app:greendaoPrepare (Thread[Task worker Thread 3,5,main]) completed. Took 0.035 secs.
+:app:greendao (Thread[Daemon worker Thread 5,5,main]) started.
+:app:greendao
+:data:incrementalReleaseJavaCompilationSafeguard (Thread[Task worker Thread 2,5,main]) completed. Took 0.035 secs.
+:data:processReleaseJavaRes (Thread[Task worker Thread 2,5,main]) started.
+:data:processReleaseJavaRes
+:pingpplib:pingpp:compileLint (Thread[Task worker Thread 7,5,main]) completed. Took 0.021 secs.
+Skipping task ':data:processReleaseJavaRes' as it has no source files.
+:data:processReleaseJavaRes UP-TO-DATE
+:pingpplib:pingpp:copyReleaseLint (Thread[Task worker Thread 7,5,main]) started.
+:pingpplib:pingpp:copyReleaseLint
+:domain:compileRetrolambdaMain (Thread[Task worker Thread 4,5,main]) completed. Took 0.033 secs.
+Skipping task ':lib:prepareComAndroidSupportAppcompatV72400Library' as it is up-to-date (took 0.022 secs).
+:lib:prepareComAndroidSupportAppcompatV72400Library UP-TO-DATE
+:domain:processResources (Thread[Task worker Thread 3,5,main]) started.
+Skipping task ':pingpplib:pingpp:copyReleaseLint' as it has no source files.
+:domain:processResources
+file or directory 'D:\workspace\androidProject\SlashCode_Android\domain\src\main\resources', not found
+Skipping task ':domain:processResources' as it has no source files.
+:domain:processResources UP-TO-DATE
+:pingpplib:pingpp:copyReleaseLint UP-TO-DATE
+:lib:prepareComAndroidSupportCardviewV72311Library (Thread[Task worker Thread 5,5,main]) started.
+:lib:prepareComAndroidSupportCardviewV72311Library
+:data:processReleaseJavaRes (Thread[Task worker Thread 2,5,main]) completed. Took 0.002 secs.
+:data:transformResourcesWithMergeJavaResForRelease (Thread[Task worker Thread 2,5,main]) started.
+:data:transformResourcesWithMergeJavaResForRelease
+Skipping task ':data:transformResourcesWithMergeJavaResForRelease' as it is up-to-date (took 0.001 secs).
+:data:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:data:transformResourcesWithMergeJavaResForRelease (Thread[Task worker Thread 2,5,main]) completed. Took 0.001 secs.
+:lib:prepareComAndroidSupportAppcompatV72400Library (Thread[Task worker,5,main]) completed. Took 0.023 secs.
+:domain:processResources (Thread[Task worker Thread 3,5,main]) completed. Took 0.004 secs.
+:domain:classes (Thread[Task worker Thread 3,5,main]) started.
+:domain:classes
+Skipping task ':domain:classes' as it has no actions.
+:domain:classes UP-TO-DATE
+:pingpplib:pingpp:copyReleaseLint (Thread[Task worker Thread 7,5,main]) completed. Took 0.005 secs.
+Skipping task ':lib:prepareComAndroidSupportCardviewV72311Library' as it is up-to-date (took 0.002 secs).
+:lib:prepareComAndroidSupportCardviewV72311Library UP-TO-DATE
+:pingpplib:pingpp:mergeReleaseShaders (Thread[Task worker Thread 7,5,main]) started.
+:pingpplib:pingpp:mergeReleaseShaders
+:domain:classes (Thread[Task worker Thread 3,5,main]) completed. Took 0.002 secs.
+:lib:prepareComAndroidSupportCardviewV72311Library (Thread[Task worker Thread 5,5,main]) completed. Took 0.005 secs.
+Skipping task ':pingpplib:pingpp:mergeReleaseShaders' as it is up-to-date (took 0.0 secs).
+:pingpplib:pingpp:mergeReleaseShaders UP-TO-DATE
+:domain:jar (Thread[Task worker Thread 6,5,main]) started.
+:domain:jar
+:lib:prepareComAndroidSupportDesign2400Library (Thread[Task worker Thread 2,5,main]) started.
+:lib:prepareComAndroidSupportDesign2400Library
+:pingpplib:pingpp:mergeReleaseShaders (Thread[Task worker Thread 7,5,main]) completed. Took 0.003 secs.
+:pingpplib:pingpp:compileReleaseShaders (Thread[Task worker,5,main]) started.
+:pingpplib:pingpp:compileReleaseShaders
+Skipping task ':pingpplib:pingpp:compileReleaseShaders' as it is up-to-date (took 0.001 secs).
+:pingpplib:pingpp:compileReleaseShaders UP-TO-DATE
+:pingpplib:pingpp:compileReleaseShaders (Thread[Task worker,5,main]) completed. Took 0.001 secs.
+:pingpplib:pingpp:generateReleaseAssets (Thread[Task worker,5,main]) started.
+:pingpplib:pingpp:generateReleaseAssets
+Skipping task ':pingpplib:pingpp:generateReleaseAssets' as it has no actions.
+:pingpplib:pingpp:generateReleaseAssets UP-TO-DATE
+:pingpplib:pingpp:generateReleaseAssets (Thread[Task worker,5,main]) completed. Took 0.0 secs.
+:pingpplib:pingpp:mergeReleaseAssets (Thread[Task worker,5,main]) started.
+:pingpplib:pingpp:mergeReleaseAssets
+Skipping task ':lib:prepareComAndroidSupportDesign2400Library' as it is up-to-date (took 0.004 secs).
+:lib:prepareComAndroidSupportDesign2400Library UP-TO-DATE
+:lib:prepareComAndroidSupportDesign2400Library (Thread[Task worker Thread 2,5,main]) completed. Took 0.004 secs.
+:lib:prepareComAndroidSupportRecyclerviewV72400Library (Thread[Task worker Thread 2,5,main]) started.
+:lib:prepareComAndroidSupportRecyclerviewV72400Library
+Skipping task ':pingpplib:pingpp:mergeReleaseAssets' as it is up-to-date (took 0.001 secs).
+:pingpplib:pingpp:mergeReleaseAssets UP-TO-DATE
+:pingpplib:pingpp:mergeReleaseAssets (Thread[Task worker,5,main]) completed. Took 0.002 secs.
+:pingpplib:pingpp:mergeReleaseProguardFiles (Thread[Task worker,5,main]) started.
+:pingpplib:pingpp:mergeReleaseProguardFiles
+Skipping task ':domain:jar' as it is up-to-date (took 0.006 secs).
+:domain:jar UP-TO-DATE
+Skipping task ':pingpplib:pingpp:mergeReleaseProguardFiles' as it is up-to-date (took 0.0 secs).
+:domain:jar (Thread[Task worker Thread 6,5,main]) completed. Took 0.006 secs.
+Skipping task ':lib:prepareComAndroidSupportRecyclerviewV72400Library' as it is up-to-date (took 0.001 secs).
+:pingpplib:pingpp:mergeReleaseProguardFiles UP-TO-DATE
+:data:prepareComFacebookStethoStetho141Library (Thread[Task worker Thread 6,5,main]) started.
+:lib:prepareComAndroidSupportRecyclerviewV72400Library UP-TO-DATE
+:lib:prepareComAndroidSupportRecyclerviewV72400Library (Thread[Task worker Thread 2,5,main]) completed. Took 0.002 secs.
+:lib:prepareComAndroidSupportSupportCompat2510Library (Thread[Task worker Thread 2,5,main]) started.
+:lib:prepareComAndroidSupportSupportCompat2510Library
+:data:prepareComFacebookStethoStetho141Library
+:pingpplib:pingpp:mergeReleaseProguardFiles (Thread[Task worker,5,main]) completed. Took 0.003 secs.
+:pingpplib:pingpp:packageReleaseRenderscript (Thread[Task worker,5,main]) started.
+:pingpplib:pingpp:packageReleaseRenderscript
+Skipping task ':pingpplib:pingpp:packageReleaseRenderscript' as it has no source files.
+:pingpplib:pingpp:packageReleaseRenderscript UP-TO-DATE
+:pingpplib:pingpp:packageReleaseRenderscript (Thread[Task worker,5,main]) completed. Took 0.001 secs.
+Skipping task ':data:prepareComFacebookStethoStetho141Library' as it is up-to-date (took 0.002 secs).
+:data:prepareComFacebookStethoStetho141Library UP-TO-DATE
+Skipping task ':lib:prepareComAndroidSupportSupportCompat2510Library' as it is up-to-date (took 0.003 secs).
+:lib:prepareComAndroidSupportSupportCompat2510Library UP-TO-DATE
+:pingpplib:pingpp:compileReleaseRenderscript (Thread[Task worker,5,main]) started.
+:pingpplib:pingpp:compileReleaseRenderscript
+:data:prepareComFacebookStethoStetho141Library (Thread[Task worker Thread 6,5,main]) completed. Took 0.005 secs.
+:lib:prepareComAndroidSupportSupportCompat2510Library (Thread[Task worker Thread 2,5,main]) completed. Took 0.004 secs.
+:data:prepareComFacebookStethoStethoOkhttp3141Library (Thread[Task worker Thread 7,5,main]) started.
+:data:prepareComFacebookStethoStethoOkhttp3141Library
+:lib:prepareComAndroidSupportSupportCoreUi2510Library (Thread[Task worker Thread 4,5,main]) started.
+:lib:prepareComAndroidSupportSupportCoreUi2510Library
+Skipping task ':pingpplib:pingpp:compileReleaseRenderscript' as it is up-to-date (took 0.001 secs).
+:pingpplib:pingpp:compileReleaseRenderscript UP-TO-DATE
+:pingpplib:pingpp:compileReleaseRenderscript (Thread[Task worker,5,main]) completed. Took 0.002 secs.
+:pingpplib:pingpp:generateReleaseResValues (Thread[Task worker,5,main]) started.
+:pingpplib:pingpp:generateReleaseResValues
+Skipping task ':pingpplib:pingpp:generateReleaseResValues' as it is up-to-date (took 0.0 secs).
+:pingpplib:pingpp:generateReleaseResValues UP-TO-DATE
+:pingpplib:pingpp:generateReleaseResValues (Thread[Task worker,5,main]) completed. Took 0.001 secs.
+:pingpplib:pingpp:generateReleaseResources (Thread[Task worker Thread 3,5,main]) started.
+Skipping task ':lib:prepareComAndroidSupportSupportCoreUi2510Library' as it is up-to-date (took 0.002 secs).
+:pingpplib:pingpp:generateReleaseResources
+Skipping task ':pingpplib:pingpp:generateReleaseResources' as it has no actions.
+Skipping task ':data:prepareComFacebookStethoStethoOkhttp3141Library' as it is up-to-date (took 0.003 secs).
+:data:prepareComFacebookStethoStethoOkhttp3141Library UP-TO-DATE
+:lib:prepareComAndroidSupportSupportCoreUi2510Library UP-TO-DATE
+:pingpplib:pingpp:generateReleaseResources UP-TO-DATE
+:lib:prepareComAndroidSupportSupportCoreUi2510Library (Thread[Task worker Thread 4,5,main]) completed. Took 0.002 secs.
+:data:prepareComFacebookStethoStethoOkhttp3141Library (Thread[Task worker Thread 7,5,main]) completed. Took 0.003 secs.
+:data:prepareComOrhanobutLogger115Library (Thread[Task worker Thread 5,5,main]) started.
+:data:prepareComOrhanobutLogger115Library
+:lib:prepareComAndroidSupportSupportCoreUtils2510Library (Thread[Task worker Thread 6,5,main]) started.
+:lib:prepareComAndroidSupportSupportCoreUtils2510Library
+:pingpplib:pingpp:generateReleaseResources (Thread[Task worker Thread 3,5,main]) completed. Took 0.001 secs.
+:pingpplib:pingpp:packageReleaseResources (Thread[Task worker Thread 3,5,main]) started.
+:pingpplib:pingpp:packageReleaseResources
+Skipping task ':lib:prepareComAndroidSupportSupportCoreUtils2510Library' as it is up-to-date (took 0.002 secs).
+:lib:prepareComAndroidSupportSupportCoreUtils2510Library UP-TO-DATE
+:lib:prepareComAndroidSupportSupportCoreUtils2510Library (Thread[Task worker Thread 6,5,main]) completed. Took 0.002 secs.
+Skipping task ':data:prepareComOrhanobutLogger115Library' as it is up-to-date (took 0.002 secs).
+:data:prepareComOrhanobutLogger115Library UP-TO-DATE
+:lib:prepareComAndroidSupportSupportFragment2510Library (Thread[Task worker Thread 6,5,main]) started.
+:lib:prepareComAndroidSupportSupportFragment2510Library
+:data:prepareComOrhanobutLogger115Library (Thread[Task worker Thread 5,5,main]) completed. Took 0.002 secs.
+:data:prepareIoReactivexRxandroid121Library (Thread[Task worker Thread 2,5,main]) started.
+:data:prepareIoReactivexRxandroid121Library
+Skipping task ':lib:prepareComAndroidSupportSupportFragment2510Library' as it is up-to-date (took 0.003 secs).
+:lib:prepareComAndroidSupportSupportFragment2510Library UP-TO-DATE
+Skipping task ':data:prepareIoReactivexRxandroid121Library' as it is up-to-date (took 0.002 secs).
+:lib:prepareComAndroidSupportSupportFragment2510Library (Thread[Task worker Thread 6,5,main]) completed. Took 0.004 secs.
+:data:prepareIoReactivexRxandroid121Library UP-TO-DATE
+:lib:prepareComAndroidSupportSupportMediaCompat2510Library (Thread[Task worker,5,main]) started.
+:lib:prepareComAndroidSupportSupportMediaCompat2510Library
+:data:prepareIoReactivexRxandroid121Library (Thread[Task worker Thread 2,5,main]) completed. Took 0.003 secs.
+:data:prepareReleaseDependencies (Thread[Task worker Thread 2,5,main]) started.
+:data:prepareReleaseDependencies
+Executing task ':data:prepareReleaseDependencies' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+:data:prepareReleaseDependencies (Thread[Task worker Thread 2,5,main]) completed. Took 0.001 secs.
+Skipping task ':pingpplib:pingpp:packageReleaseResources' as it is up-to-date (took 0.006 secs).
+:pingpplib:pingpp:packageReleaseResources UP-TO-DATE
+:data:compileReleaseAidl (Thread[Task worker Thread 2,5,main]) started.
+:data:compileReleaseAidl
+:pingpplib:pingpp:packageReleaseResources (Thread[Task worker Thread 3,5,main]) completed. Took 0.007 secs.
+Skipping task ':lib:prepareComAndroidSupportSupportMediaCompat2510Library' as it is up-to-date (took 0.003 secs).
+:lib:prepareComAndroidSupportSupportMediaCompat2510Library UP-TO-DATE
+:lib:prepareComAndroidSupportSupportMediaCompat2510Library (Thread[Task worker,5,main]) completed. Took 0.003 secs.
+:pingpplib:pingpp:processReleaseManifest (Thread[Task worker Thread 7,5,main]) started.
+:pingpplib:pingpp:processReleaseManifest
+:lib:prepareComAndroidSupportSupportV42510Library (Thread[Task worker,5,main]) started.
+:lib:prepareComAndroidSupportSupportV42510Library
+Skipping task ':pingpplib:pingpp:processReleaseManifest' as it is up-to-date (took 0.001 secs).
+:pingpplib:pingpp:processReleaseManifest UP-TO-DATE
+:pingpplib:pingpp:processReleaseManifest (Thread[Task worker Thread 7,5,main]) completed. Took 0.002 secs.
+Skipping task ':data:compileReleaseAidl' as it is up-to-date (took 0.003 secs).
+:pingpplib:pingpp:generateReleaseBuildConfig (Thread[Task worker Thread 6,5,main]) started.
+:data:compileReleaseAidl UP-TO-DATE
+:pingpplib:pingpp:generateReleaseBuildConfig
+:data:compileReleaseAidl (Thread[Task worker Thread 2,5,main]) completed. Took 0.003 secs.
+Skipping task ':lib:prepareComAndroidSupportSupportV42510Library' as it is up-to-date (took 0.002 secs).
+:lib:prepareComAndroidSupportSupportV42510Library UP-TO-DATE
+:data:mergeReleaseAssets (Thread[Task worker Thread 4,5,main]) started.
+:data:mergeReleaseAssets
+:lib:prepareComAndroidSupportSupportV42510Library (Thread[Task worker,5,main]) completed. Took 0.002 secs.
+Skipping task ':pingpplib:pingpp:generateReleaseBuildConfig' as it is up-to-date (took 0.0 secs).
+:pingpplib:pingpp:generateReleaseBuildConfig UP-TO-DATE
+:lib:prepareComAndroidSupportSupportVectorDrawable2400Library (Thread[Task worker Thread 3,5,main]) started.
+:lib:prepareComAndroidSupportSupportVectorDrawable2400Library
+:pingpplib:pingpp:generateReleaseBuildConfig (Thread[Task worker Thread 6,5,main]) completed. Took 0.002 secs.
+Skipping task ':data:mergeReleaseAssets' as it is up-to-date (took 0.001 secs).
+:data:mergeReleaseAssets UP-TO-DATE
+:pingpplib:pingpp:processReleaseResources (Thread[Task worker Thread 5,5,main]) started.
+:pingpplib:pingpp:processReleaseResources
+:data:mergeReleaseAssets (Thread[Task worker Thread 4,5,main]) completed. Took 0.002 secs.
+Skipping task ':lib:prepareComAndroidSupportSupportVectorDrawable2400Library' as it is up-to-date (took 0.001 secs).
+:lib:prepareComAndroidSupportSupportVectorDrawable2400Library UP-TO-DATE
+:data:compileReleaseRenderscript (Thread[Task worker Thread 7,5,main]) started.
+:data:compileReleaseRenderscript
+:lib:prepareComAndroidSupportSupportVectorDrawable2400Library (Thread[Task worker Thread 3,5,main]) completed. Took 0.002 secs.
+:lib:prepareComAurelhubertAhbottomnavigation133Library (Thread[Task worker Thread 2,5,main]) started.
+:lib:prepareComAurelhubertAhbottomnavigation133Library
+Skipping task ':data:compileReleaseRenderscript' as it is up-to-date (took 0.001 secs).
+:data:compileReleaseRenderscript UP-TO-DATE
+:data:compileReleaseRenderscript (Thread[Task worker Thread 7,5,main]) completed. Took 0.001 secs.
+:data:generateReleaseResources (Thread[Task worker,5,main]) started.
+:data:generateReleaseResources
+Skipping task ':data:generateReleaseResources' as it has no actions.
+:data:generateReleaseResources UP-TO-DATE
+:data:generateReleaseResources (Thread[Task worker,5,main]) completed. Took 0.001 secs.
+:data:packageReleaseResources (Thread[Task worker Thread 6,5,main]) started.
+:data:packageReleaseResources
+Skipping task ':lib:prepareComAurelhubertAhbottomnavigation133Library' as it is up-to-date (took 0.003 secs).
+:lib:prepareComAurelhubertAhbottomnavigation133Library UP-TO-DATE
+:lib:prepareComAurelhubertAhbottomnavigation133Library (Thread[Task worker Thread 2,5,main]) completed. Took 0.003 secs.
+:lib:prepareComJakewhartonRxbindingRxbinding040Library (Thread[Task worker Thread 4,5,main]) started.
+:lib:prepareComJakewhartonRxbindingRxbinding040Library
+Skipping task ':pingpplib:pingpp:processReleaseResources' as it is up-to-date (took 0.006 secs).
+:pingpplib:pingpp:processReleaseResources UP-TO-DATE
+Skipping task ':data:packageReleaseResources' as it is up-to-date (took 0.002 secs).
+:data:packageReleaseResources UP-TO-DATE
+:pingpplib:pingpp:processReleaseResources (Thread[Task worker Thread 5,5,main]) completed. Took 0.006 secs.
+:pingpplib:pingpp:generateReleaseSources (Thread[Task worker Thread 3,5,main]) started.
+:pingpplib:pingpp:generateReleaseSources
+Skipping task ':pingpplib:pingpp:generateReleaseSources' as it has no actions.
+:pingpplib:pingpp:generateReleaseSources UP-TO-DATE
+:data:packageReleaseResources (Thread[Task worker Thread 6,5,main]) completed. Took 0.002 secs.
+:data:processReleaseManifest (Thread[Task worker Thread 7,5,main]) started.
+:data:processReleaseManifest
+:pingpplib:pingpp:generateReleaseSources (Thread[Task worker Thread 3,5,main]) completed. Took 0.001 secs.
+Skipping task ':lib:prepareComJakewhartonRxbindingRxbinding040Library' as it is up-to-date (took 0.001 secs).
+:lib:prepareComJakewhartonRxbindingRxbinding040Library UP-TO-DATE
+:pingpplib:pingpp:incrementalReleaseJavaCompilationSafeguard (Thread[Task worker,5,main]) started.
+:pingpplib:pingpp:incrementalReleaseJavaCompilationSafeguard
+:lib:prepareComJakewhartonRxbindingRxbinding040Library (Thread[Task worker Thread 4,5,main]) completed. Took 0.003 secs.
+Skipping task ':data:processReleaseManifest' as it is up-to-date (took 0.001 secs).
+:data:processReleaseManifest UP-TO-DATE
+:lib:prepareComJakewhartonTimberTimber412Library (Thread[Task worker Thread 2,5,main]) started.
+:lib:prepareComJakewhartonTimberTimber412Library
+:data:processReleaseManifest (Thread[Task worker Thread 7,5,main]) completed. Took 0.001 secs.
+:data:mergeReleaseResources (Thread[Task worker Thread 5,5,main]) started.
+:data:mergeReleaseResources
+Skipping task ':lib:prepareComJakewhartonTimberTimber412Library' as it is up-to-date (took 0.002 secs).
+:lib:prepareComJakewhartonTimberTimber412Library UP-TO-DATE
+Skipping task ':pingpplib:pingpp:incrementalReleaseJavaCompilationSafeguard' as it is up-to-date (took 0.002 secs).
+:pingpplib:pingpp:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:lib:prepareComJakewhartonTimberTimber412Library (Thread[Task worker Thread 2,5,main]) completed. Took 0.002 secs.
+:lib:prepareComMcxiaokeViewpagerindicatorLibrary241Library (Thread[Task worker Thread 7,5,main]) started.
+:lib:prepareComMcxiaokeViewpagerindicatorLibrary241Library
+:pingpplib:pingpp:incrementalReleaseJavaCompilationSafeguard (Thread[Task worker,5,main]) completed. Took 0.005 secs.
+:pingpplib:pingpp:compileReleaseJavaWithJavac (Thread[Task worker Thread 2,5,main]) started.
+:pingpplib:pingpp:compileReleaseJavaWithJavac
+Skipping task ':lib:prepareComMcxiaokeViewpagerindicatorLibrary241Library' as it is up-to-date (took 0.002 secs).
+:lib:prepareComMcxiaokeViewpagerindicatorLibrary241Library UP-TO-DATE
+:lib:prepareComMcxiaokeViewpagerindicatorLibrary241Library (Thread[Task worker Thread 7,5,main]) completed. Took 0.003 secs.
+Skipping task ':data:mergeReleaseResources' as it is up-to-date (took 0.003 secs).
+:data:mergeReleaseResources UP-TO-DATE
+:lib:prepareComTbruyelleRxpermissionsRxpermissions091Library (Thread[Task worker Thread 7,5,main]) started.
+:lib:prepareComTbruyelleRxpermissionsRxpermissions091Library
+file or directory 'D:\workspace\androidProject\SlashCode_Android\pingpplib\pingpp\src\main\java', not found
+file or directory 'D:\workspace\androidProject\SlashCode_Android\pingpplib\pingpp\src\release\java', not found
+:data:mergeReleaseResources (Thread[Task worker Thread 5,5,main]) completed. Took 0.006 secs.
+:data:processReleaseResources (Thread[Task worker Thread 5,5,main]) started.
+:data:processReleaseResources
+Skipping task ':lib:prepareComTbruyelleRxpermissionsRxpermissions091Library' as it is up-to-date (took 0.002 secs).
+:lib:prepareComTbruyelleRxpermissionsRxpermissions091Library UP-TO-DATE
+:lib:prepareComTbruyelleRxpermissionsRxpermissions091Library (Thread[Task worker Thread 7,5,main]) completed. Took 0.003 secs.
+:lib:prepareComTrelloRxlifecycle061Library (Thread[Task worker Thread 6,5,main]) started.
+:lib:prepareComTrelloRxlifecycle061Library
+file or directory 'D:\workspace\androidProject\SlashCode_Android\pingpplib\pingpp\src\main\java', not found
+file or directory 'D:\workspace\androidProject\SlashCode_Android\pingpplib\pingpp\src\release\java', not found
+Skipping task ':lib:prepareComTrelloRxlifecycle061Library' as it is up-to-date (took 0.002 secs).
+:lib:prepareComTrelloRxlifecycle061Library UP-TO-DATE
+:lib:prepareComTrelloRxlifecycle061Library (Thread[Task worker Thread 6,5,main]) completed. Took 0.003 secs.
+:lib:prepareComTrelloRxlifecycleComponents061Library (Thread[Task worker Thread 6,5,main]) started.
+:lib:prepareComTrelloRxlifecycleComponents061Library
+Skipping task ':pingpplib:pingpp:compileReleaseJavaWithJavac' as it is up-to-date (took 0.006 secs).
+:pingpplib:pingpp:compileReleaseJavaWithJavac UP-TO-DATE
+:pingpplib:pingpp:compileReleaseJavaWithJavac (Thread[Task worker Thread 2,5,main]) completed. Took 0.009 secs.
+:pingpplib:pingpp:processReleaseJavaRes (Thread[Task worker Thread 3,5,main]) started.
+:pingpplib:pingpp:processReleaseJavaRes
+Skipping task ':pingpplib:pingpp:processReleaseJavaRes' as it has no source files.
+:pingpplib:pingpp:processReleaseJavaRes UP-TO-DATE
+:pingpplib:pingpp:processReleaseJavaRes (Thread[Task worker Thread 3,5,main]) completed. Took 0.001 secs.
+:pingpplib:pingpp:transformResourcesWithMergeJavaResForRelease (Thread[Task worker Thread 3,5,main]) started.
+:pingpplib:pingpp:transformResourcesWithMergeJavaResForRelease
+Skipping task ':data:processReleaseResources' as it is up-to-date (took 0.008 secs).
+:data:processReleaseResources UP-TO-DATE
+:data:processReleaseResources (Thread[Task worker Thread 5,5,main]) completed. Took 0.009 secs.
+:data:generateReleaseSources (Thread[Task worker Thread 5,5,main]) started.
+:data:generateReleaseSources
+Skipping task ':data:generateReleaseSources' as it has no actions.
+Skipping task ':pingpplib:pingpp:transformResourcesWithMergeJavaResForRelease' as it is up-to-date (took 0.0 secs).
+:pingpplib:pingpp:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:pingpplib:pingpp:transformResourcesWithMergeJavaResForRelease (Thread[Task worker Thread 3,5,main]) completed. Took 0.001 secs.
+Skipping task ':lib:prepareComTrelloRxlifecycleComponents061Library' as it is up-to-date (took 0.005 secs).
+:lib:prepareComTrelloRxlifecycleComponents061Library UP-TO-DATE
+:data:generateReleaseSources UP-TO-DATE
+:pingpplib:pingpp:transformClassesAndResourcesWithSyncLibJarsForRelease (Thread[Task worker Thread 4,5,main]) started.
+:pingpplib:pingpp:transformClassesAndResourcesWithSyncLibJarsForRelease
+:lib:prepareComTrelloRxlifecycleComponents061Library (Thread[Task worker Thread 6,5,main]) completed. Took 0.005 secs.
+:data:generateReleaseSources (Thread[Task worker Thread 5,5,main]) completed. Took 0.001 secs.
+:data:compileReleaseJavaWithJavac (Thread[Task worker,5,main]) started.
+:data:compileReleaseJavaWithJavac
+:lib:prepareIoReactivexRxandroid110Library (Thread[Task worker Thread 7,5,main]) started.
+:lib:prepareIoReactivexRxandroid110Library
+Skipping task ':pingpplib:pingpp:transformClassesAndResourcesWithSyncLibJarsForRelease' as it is up-to-date (took 0.002 secs).
+:pingpplib:pingpp:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:pingpplib:pingpp:transformClassesAndResourcesWithSyncLibJarsForRelease (Thread[Task worker Thread 4,5,main]) completed. Took 0.002 secs.
+:pingpplib:pingpp:mergeReleaseJniLibFolders (Thread[Task worker Thread 4,5,main]) started.
+:pingpplib:pingpp:mergeReleaseJniLibFolders
+Skipping task ':lib:prepareIoReactivexRxandroid110Library' as it is up-to-date (took 0.002 secs).
+:lib:prepareIoReactivexRxandroid110Library UP-TO-DATE
+:lib:prepareIoReactivexRxandroid110Library (Thread[Task worker Thread 7,5,main]) completed. Took 0.002 secs.
+:lib:prepareReleaseDependencies (Thread[Task worker Thread 2,5,main]) started.
+:lib:prepareReleaseDependencies
+Executing task ':lib:prepareReleaseDependencies' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+:lib:prepareReleaseDependencies (Thread[Task worker Thread 2,5,main]) completed. Took 0.0 secs.
+:lib:compileReleaseAidl (Thread[Task worker Thread 7,5,main]) started.
+:lib:compileReleaseAidl
+Skipping task ':pingpplib:pingpp:mergeReleaseJniLibFolders' as it is up-to-date (took 0.003 secs).
+:pingpplib:pingpp:mergeReleaseJniLibFolders UP-TO-DATE
+:pingpplib:pingpp:mergeReleaseJniLibFolders (Thread[Task worker Thread 4,5,main]) completed. Took 0.003 secs.
+:pingpplib:pingpp:transformNative_libsWithMergeJniLibsForRelease (Thread[Task worker Thread 4,5,main]) started.
+:pingpplib:pingpp:transformNative_libsWithMergeJniLibsForRelease
+Skipping task ':pingpplib:pingpp:transformNative_libsWithMergeJniLibsForRelease' as it is up-to-date (took 0.005 secs).
+:pingpplib:pingpp:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:pingpplib:pingpp:transformNative_libsWithMergeJniLibsForRelease (Thread[Task worker Thread 4,5,main]) completed. Took 0.005 secs.
+:pingpplib:pingpp:transformNative_libsWithSyncJniLibsForRelease (Thread[Task worker Thread 3,5,main]) started.
+:pingpplib:pingpp:transformNative_libsWithSyncJniLibsForRelease
+Skipping task ':pingpplib:pingpp:transformNative_libsWithSyncJniLibsForRelease' as it is up-to-date (took 0.004 secs).
+:pingpplib:pingpp:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:pingpplib:pingpp:transformNative_libsWithSyncJniLibsForRelease (Thread[Task worker Thread 3,5,main]) completed. Took 0.004 secs.
+:pingpplib:pingpp:bundleRelease (Thread[Task worker Thread 3,5,main]) started.
+:pingpplib:pingpp:bundleRelease
+Skipping task ':lib:compileReleaseAidl' as it is up-to-date (took 0.012 secs).
+:lib:compileReleaseAidl UP-TO-DATE
+:lib:compileReleaseAidl (Thread[Task worker Thread 7,5,main]) completed. Took 0.014 secs.
+:lib:compileReleaseNdk (Thread[Task worker Thread 6,5,main]) started.
+:lib:compileReleaseNdk
+file or directory 'D:\workspace\androidProject\SlashCode_Android\data\src\release\java', not found
+Skipping task ':lib:compileReleaseNdk' as it has no source files.
+:lib:compileReleaseNdk UP-TO-DATE
+:lib:compileReleaseNdk (Thread[Task worker Thread 6,5,main]) completed. Took 0.001 secs.
+:lib:compileLint (Thread[Task worker Thread 5,5,main]) started.
+:lib:compileLint
+Skipping task ':lib:compileLint' as it is up-to-date (took 0.0 secs).
+:lib:compileLint UP-TO-DATE
+:lib:compileLint (Thread[Task worker Thread 5,5,main]) completed. Took 0.0 secs.
+:lib:copyReleaseLint (Thread[Task worker Thread 2,5,main]) started.
+:lib:copyReleaseLint
+Skipping task ':pingpplib:pingpp:bundleRelease' as it is up-to-date (took 0.004 secs).
+:pingpplib:pingpp:bundleRelease UP-TO-DATE
+:pingpplib:pingpp:bundleRelease (Thread[Task worker Thread 3,5,main]) completed. Took 0.004 secs.
+:pingpplib:pingpp:compileReleaseSources (Thread[Task worker Thread 4,5,main]) started.
+Skipping task ':lib:copyReleaseLint' as it has no source files.
+:pingpplib:pingpp:compileReleaseSources
+:lib:copyReleaseLint UP-TO-DATE
+Skipping task ':pingpplib:pingpp:compileReleaseSources' as it has no actions.
+:pingpplib:pingpp:compileReleaseSources UP-TO-DATE
+:lib:copyReleaseLint (Thread[Task worker Thread 2,5,main]) completed. Took 0.0 secs.
+:lib:compileReleaseRenderscript (Thread[Task worker Thread 7,5,main]) started.
+:lib:compileReleaseRenderscript
+:pingpplib:pingpp:compileReleaseSources (Thread[Task worker Thread 4,5,main]) completed. Took 0.002 secs.
+Skipping task ':data:compileReleaseJavaWithJavac' as it is up-to-date (took 0.02 secs).
+:pingpplib:pingpp:assembleRelease (Thread[Task worker Thread 4,5,main]) started.
+:data:compileReleaseJavaWithJavac UP-TO-DATE
+:pingpplib:pingpp:assembleRelease
+Skipping task ':pingpplib:pingpp:assembleRelease' as it has no actions.
+:data:compileReleaseJavaWithJavac (Thread[Task worker,5,main]) completed. Took 0.023 secs.
+:pingpplib:pingpp:assembleRelease UP-TO-DATE
+:data:compileRetrolambdaRelease (Thread[Task worker,5,main]) started.
+:data:compileRetrolambdaRelease
+:pingpplib:pingpp:assembleRelease (Thread[Task worker Thread 4,5,main]) completed. Took 0.001 secs.
+Skipping task ':app:greendao' as it is up-to-date (took 0.09 secs).
+:app:greendao UP-TO-DATE
+:app:greendao (Thread[Daemon worker Thread 5,5,main]) completed. Took 0.09 secs.
+:app:preDebugBuild (Thread[Task worker Thread 4,5,main]) started.
+:app:preDebugBuild
+Skipping task ':app:preDebugBuild' as it has no actions.
+:app:preDebugBuild UP-TO-DATE
+:app:preDebugBuild (Thread[Task worker Thread 4,5,main]) completed. Took 0.0 secs.
+:app:preDebugAndroidTestBuild (Thread[Daemon worker Thread 5,5,main]) started.
+:app:preDebugAndroidTestBuild
+Skipping task ':app:preDebugAndroidTestBuild' as it has no actions.
+:app:preDebugAndroidTestBuild UP-TO-DATE
+Skipping task ':lib:compileReleaseRenderscript' as it is up-to-date (took 0.001 secs).
+:app:preDebugAndroidTestBuild (Thread[Daemon worker Thread 5,5,main]) completed. Took 0.001 secs.
+:lib:compileReleaseRenderscript UP-TO-DATE
+:app:generateReleaseResValues (Thread[Task worker Thread 5,5,main]) started.
+:app:generateReleaseResValues
+:lib:compileReleaseRenderscript (Thread[Task worker Thread 7,5,main]) completed. Took 0.003 secs.
+Skipping task ':app:generateReleaseResValues' as it is up-to-date (took 0.0 secs).
+:app:generateReleaseResValues UP-TO-DATE
+:lib:generateReleaseResValues (Thread[Task worker Thread 3,5,main]) started.
+:lib:generateReleaseResValues
+:app:generateReleaseResValues (Thread[Task worker Thread 5,5,main]) completed. Took 0.001 secs.
+Skipping task ':lib:generateReleaseResValues' as it is up-to-date (took 0.0 secs).
+:lib:generateReleaseResValues UP-TO-DATE
+:app:generateReleaseBuildConfig (Thread[Task worker Thread 5,5,main]) started.
+:app:generateReleaseBuildConfig
+:lib:generateReleaseResValues (Thread[Task worker Thread 3,5,main]) completed. Took 0.001 secs.
+:lib:generateReleaseResources (Thread[Task worker Thread 3,5,main]) started.
+:lib:generateReleaseResources
+Skipping task ':lib:generateReleaseResources' as it has no actions.
+:lib:generateReleaseResources UP-TO-DATE
+:lib:generateReleaseResources (Thread[Task worker Thread 3,5,main]) completed. Took 0.0 secs.
+Skipping task ':app:generateReleaseBuildConfig' as it is up-to-date (took 0.001 secs).
+:app:generateReleaseBuildConfig UP-TO-DATE
+:lib:mergeReleaseResources (Thread[Task worker Thread 3,5,main]) started.
+:lib:mergeReleaseResources
+:app:generateReleaseBuildConfig (Thread[Task worker Thread 5,5,main]) completed. Took 0.002 secs.
+:app:incrementalReleaseJavaCompilationSafeguard (Thread[Task worker Thread 5,5,main]) started.
+:app:incrementalReleaseJavaCompilationSafeguard
+Skipping task ':data:compileRetrolambdaRelease' as it is up-to-date (took 0.011 secs).
+:data:compileRetrolambdaRelease UP-TO-DATE
+:data:compileRetrolambdaRelease (Thread[Task worker,5,main]) completed. Took 0.012 secs.
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease (Thread[Task worker Thread 2,5,main]) started.
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease
+Skipping task ':app:incrementalReleaseJavaCompilationSafeguard' as it is up-to-date (took 0.01 secs).
+:app:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:app:incrementalReleaseJavaCompilationSafeguard (Thread[Task worker Thread 5,5,main]) completed. Took 0.012 secs.
+Skipping task ':data:transformClassesAndResourcesWithSyncLibJarsForRelease' as it is up-to-date (took 0.006 secs).
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:app:compileReleaseNdk (Thread[Task worker Thread 4,5,main]) started.
+:app:compileReleaseNdk
+:data:transformClassesAndResourcesWithSyncLibJarsForRelease (Thread[Task worker Thread 2,5,main]) completed. Took 0.007 secs.
+Skipping task ':app:compileReleaseNdk' as it has no source files.
+:app:compileReleaseNdk UP-TO-DATE
+:data:mergeReleaseJniLibFolders (Thread[Task worker Thread 6,5,main]) started.
+:data:mergeReleaseJniLibFolders
+:app:compileReleaseNdk (Thread[Task worker Thread 4,5,main]) completed. Took 0.001 secs.
+:app:mergeReleaseShaders (Thread[Daemon worker Thread 5,5,main]) started.
+:app:mergeReleaseShaders
+Skipping task ':data:mergeReleaseJniLibFolders' as it is up-to-date (took 0.001 secs).
+:data:mergeReleaseJniLibFolders UP-TO-DATE
+:data:mergeReleaseJniLibFolders (Thread[Task worker Thread 6,5,main]) completed. Took 0.001 secs.
+:data:transformNative_libsWithMergeJniLibsForRelease (Thread[Task worker Thread 7,5,main]) started.
+:data:transformNative_libsWithMergeJniLibsForRelease
+Skipping task ':app:mergeReleaseShaders' as it is up-to-date (took 0.001 secs).
+:app:mergeReleaseShaders UP-TO-DATE
+:app:mergeReleaseShaders (Thread[Daemon worker Thread 5,5,main]) completed. Took 0.001 secs.
+Skipping task ':data:transformNative_libsWithMergeJniLibsForRelease' as it is up-to-date (took 0.001 secs).
+:data:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:app:compileReleaseShaders (Thread[Daemon worker Thread 5,5,main]) started.
+:data:transformNative_libsWithMergeJniLibsForRelease (Thread[Task worker Thread 7,5,main]) completed. Took 0.001 secs.
+:app:compileReleaseShaders
+:data:transformNative_libsWithSyncJniLibsForRelease (Thread[Task worker Thread 7,5,main]) started.
+:data:transformNative_libsWithSyncJniLibsForRelease
+Skipping task ':app:compileReleaseShaders' as it is up-to-date (took 0.0 secs).
+:app:compileReleaseShaders UP-TO-DATE
+:app:compileReleaseShaders (Thread[Daemon worker Thread 5,5,main]) completed. Took 0.001 secs.
+:app:generateReleaseAssets (Thread[Daemon worker Thread 5,5,main]) started.
+:app:generateReleaseAssets
+Skipping task ':app:generateReleaseAssets' as it has no actions.
+:app:generateReleaseAssets UP-TO-DATE
+:app:generateReleaseAssets (Thread[Daemon worker Thread 5,5,main]) completed. Took 0.0 secs.
+Skipping task ':data:transformNative_libsWithSyncJniLibsForRelease' as it is up-to-date (took 0.0 secs).
+:data:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:app:processReleaseJavaRes (Thread[Daemon worker Thread 5,5,main]) started.
+:app:processReleaseJavaRes
+:data:transformNative_libsWithSyncJniLibsForRelease (Thread[Task worker Thread 7,5,main]) completed. Took 0.001 secs.
+Skipping task ':app:processReleaseJavaRes' as it has no source files.
+:app:processReleaseJavaRes UP-TO-DATE
+:data:bundleRelease (Thread[Task worker Thread 2,5,main]) started.
+:data:bundleRelease
+:app:processReleaseJavaRes (Thread[Daemon worker Thread 5,5,main]) completed. Took 0.003 secs.
+:app:validateSigningRelease (Thread[Daemon worker Thread 5,5,main]) started.
+:app:validateSigningRelease
+Skipping task ':data:bundleRelease' as it is up-to-date (took 0.001 secs).
+Executing task ':app:validateSigningRelease' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+:data:bundleRelease UP-TO-DATE
+:data:bundleRelease (Thread[Task worker Thread 2,5,main]) completed. Took 0.003 secs.
+:data:compileReleaseSources (Thread[Task worker Thread 2,5,main]) started.
+:data:compileReleaseSources
+:app:validateSigningRelease (Thread[Daemon worker Thread 5,5,main]) completed. Took 0.001 secs.
+Skipping task ':data:compileReleaseSources' as it has no actions.
+:data:compileReleaseSources UP-TO-DATE
+:data:compileReleaseSources (Thread[Task worker Thread 2,5,main]) completed. Took 0.0 secs.
+:data:assembleRelease (Thread[Task worker Thread 2,5,main]) started.
+:data:assembleRelease
+Skipping task ':data:assembleRelease' as it has no actions.
+:data:assembleRelease UP-TO-DATE
+:data:assembleRelease (Thread[Task worker Thread 2,5,main]) completed. Took 0.0 secs.
+Skipping task ':lib:mergeReleaseResources' as it is up-to-date (took 0.066 secs).
+:lib:mergeReleaseResources UP-TO-DATE
+:lib:mergeReleaseResources (Thread[Task worker Thread 3,5,main]) completed. Took 0.068 secs.
+:lib:dataBindingProcessLayoutsRelease (Thread[Task worker Thread 2,5,main]) started.
+:lib:dataBindingProcessLayoutsRelease
+Skipping task ':lib:dataBindingProcessLayoutsRelease' as it is up-to-date (took 0.021 secs).
+:lib:dataBindingProcessLayoutsRelease UP-TO-DATE
+:lib:dataBindingProcessLayoutsRelease (Thread[Task worker Thread 2,5,main]) completed. Took 0.021 secs.
+:lib:generateReleaseBuildConfig (Thread[Task worker Thread 4,5,main]) started.
+:lib:generateReleaseBuildConfig
+Skipping task ':lib:generateReleaseBuildConfig' as it is up-to-date (took 0.001 secs).
+:lib:generateReleaseBuildConfig UP-TO-DATE
+:lib:generateReleaseBuildConfig (Thread[Task worker Thread 4,5,main]) completed. Took 0.001 secs.
+:lib:processReleaseManifest (Thread[Task worker Thread 6,5,main]) started.
+:lib:processReleaseManifest
+Skipping task ':lib:processReleaseManifest' as it is up-to-date (took 0.001 secs).
+:lib:processReleaseManifest UP-TO-DATE
+:lib:processReleaseManifest (Thread[Task worker Thread 6,5,main]) completed. Took 0.002 secs.
+:lib:processReleaseResources (Thread[Task worker,5,main]) started.
+:lib:processReleaseResources
+Skipping task ':lib:processReleaseResources' as it is up-to-date (took 0.024 secs).
+:lib:processReleaseResources UP-TO-DATE
+:lib:processReleaseResources (Thread[Task worker,5,main]) completed. Took 0.024 secs.
+:lib:generateReleaseSources (Thread[Task worker Thread 5,5,main]) started.
+:lib:generateReleaseSources
+Skipping task ':lib:generateReleaseSources' as it has no actions.
+:lib:generateReleaseSources UP-TO-DATE
+:lib:dataBindingExportBuildInfoRelease (Thread[Task worker Thread 7,5,main]) started.
+:lib:generateReleaseSources (Thread[Task worker Thread 5,5,main]) completed. Took 0.001 secs.
+:lib:dataBindingExportBuildInfoRelease
+file or directory 'D:\workspace\androidProject\SlashCode_Android\lib\src\release\java', not found
+Skipping task ':lib:dataBindingExportBuildInfoRelease' as it is up-to-date (took 0.03 secs).
+:lib:dataBindingExportBuildInfoRelease UP-TO-DATE
+:lib:dataBindingExportBuildInfoRelease (Thread[Task worker Thread 7,5,main]) completed. Took 0.032 secs.
+:lib:incrementalReleaseJavaCompilationSafeguard (Thread[Daemon worker Thread 5,5,main]) started.
+:lib:incrementalReleaseJavaCompilationSafeguard
+Skipping task ':lib:incrementalReleaseJavaCompilationSafeguard' as it is up-to-date (took 0.006 secs).
+:lib:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:lib:incrementalReleaseJavaCompilationSafeguard (Thread[Daemon worker Thread 5,5,main]) completed. Took 0.006 secs.
+:lib:compileReleaseJavaWithJavac (Thread[Task worker Thread 3,5,main]) started.
+:lib:compileReleaseJavaWithJavac
+file or directory 'D:\workspace\androidProject\SlashCode_Android\lib\src\release\java', not found
+Skipping task ':lib:compileReleaseJavaWithJavac' as it is up-to-date (took 0.048 secs).
+:lib:compileReleaseJavaWithJavac UP-TO-DATE
+:lib:compileReleaseJavaWithJavac (Thread[Task worker Thread 3,5,main]) completed. Took 0.049 secs.
+:lib:compileRetrolambdaRelease (Thread[Task worker Thread 2,5,main]) started.
+:lib:compileRetrolambdaRelease
+Skipping task ':lib:compileRetrolambdaRelease' as it is up-to-date (took 0.037 secs).
+:lib:compileRetrolambdaRelease UP-TO-DATE
+:lib:compileRetrolambdaRelease (Thread[Task worker Thread 2,5,main]) completed. Took 0.038 secs.
+:lib:extractReleaseAnnotations (Thread[Task worker Thread 3,5,main]) started.
+:lib:extractReleaseAnnotations
+Skipping task ':lib:extractReleaseAnnotations' as it has no actions.
+:lib:extractReleaseAnnotations UP-TO-DATE
+:lib:extractReleaseAnnotations (Thread[Task worker Thread 3,5,main]) completed. Took 0.0 secs.
+:lib:mergeReleaseShaders (Thread[Task worker Thread 2,5,main]) started.
+:lib:mergeReleaseShaders
+Skipping task ':lib:mergeReleaseShaders' as it is up-to-date (took 0.001 secs).
+:lib:mergeReleaseShaders UP-TO-DATE
+:lib:mergeReleaseShaders (Thread[Task worker Thread 2,5,main]) completed. Took 0.002 secs.
+:lib:compileReleaseShaders (Thread[Task worker Thread 4,5,main]) started.
+:lib:compileReleaseShaders
+Skipping task ':lib:compileReleaseShaders' as it is up-to-date (took 0.001 secs).
+:lib:compileReleaseShaders UP-TO-DATE
+:lib:compileReleaseShaders (Thread[Task worker Thread 4,5,main]) completed. Took 0.001 secs.
+:lib:generateReleaseAssets (Thread[Task worker Thread 6,5,main]) started.
+:lib:generateReleaseAssets
+Skipping task ':lib:generateReleaseAssets' as it has no actions.
+:lib:generateReleaseAssets UP-TO-DATE
+:lib:generateReleaseAssets (Thread[Task worker Thread 6,5,main]) completed. Took 0.0 secs.
+:lib:mergeReleaseAssets (Thread[Task worker Thread 6,5,main]) started.
+:lib:mergeReleaseAssets
+Skipping task ':lib:mergeReleaseAssets' as it is up-to-date (took 0.0 secs).
+:lib:mergeReleaseAssets UP-TO-DATE
+:lib:mergeReleaseAssets (Thread[Task worker Thread 6,5,main]) completed. Took 0.001 secs.
+:lib:mergeReleaseProguardFiles (Thread[Task worker Thread 4,5,main]) started.
+:lib:mergeReleaseProguardFiles
+Skipping task ':lib:mergeReleaseProguardFiles' as it is up-to-date (took 0.0 secs).
+:lib:mergeReleaseProguardFiles UP-TO-DATE
+:lib:mergeReleaseProguardFiles (Thread[Task worker Thread 4,5,main]) completed. Took 0.001 secs.
+:lib:packageReleaseRenderscript (Thread[Task worker,5,main]) started.
+:lib:packageReleaseRenderscript
+Skipping task ':lib:packageReleaseRenderscript' as it has no source files.
+:lib:packageReleaseRenderscript UP-TO-DATE
+:lib:packageReleaseRenderscript (Thread[Task worker,5,main]) completed. Took 0.0 secs.
+:lib:packageReleaseResources (Thread[Task worker Thread 5,5,main]) started.
+:lib:packageReleaseResources
+Skipping task ':lib:packageReleaseResources' as it is up-to-date (took 0.004 secs).
+:lib:packageReleaseResources UP-TO-DATE
+:lib:packageReleaseResources (Thread[Task worker Thread 5,5,main]) completed. Took 0.004 secs.
+:lib:processReleaseJavaRes (Thread[Task worker Thread 7,5,main]) started.
+:lib:processReleaseJavaRes
+Skipping task ':lib:processReleaseJavaRes' as it has no source files.
+:lib:processReleaseJavaRes UP-TO-DATE
+:lib:transformResourcesWithMergeJavaResForRelease (Thread[Daemon worker Thread 5,5,main]) started.
+:lib:processReleaseJavaRes (Thread[Task worker Thread 7,5,main]) completed. Took 0.001 secs.
+:lib:transformResourcesWithMergeJavaResForRelease
+Skipping task ':lib:transformResourcesWithMergeJavaResForRelease' as it is up-to-date (took 0.001 secs).
+:lib:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:lib:transformResourcesWithMergeJavaResForRelease (Thread[Daemon worker Thread 5,5,main]) completed. Took 0.002 secs.
+:lib:transformClassesAndResourcesWithSyncLibJarsForRelease (Thread[Task worker Thread 3,5,main]) started.
+:lib:transformClassesAndResourcesWithSyncLibJarsForRelease
+Skipping task ':lib:transformClassesAndResourcesWithSyncLibJarsForRelease' as it is up-to-date (took 0.02 secs).
+:lib:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:lib:transformClassesAndResourcesWithSyncLibJarsForRelease (Thread[Task worker Thread 3,5,main]) completed. Took 0.02 secs.
+:lib:mergeReleaseJniLibFolders (Thread[Task worker Thread 2,5,main]) started.
+:lib:mergeReleaseJniLibFolders
+Skipping task ':lib:mergeReleaseJniLibFolders' as it is up-to-date (took 0.002 secs).
+:lib:mergeReleaseJniLibFolders UP-TO-DATE
+:lib:mergeReleaseJniLibFolders (Thread[Task worker Thread 2,5,main]) completed. Took 0.002 secs.
+:lib:transformNative_libsWithMergeJniLibsForRelease (Thread[Task worker Thread 6,5,main]) started.
+:lib:transformNative_libsWithMergeJniLibsForRelease
+Skipping task ':lib:transformNative_libsWithMergeJniLibsForRelease' as it is up-to-date (took 0.001 secs).
+:lib:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:lib:transformNative_libsWithMergeJniLibsForRelease (Thread[Task worker Thread 6,5,main]) completed. Took 0.001 secs.
+:lib:transformNative_libsWithSyncJniLibsForRelease (Thread[Task worker Thread 4,5,main]) started.
+:lib:transformNative_libsWithSyncJniLibsForRelease
+Skipping task ':lib:transformNative_libsWithSyncJniLibsForRelease' as it is up-to-date (took 0.0 secs).
+:lib:transformNative_libsWithSyncJniLibsForRelease UP-TO-DATE
+:lib:transformNative_libsWithSyncJniLibsForRelease (Thread[Task worker Thread 4,5,main]) completed. Took 0.001 secs.
+:lib:bundleRelease (Thread[Task worker,5,main]) started.
+:lib:bundleRelease
+Skipping task ':lib:bundleRelease' as it is up-to-date (took 0.002 secs).
+:lib:bundleRelease UP-TO-DATE
+:lib:bundleRelease (Thread[Task worker,5,main]) completed. Took 0.003 secs.
+:app:prepareCnFinalteamGalleryfinal1487Library (Thread[Task worker,5,main]) started.
+:app:prepareCnFinalteamGalleryfinal1487Library
+:lib:compileReleaseSources (Thread[Task worker Thread 4,5,main]) started.
+:lib:compileReleaseSources
+Skipping task ':lib:compileReleaseSources' as it has no actions.
+:lib:compileReleaseSources UP-TO-DATE
+:lib:compileReleaseSources (Thread[Task worker Thread 4,5,main]) completed. Took 0.0 secs.
+:lib:assembleRelease (Thread[Task worker Thread 5,5,main]) started.
+:lib:assembleRelease
+Skipping task ':lib:assembleRelease' as it has no actions.
+:lib:assembleRelease UP-TO-DATE
+:lib:assembleRelease (Thread[Task worker Thread 5,5,main]) completed. Took 0.0 secs.
+Skipping task ':app:prepareCnFinalteamGalleryfinal1487Library' as it is up-to-date (took 0.003 secs).
+:app:prepareCnFinalteamGalleryfinal1487Library UP-TO-DATE
+:app:prepareCnFinalteamGalleryfinal1487Library (Thread[Task worker,5,main]) completed. Took 0.003 secs.
+:app:prepareCnFinalteamToolsfinal115Library (Thread[Task worker,5,main]) started.
+:app:prepareCnFinalteamToolsfinal115Library
+Skipping task ':app:prepareCnFinalteamToolsfinal115Library' as it is up-to-date (took 0.002 secs).
+:app:prepareCnFinalteamToolsfinal115Library UP-TO-DATE
+:app:prepareCnFinalteamToolsfinal115Library (Thread[Task worker,5,main]) completed. Took 0.002 secs.
+:app:prepareComAndroidDatabindingAdapters121Library (Thread[Task worker Thread 4,5,main]) started.
+:app:prepareComAndroidDatabindingAdapters121Library
+Skipping task ':app:prepareComAndroidDatabindingAdapters121Library' as it is up-to-date (took 0.002 secs).
+:app:prepareComAndroidDatabindingAdapters121Library UP-TO-DATE
+:app:prepareComAndroidDatabindingAdapters121Library (Thread[Task worker Thread 4,5,main]) completed. Took 0.002 secs.
+:app:prepareComAndroidDatabindingLibrary121Library (Thread[Task worker Thread 4,5,main]) started.
+:app:prepareComAndroidDatabindingLibrary121Library
+Skipping task ':app:prepareComAndroidDatabindingLibrary121Library' as it is up-to-date (took 0.002 secs).
+:app:prepareComAndroidDatabindingLibrary121Library UP-TO-DATE
+:app:prepareComAndroidDatabindingLibrary121Library (Thread[Task worker Thread 4,5,main]) completed. Took 0.002 secs.
+:app:prepareComAndroidSupportAnimatedVectorDrawable2400Library (Thread[Task worker Thread 7,5,main]) started.
+:app:prepareComAndroidSupportAnimatedVectorDrawable2400Library
+Skipping task ':app:prepareComAndroidSupportAnimatedVectorDrawable2400Library' as it is up-to-date (took 0.002 secs).
+:app:prepareComAndroidSupportAnimatedVectorDrawable2400Library UP-TO-DATE
+:app:prepareComAndroidSupportAnimatedVectorDrawable2400Library (Thread[Task worker Thread 7,5,main]) completed. Took 0.002 secs.
+:app:prepareComAndroidSupportAppcompatV72400Library (Thread[Daemon worker Thread 5,5,main]) started.
+:app:prepareComAndroidSupportAppcompatV72400Library
+Skipping task ':app:prepareComAndroidSupportAppcompatV72400Library' as it is up-to-date (took 0.015 secs).
+:app:prepareComAndroidSupportAppcompatV72400Library UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72400Library (Thread[Daemon worker Thread 5,5,main]) completed. Took 0.016 secs.
+:app:prepareComAndroidSupportCardviewV72311Library (Thread[Task worker Thread 3,5,main]) started.
+:app:prepareComAndroidSupportCardviewV72311Library
+Skipping task ':app:prepareComAndroidSupportCardviewV72311Library' as it is up-to-date (took 0.001 secs).
+:app:prepareComAndroidSupportCardviewV72311Library UP-TO-DATE
+:app:prepareComAndroidSupportCardviewV72311Library (Thread[Task worker Thread 3,5,main]) completed. Took 0.001 secs.
+:app:prepareComAndroidSupportDesign2400Library (Thread[Task worker Thread 2,5,main]) started.
+:app:prepareComAndroidSupportDesign2400Library
+Skipping task ':app:prepareComAndroidSupportDesign2400Library' as it is up-to-date (took 0.002 secs).
+:app:prepareComAndroidSupportDesign2400Library UP-TO-DATE
+:app:prepareComAndroidSupportDesign2400Library (Thread[Task worker Thread 2,5,main]) completed. Took 0.004 secs.
+:app:prepareComAndroidSupportMultidex101Library (Thread[Task worker Thread 6,5,main]) started.
+:app:prepareComAndroidSupportMultidex101Library
+Skipping task ':app:prepareComAndroidSupportMultidex101Library' as it is up-to-date (took 0.001 secs).
+:app:prepareComAndroidSupportMultidex101Library UP-TO-DATE
+:app:prepareComAndroidSupportMultidex101Library (Thread[Task worker Thread 6,5,main]) completed. Took 0.002 secs.
+:app:prepareComAndroidSupportRecyclerviewV72400Library (Thread[Task worker Thread 5,5,main]) started.
+:app:prepareComAndroidSupportRecyclerviewV72400Library
+Skipping task ':app:prepareComAndroidSupportRecyclerviewV72400Library' as it is up-to-date (took 0.001 secs).
+:app:prepareComAndroidSupportRecyclerviewV72400Library UP-TO-DATE
+:app:prepareComAndroidSupportRecyclerviewV72400Library (Thread[Task worker Thread 5,5,main]) completed. Took 0.001 secs.
+:app:prepareComAndroidSupportSupportCompat2510Library (Thread[Task worker,5,main]) started.
+:app:prepareComAndroidSupportSupportCompat2510Library
+Skipping task ':app:prepareComAndroidSupportSupportCompat2510Library' as it is up-to-date (took 0.002 secs).
+:app:prepareComAndroidSupportSupportCompat2510Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportCompat2510Library (Thread[Task worker,5,main]) completed. Took 0.002 secs.
+:app:prepareComAndroidSupportSupportCoreUi2510Library (Thread[Task worker Thread 5,5,main]) started.
+:app:prepareComAndroidSupportSupportCoreUi2510Library
+Skipping task ':app:prepareComAndroidSupportSupportCoreUi2510Library' as it is up-to-date (took 0.001 secs).
+:app:prepareComAndroidSupportSupportCoreUi2510Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportCoreUi2510Library (Thread[Task worker Thread 5,5,main]) completed. Took 0.002 secs.
+:app:prepareComAndroidSupportSupportCoreUtils2510Library (Thread[Task worker Thread 4,5,main]) started.
+:app:prepareComAndroidSupportSupportCoreUtils2510Library
+Skipping task ':app:prepareComAndroidSupportSupportCoreUtils2510Library' as it is up-to-date (took 0.001 secs).
+:app:prepareComAndroidSupportSupportCoreUtils2510Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportCoreUtils2510Library (Thread[Task worker Thread 4,5,main]) completed. Took 0.002 secs.
+:app:prepareComAndroidSupportSupportFragment2510Library (Thread[Task worker Thread 7,5,main]) started.
+:app:prepareComAndroidSupportSupportFragment2510Library
+Skipping task ':app:prepareComAndroidSupportSupportFragment2510Library' as it is up-to-date (took 0.002 secs).
+:app:prepareComAndroidSupportSupportFragment2510Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportFragment2510Library (Thread[Task worker Thread 7,5,main]) completed. Took 0.002 secs.
+:app:prepareComAndroidSupportSupportMediaCompat2510Library (Thread[Daemon worker Thread 5,5,main]) started.
+:app:prepareComAndroidSupportSupportMediaCompat2510Library
+Skipping task ':app:prepareComAndroidSupportSupportMediaCompat2510Library' as it is up-to-date (took 0.002 secs).
+:app:prepareComAndroidSupportSupportMediaCompat2510Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportMediaCompat2510Library (Thread[Daemon worker Thread 5,5,main]) completed. Took 0.002 secs.
+:app:prepareComAndroidSupportSupportV42510Library (Thread[Task worker Thread 7,5,main]) started.
+:app:prepareComAndroidSupportSupportV42510Library
+Skipping task ':app:prepareComAndroidSupportSupportV42510Library' as it is up-to-date (took 0.001 secs).
+:app:prepareComAndroidSupportSupportV42510Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42510Library (Thread[Task worker Thread 7,5,main]) completed. Took 0.002 secs.
+:app:prepareComAndroidSupportSupportVectorDrawable2400Library (Thread[Task worker Thread 7,5,main]) started.
+:app:prepareComAndroidSupportSupportVectorDrawable2400Library
+Skipping task ':app:prepareComAndroidSupportSupportVectorDrawable2400Library' as it is up-to-date (took 0.001 secs).
+:app:prepareComAndroidSupportSupportVectorDrawable2400Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportVectorDrawable2400Library (Thread[Task worker Thread 7,5,main]) completed. Took 0.001 secs.
+:app:prepareComAurelhubertAhbottomnavigation133Library (Thread[Daemon worker Thread 5,5,main]) started.
+:app:prepareComAurelhubertAhbottomnavigation133Library
+Skipping task ':app:prepareComAurelhubertAhbottomnavigation133Library' as it is up-to-date (took 0.001 secs).
+:app:prepareComAurelhubertAhbottomnavigation133Library UP-TO-DATE
+:app:prepareComAurelhubertAhbottomnavigation133Library (Thread[Daemon worker Thread 5,5,main]) completed. Took 0.001 secs.
+:app:prepareComBlankjUtilcode121Library (Thread[Task worker Thread 3,5,main]) started.
+:app:prepareComBlankjUtilcode121Library
+Skipping task ':app:prepareComBlankjUtilcode121Library' as it is up-to-date (took 0.001 secs).
+:app:prepareComBlankjUtilcode121Library UP-TO-DATE
+:app:prepareComBlankjUtilcode121Library (Thread[Task worker Thread 3,5,main]) completed. Took 0.002 secs.
+:app:prepareComFacebookStethoStetho141Library (Thread[Daemon worker Thread 5,5,main]) started.
+:app:prepareComFacebookStethoStetho141Library
+Skipping task ':app:prepareComFacebookStethoStetho141Library' as it is up-to-date (took 0.003 secs).
+:app:prepareComFacebookStethoStetho141Library UP-TO-DATE
+:app:prepareComFacebookStethoStetho141Library (Thread[Daemon worker Thread 5,5,main]) completed. Took 0.003 secs.
+:app:prepareComFacebookStethoStethoOkhttp3141Library (Thread[Task worker Thread 3,5,main]) started.
+:app:prepareComFacebookStethoStethoOkhttp3141Library
+Skipping task ':app:prepareComFacebookStethoStethoOkhttp3141Library' as it is up-to-date (took 0.002 secs).
+:app:prepareComFacebookStethoStethoOkhttp3141Library UP-TO-DATE
+:app:prepareComFacebookStethoStethoOkhttp3141Library (Thread[Task worker Thread 3,5,main]) completed. Took 0.002 secs.
+:app:prepareComJakewhartonRxbindingRxbinding040Library (Thread[Task worker Thread 2,5,main]) started.
+:app:prepareComJakewhartonRxbindingRxbinding040Library
+Skipping task ':app:prepareComJakewhartonRxbindingRxbinding040Library' as it is up-to-date (took 0.002 secs).
+:app:prepareComJakewhartonRxbindingRxbinding040Library UP-TO-DATE
+:app:prepareComJakewhartonRxbindingRxbinding040Library (Thread[Task worker Thread 2,5,main]) completed. Took 0.002 secs.
+:app:prepareComJakewhartonTimberTimber412Library (Thread[Task worker Thread 6,5,main]) started.
+:app:prepareComJakewhartonTimberTimber412Library
+Skipping task ':app:prepareComJakewhartonTimberTimber412Library' as it is up-to-date (took 0.001 secs).
+:app:prepareComJakewhartonTimberTimber412Library UP-TO-DATE
+:app:prepareComJakewhartonTimberTimber412Library (Thread[Task worker Thread 6,5,main]) completed. Took 0.002 secs.
+:app:prepareComJunglyGridPasswordView03Library (Thread[Task worker,5,main]) started.
+:app:prepareComJunglyGridPasswordView03Library
+Skipping task ':app:prepareComJunglyGridPasswordView03Library' as it is up-to-date (took 0.002 secs).
+:app:prepareComJunglyGridPasswordView03Library UP-TO-DATE
+:app:prepareComJunglyGridPasswordView03Library (Thread[Task worker,5,main]) completed. Took 0.003 secs.
+:app:prepareComLaiWeaveyDialog11Library (Thread[Task worker Thread 5,5,main]) started.
+:app:prepareComLaiWeaveyDialog11Library
+Skipping task ':app:prepareComLaiWeaveyDialog11Library' as it is up-to-date (took 0.003 secs).
+:app:prepareComLaiWeaveyDialog11Library UP-TO-DATE
+:app:prepareComLaiWeaveyDialog11Library (Thread[Task worker Thread 5,5,main]) completed. Took 0.003 secs.
+:app:prepareComMcxiaokeViewpagerindicatorLibrary241Library (Thread[Task worker Thread 4,5,main]) started.
+:app:prepareComMcxiaokeViewpagerindicatorLibrary241Library
+Skipping task ':app:prepareComMcxiaokeViewpagerindicatorLibrary241Library' as it is up-to-date (took 0.002 secs).
+:app:prepareComMcxiaokeViewpagerindicatorLibrary241Library UP-TO-DATE
+:app:prepareComMcxiaokeViewpagerindicatorLibrary241Library (Thread[Task worker Thread 4,5,main]) completed. Took 0.002 secs.
+:app:prepareComOrhanobutLogger115Library (Thread[Task worker Thread 7,5,main]) started.
+:app:prepareComOrhanobutLogger115Library
+Skipping task ':app:prepareComOrhanobutLogger115Library' as it is up-to-date (took 0.001 secs).
+:app:prepareComOrhanobutLogger115Library UP-TO-DATE
+:app:prepareComOrhanobutLogger115Library (Thread[Task worker Thread 7,5,main]) completed. Took 0.002 secs.
+:app:prepareComTbruyelleRxpermissionsRxpermissions091Library (Thread[Daemon worker Thread 5,5,main]) started.
+:app:prepareComTbruyelleRxpermissionsRxpermissions091Library
+Skipping task ':app:prepareComTbruyelleRxpermissionsRxpermissions091Library' as it is up-to-date (took 0.002 secs).
+:app:prepareComTbruyelleRxpermissionsRxpermissions091Library UP-TO-DATE
+:app:prepareComTbruyelleRxpermissionsRxpermissions091Library (Thread[Daemon worker Thread 5,5,main]) completed. Took 0.002 secs.
+:app:prepareComTrelloRxlifecycle061Library (Thread[Task worker Thread 3,5,main]) started.
+:app:prepareComTrelloRxlifecycle061Library
+Skipping task ':app:prepareComTrelloRxlifecycle061Library' as it is up-to-date (took 0.002 secs).
+:app:prepareComTrelloRxlifecycle061Library UP-TO-DATE
+:app:prepareComTrelloRxlifecycle061Library (Thread[Task worker Thread 3,5,main]) completed. Took 0.003 secs.
+:app:prepareComTrelloRxlifecycleComponents061Library (Thread[Task worker Thread 2,5,main]) started.
+:app:prepareComTrelloRxlifecycleComponents061Library
+Skipping task ':app:prepareComTrelloRxlifecycleComponents061Library' as it is up-to-date (took 0.002 secs).
+:app:prepareComTrelloRxlifecycleComponents061Library UP-TO-DATE
+:app:prepareComTrelloRxlifecycleComponents061Library (Thread[Task worker Thread 2,5,main]) completed. Took 0.002 secs.
+:app:prepareIoReactivexRxandroid121Library (Thread[Task worker Thread 6,5,main]) started.
+:app:prepareIoReactivexRxandroid121Library
+Skipping task ':app:prepareIoReactivexRxandroid121Library' as it is up-to-date (took 0.001 secs).
+:app:prepareIoReactivexRxandroid121Library UP-TO-DATE
+:app:prepareIoReactivexRxandroid121Library (Thread[Task worker Thread 6,5,main]) completed. Took 0.002 secs.
+:app:prepareOrgXutilsXutils3336Library (Thread[Task worker,5,main]) started.
+:app:prepareOrgXutilsXutils3336Library
+Skipping task ':app:prepareOrgXutilsXutils3336Library' as it is up-to-date (took 0.002 secs).
+:app:prepareOrgXutilsXutils3336Library UP-TO-DATE
+:app:prepareOrgXutilsXutils3336Library (Thread[Task worker,5,main]) completed. Took 0.002 secs.
+:app:prepareSlashCode_AndroidDataUnspecifiedLibrary (Thread[Task worker Thread 5,5,main]) started.
+:app:prepareSlashCode_AndroidDataUnspecifiedLibrary
+Skipping task ':app:prepareSlashCode_AndroidDataUnspecifiedLibrary' as it is up-to-date (took 0.002 secs).
+:app:prepareSlashCode_AndroidDataUnspecifiedLibrary UP-TO-DATE
+:app:prepareSlashCode_AndroidDataUnspecifiedLibrary (Thread[Task worker Thread 5,5,main]) completed. Took 0.002 secs.
+:app:prepareSlashCode_AndroidLibUnspecifiedLibrary (Thread[Task worker,5,main]) started.
+:app:prepareSlashCode_AndroidLibUnspecifiedLibrary
+Skipping task ':app:prepareSlashCode_AndroidLibUnspecifiedLibrary' as it is up-to-date (took 0.002 secs).
+:app:prepareSlashCode_AndroidLibUnspecifiedLibrary UP-TO-DATE
+:app:prepareSlashCode_AndroidLibUnspecifiedLibrary (Thread[Task worker,5,main]) completed. Took 0.003 secs.
+:app:prepareSlashCode_AndroidPingpplibPingppUnspecifiedLibrary (Thread[Task worker Thread 4,5,main]) started.
+:app:prepareSlashCode_AndroidPingpplibPingppUnspecifiedLibrary
+Skipping task ':app:prepareSlashCode_AndroidPingpplibPingppUnspecifiedLibrary' as it is up-to-date (took 0.003 secs).
+:app:prepareSlashCode_AndroidPingpplibPingppUnspecifiedLibrary UP-TO-DATE
+:app:prepareSlashCode_AndroidPingpplibPingppUnspecifiedLibrary (Thread[Task worker Thread 4,5,main]) completed. Took 0.003 secs.
+:app:prepareReleaseDependencies (Thread[Task worker Thread 7,5,main]) started.
+:app:prepareReleaseDependencies
+Executing task ':app:prepareReleaseDependencies' (up-to-date check took 0.0 secs) due to:
+  Task has not declared any outputs.
+:app:prepareReleaseDependencies (Thread[Task worker Thread 7,5,main]) completed. Took 0.001 secs.
+:app:compileReleaseRenderscript (Thread[Task worker Thread 4,5,main]) started.
+:app:compileReleaseRenderscript
+Skipping task ':app:compileReleaseRenderscript' as it is up-to-date (took 0.002 secs).
+:app:compileReleaseRenderscript UP-TO-DATE
+:app:compileReleaseRenderscript (Thread[Task worker Thread 4,5,main]) completed. Took 0.003 secs.
+:app:generateReleaseResources (Thread[Daemon worker Thread 5,5,main]) started.
+:app:generateReleaseResources
+Skipping task ':app:generateReleaseResources' as it has no actions.
+:app:generateReleaseResources UP-TO-DATE
+:app:generateReleaseResources (Thread[Daemon worker Thread 5,5,main]) completed. Took 0.0 secs.
+:app:mergeReleaseResources (Thread[Task worker Thread 3,5,main]) started.
+:app:mergeReleaseResources
+Skipping task ':app:mergeReleaseResources' as it is up-to-date (took 0.065 secs).
+:app:mergeReleaseResources UP-TO-DATE
+:app:dataBindingProcessLayoutsRelease (Thread[Task worker Thread 2,5,main]) started.
+:app:mergeReleaseResources (Thread[Task worker Thread 3,5,main]) completed. Took 0.067 secs.
+:app:dataBindingProcessLayoutsRelease
+Skipping task ':app:dataBindingProcessLayoutsRelease' as it is up-to-date (took 0.028 secs).
+:app:dataBindingProcessLayoutsRelease UP-TO-DATE
+:app:dataBindingProcessLayoutsRelease (Thread[Task worker Thread 2,5,main]) completed. Took 0.028 secs.
+:app:compileReleaseAidl (Thread[Daemon worker Thread 5,5,main]) started.
+:app:compileReleaseAidl
+Skipping task ':app:compileReleaseAidl' as it is up-to-date (took 0.016 secs).
+:app:compileReleaseAidl UP-TO-DATE
+:app:compileReleaseAidl (Thread[Daemon worker Thread 5,5,main]) completed. Took 0.018 secs.
+:app:processReleaseManifest (Thread[Task worker Thread 6,5,main]) started.
+:app:processReleaseManifest
+Skipping task ':app:processReleaseManifest' as it is up-to-date (took 0.05 secs).
+:app:processReleaseManifest UP-TO-DATE
+:app:processReleaseManifest (Thread[Task worker Thread 6,5,main]) completed. Took 0.051 secs.
+:app:processReleaseResources (Thread[Task worker Thread 5,5,main]) started.
+:app:processReleaseResources
+Skipping task ':app:processReleaseResources' as it is up-to-date (took 0.029 secs).
+:app:processReleaseResources UP-TO-DATE
+:app:processReleaseResources (Thread[Task worker Thread 5,5,main]) completed. Took 0.029 secs.
+:app:generateReleaseSources (Thread[Task worker,5,main]) started.
+:app:generateReleaseSources
+Skipping task ':app:generateReleaseSources' as it has no actions.
+:app:generateReleaseSources UP-TO-DATE
+:app:generateReleaseSources (Thread[Task worker,5,main]) completed. Took 0.0 secs.
+:app:dataBindingExportBuildInfoRelease (Thread[Task worker Thread 7,5,main]) started.
+:app:dataBindingExportBuildInfoRelease
+file or directory 'D:\workspace\androidProject\SlashCode_Android\app\src\release\java', not found
+Skipping task ':app:dataBindingExportBuildInfoRelease' as it is up-to-date (took 0.041 secs).
+:app:dataBindingExportBuildInfoRelease UP-TO-DATE
+:app:dataBindingExportBuildInfoRelease (Thread[Task worker Thread 7,5,main]) completed. Took 0.044 secs.
+:app:compileReleaseJavaWithJavac (Thread[Task worker Thread 4,5,main]) started.
+:app:compileReleaseJavaWithJavac
+file or directory 'D:\workspace\androidProject\SlashCode_Android\app\src\release\java', not found
+Executing task ':app:compileReleaseJavaWithJavac' (up-to-date check took 0.03 secs) due to:
+  No history is available.
+All input files are considered out-of-date for incremental task ':app:compileReleaseJavaWithJavac'.
+Compiling with source level 1.8 and target level 1.8.
+file or directory 'D:\workspace\androidProject\SlashCode_Android\app\src\release\java', not found
+Compiling with JDK Java compiler API.
+:app:compileReleaseJavaWithJavac FAILED
+:app:compileReleaseJavaWithJavac (Thread[Task worker Thread 4,5,main]) completed. Took 1.326 secs.
+:app:compileRetrolambdaRelease (Thread[Task worker Thread 7,5,main]) started.
+:app:compileRetrolambdaRelease
+Skipping task ':app:compileRetrolambdaRelease' as it is up-to-date (took 0.001 secs).
+:app:compileRetrolambdaRelease UP-TO-DATE
+:app:compileRetrolambdaRelease (Thread[Task worker Thread 7,5,main]) completed. Took 0.001 secs.
+
+BUILD FAILED
+
+Total time: 3.952 secs
+Stopped 0 compiler daemon(s).
+Received result Failure[value=org.gradle.initialization.ReportedException: org.gradle.internal.exceptions.LocationAwareException: Execution failed for task ':app:compileReleaseJavaWithJavac'.] from daemon DaemonInfo{pid=14232, address=[8ec79e62-36ed-4719-92bb-4755a99d04e5 port:51772, addresses:[/127.0.0.1, /0:0:0:0:0:0:0:1]], idle=true, lastBusy=1489479176553, context=DefaultDaemonContext[uid=ad08503b-97dc-4886-9850-4e00127d1740,javaHome=E:\java\jdk1.8,daemonRegistryDir=C:\Users\jl\.gradle\daemon,pid=14232,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=512m,-Xmx2048m,-Dfile.encoding=GBK,-Duser.country=CN,-Duser.language=zh,-Duser.variant]} (build should be done).

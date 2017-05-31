@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.pub.PubViewModel" />
+
+        <import type="com.core.op.bindingadapter.common.LayoutManagers" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/include_white_toolbar_alpha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorPrimary="@color/app.text.black666"
+            app:toolTitle="@{viewModel.title}" />
+
+        <include layout="@layout/include_line_h" />
+        <com.core.op.lib.weight.RecycleScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app.theme.background_31C5E4"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/app.padding.large">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/app.margin.xlarge"
+                        android:src="@mipmap/icon_task_top" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/App.Theme.TextAppearance.ww.small"
+                            android:layout_marginLeft="@dimen/app.margin.normal"
+                            android:text="@string/app.pub.top.text1"
+                            android:textColor="@color/app.text" />
+
+                        <TextView
+                            style="@style/App.Theme.TextAppearance.ww.small"
+                            android:layout_marginLeft="@dimen/app.margin.normal"
+                            android:text="@string/app.pub.top.text2"
+                            android:textColor="@color/app.text" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout style="@style/App.Theme.Linear.padding">
+
+                    <TextView
+                        style="@style/App.Theme.TextAppearance.ww.small.black666"
+                        android:text="@string/app.pub.taskname" />
+
+                    <EditText
+                        style="@style/App.Theme.Edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/app.pub.name.hint"
+                        android:maxLength="15"
+                        android:paddingLeft="@dimen/app.padding.normal"
+                        android:text="@={viewModel.name}"
+                        app:textWatcher="@{viewModel.textWatcher}" />
+
+                    <TextView
+                        style="@style/App.Theme.TextAppearance.ww.small.black666"
+                        android:paddingRight="@dimen/app.padding.large"
+                        android:text="@{viewModel.nameNum}" />
+                </LinearLayout>
+
+                <include layout="@layout/include_line_h_padding" />
+
+                <LinearLayout
+                    style="@style/App.Theme.Linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:clickCommand="@{viewModel.pubContent}">
+
+                    <TextView
+                        android:id="@+id/tv_pub_content"
+                        style="@style/App.Theme.TextAppearance.ww.small.black666"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/transparent"
+                        android:padding="@dimen/app.padding.normal"
+                        android:text="@{viewModel.content}" />
+
+                </LinearLayout>
+
+
+                <include layout="@layout/include_space_h" />
+
+                <LinearLayout
+                    style="@style/App.Theme.Linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:clickCommand="@{viewModel.pubAccept}">
+
+                    <TextView
+                        android:id="@+id/tv_pub_accept"
+                        style="@style/App.Theme.TextAppearance.ww.small.black666"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/transparent"
+                        android:padding="@dimen/app.padding.normal"
+                        android:text="@{viewModel.standard}" />
+                </LinearLayout>
+
+
+                <include layout="@layout/include_space_h" />
+
+                <LinearLayout style="@style/App.Theme.Linear.padding"
+                    app:clickCommand="@{viewModel.lableClick}">
+
+                    <TextView
+                        style="@style/App.Theme.TextAppearance.ww.small.black666"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/icon_pub_type"
+                        android:drawablePadding="@dimen/app.padding.normal"
+                        android:text="@string/app.pub.type.select" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:paddingRight="@dimen/app.padding.large"
+                        android:src="@mipmap/icon_arrow_right" />
+                </LinearLayout>
+
+                <include layout="@layout/include_line_h_padding" />
+
+                <LinearLayout style="@style/App.Theme.Linear.padding">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_pub_price" />
+
+                    <EditText
+                        style="@style/App.Theme.Edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/transparent"
+                        android:hint="@string/app.pub.name.hint"
+                        android:paddingLeft="@dimen/app.padding.normal"
+                        android:text="@={viewModel.price}" />
+
+                    <include
+                        layout="@layout/include_line_v"
+                        android:layout_width="0.1dp"
+                        android:layout_height="20dp" />
+
+                    <EditText
+                        style="@style/App.Theme.Edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:hint="@string/app.pub.unit.hint"
+                        android:paddingLeft="@dimen/app.padding.large"
+                        android:paddingRight="@dimen/app.padding.large"
+                        android:text="@={viewModel.unit}" />
+                </LinearLayout>
+
+                <include layout="@layout/include_line_h_padding" />
+
+                <LinearLayout
+                    style="@style/App.Theme.Linear.padding"
+                    app:clickCommand="@{viewModel.localClick}">
+
+                    <TextView
+                        style="@style/App.Theme.TextAppearance.ww.small.black666"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/icon_pub_local"
+                        android:drawablePadding="@dimen/app.padding.normal"
+                        android:text="@{viewModel.local}" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:paddingRight="@dimen/app.padding.large"
+                        android:src="@mipmap/icon_arrow_right" />
+                </LinearLayout>
+
+                <include layout="@layout/include_line_h_padding" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app.theme.background_f3f3f3"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/app.padding.large12">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/hot_recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fadingEdge="none"
+                        android:paddingLeft="@dimen/app.padding.large12"
+                        android:paddingRight="@dimen/app.padding.xlarge"
+                        app:itemView="@{viewModel.itemView}"
+                        app:items="@{viewModel.itemViewModels}"
+                        app:layoutManager="@{LayoutManagers.grid(3)}" />
+
+                    <TextView
+                        style="@style/App.Theme.TextAppearance.ww.small.black666"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/app.padding.large"
+                        android:text="*(选传)如有需要可上传相关图片上限，5张" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.core.op.lib.weight.RecycleScrollView>
+    </LinearLayout>
+</layout>

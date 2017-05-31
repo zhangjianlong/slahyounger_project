@@ -1,0 +1,92 @@
+//脚本插件
+
+ext {
+    BUILD_ENV = ""
+    BUILD_DIR = ""
+    BUILD_VERSION_CODE = ""
+    BUILD_VERSION_NAME = ""
+    FILE_NAME = ""
+    VERSION_NAME = ""
+    CHANNELSPRODUCTFLAVORS = ""
+}
+
+class Channels {
+    def channelsName = ["yingyongbao"]//渠道集合
+    def channelsProductFlavors = "" //渠道集合
+}
+
+task preBuild << {
+}
+
+
+preBuild {
+    doFirst {
+        createParams()
+        createApkParams()
+    }
+
+    doLast {
+
+    }
+}
+
+/**
+ * 创建APK 目录，以及APK打包的参数
+ */
+def createParams() {
+    Properties properties = new Properties()
+    InputStream inputStream = project.file('build.properties').newDataInputStream()
+    properties.load(inputStream)
+    BUILD_ENV = properties.getProperty("BUILD_ENV")
+    BUILD_DIR = properties.getProperty("BUILD_DIR")
+    BUILD_VERSION_CODE = properties.getProperty("BUILD_VERSION_CODE")
+    BUILD_VERSION_NAME = properties.getProperty("BUILD_VERSION_NAME")
+    File file = new File(BUILD_DIR)
+    if (!file.exists()) {
+        file.mkdirs()
+    }
+}
+
+/**
+ * 生成APK文件名,VersionName,渠道等参数
+ */
+def createApkParams() {
+    if (BUILD_ENV ==~ /(?i)TEST/) {
+        BUILD_VERSION_NAME = BUILD_ENV + "_" + BUILD_VERSION_NAME
+        FILE_NAME = BUILD_VERSION_NAME + ".apk"
+    } else {
+        FILE_NAME = BUILD_VERSION_NAME + ".apk"
+    }
+
+    File temp = new File(project.projectDir, "temp")
+    if (temp.exists()) {
+        temp.deleteDir()
+    }
+    temp.mkdirs()
+    def apkSaveDir = BUILD_DIR + "/" + BUILD_VERSION_NAME
+    File apkDir = new File(apkSaveDir)
+    if (apkDir.exists()) {
+        apkDir.deleteDir()
+    }
+    apkDir.mkdirs()
+    def outApkFile = """
+        def fileName =  "${FILE_NAME}"\n
+        output.outputFile = new File('${apkSaveDir}',fileName)"""
+    new File(temp, "outPutApk.txt").write(outApkFile, "UTF-8")
+    Channels channels = new Channels()
+    if (channels.channelsName.size() > 0) {
+        channels.channelsName.size().times {
+            channels.channelsProductFlavors += """
+            '${channels.channelsName[it]}' {
+                versionCode ${BUILD_VERSION_CODE}
+                versionName "${BUILD_VERSION_NAME}"
+            }"""
+        }
+    }
+    new File(temp, "productFlavor.txt").write(channels.channelsProductFlavors, "UTF-8")
+}
+
+
+
+
+

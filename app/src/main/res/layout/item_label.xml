@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.label.LabelItemViewModel" />
+
+        <import type="android.view.View" />
+
+        <import type="com.core.op.bindingadapter.common.LayoutManagers" />
+    </data>
+
+    <LinearLayout
+        style="@style/App.Theme.Linear"
+        android:background="@{viewModel.bgDrawable}"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:clickCommand="@{viewModel.click}">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/App.Theme.TextAppearance.ww.normal"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/app.padding.large"
+                android:paddingTop="@dimen/app.padding.large"
+                android:gravity="center"
+                android:text="@{viewModel.data.tag}"
+                android:textColor="@{viewModel.textDrawable}"
+                tools:text="苏州" />
+
+            <include layout="@layout/include_line_v"
+                android:visibility="@{viewModel.selected}"/>
+        </LinearLayout>
+
+        <include layout="@layout/include_line_h" />
+    </LinearLayout>
+</layout>

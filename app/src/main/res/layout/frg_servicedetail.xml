@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.back.servicedetail.ServiceDetailViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/app.theme.background"
+                android:orientation="vertical">
+
+
+                <include layout="@layout/include_line_h" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/app.padding.large">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_service_party" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/App.Theme.TextAppearance.ww.normal.black333"
+                            android:paddingLeft="@dimen/app.padding.normal"
+                            tools:text="对方已抢单，请做出选择；也可协商并由对方修改订单条件" />
+
+                        <TextView
+                            style="@style/App.Theme.TextAppearance.ww.small.black999"
+                            android:paddingLeft="@dimen/app.padding.normal"
+                            android:paddingTop="@dimen/app.padding.normal"
+                            tools:text="2015" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/app.padding.normal"
+                        android:src="@mipmap/icon_service_detail_more" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app.theme.background_fafafa"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/app.padding.normal"
+                        android:paddingTop="@dimen/app.padding.normal">
+
+                        <TextView
+                            style="@style/App.Theme.TextAppearance.ww.normal.black999"
+                            android:text="@string/app.servicedetail.step1"
+                            tools:text="预约" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="2dp"
+                                android:layout_weight="1"
+                                android:background="@color/app.theme.background_ddd"
+                                android:visibility="invisible" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@mipmap/icon_servicedetail_dot_select" />
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="2dp"
+                                android:layout_weight="1"
+                                android:background="@color/app.theme.background_ddd" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/app.padding.normal"
+                        android:paddingTop="@dimen/app.padding.normal">
+
+                        <TextView
+                            style="@style/App.Theme.TextAppearance.ww.normal.black999"
+                            android:text="@string/app.servicedetail.step2"
+                            tools:text="预约" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="2dp"
+                                android:layout_weight="1"
+                                android:background="@color/app.theme.background_ddd"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@mipmap/icon_servicedetail_dot_normal" />
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="2dp"
+                                android:layout_weight="1"
+                                android:background="@color/app.theme.background_ddd" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/app.padding.normal"
+                        android:paddingTop="@dimen/app.padding.normal">
+
+                        <TextView
+                            style="@style/App.Theme.TextAppearance.ww.normal.black999"
+                            android:text="@string/app.servicedetail.step3"
+                            tools:text="预约" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="2dp"
+                                android:layout_weight="1"
+                                android:background="@color/app.theme.background_ddd"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@mipmap/icon_service_detail_more" />
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="2dp"
+                                android:layout_weight="1"
+                                android:background="@color/app.theme.background_ddd" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/app.padding.normal"
+                        android:paddingTop="@dimen/app.padding.normal">
+
+                        <TextView
+                            style="@style/App.Theme.TextAppearance.ww.normal.black999"
+                            android:text="@string/app.servicedetail.step4"
+                            tools:text="预约" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="2dp"
+                                android:layout_weight="1"
+                                android:background="@color/app.theme.background_ddd"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@mipmap/icon_service_detail_more" />
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="5dp"
+                                android:layout_weight="1"
+                                android:background="@color/app.theme.background_ddd"
+                                android:visibility="invisible" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <include layout="@layout/include_line_h" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app.padding.large"
+                    android:background="@color/app.theme.background_f3f3f3" />
+
+                <include layout="@layout/include_line_h" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/app.padding.normal">
+
+                    <com.core.op.lib.weight.ShapedImageView
+                        android:layout_width="@dimen/app.image.height.normal40"
+                        android:layout_height="@dimen/app.image.height.normal40" />
+
+                    <TextView
+                        style="@style/App.Theme.TextAppearance.ww.normal.black333"
+                        tools:text="张三丰" />
+
+                </LinearLayout>
+
+                <include layout="@layout/include_line_h" />
+
+
+                <TextView
+                    style="@style/App.Theme.TextAppearance.ww.normal.black333"
+                    android:layout_marginTop="@dimen/app.margin.normal"
+                    android:padding="@dimen/app.padding.large"
+                    tools:text="做一个微信" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/app.padding.large">
+
+                    <TextView
+                        style="@style/App.Theme.TextAppearance.ww.normal.black666"
+                        tools:text="@string/app.servicedetail.price" />
+
+                    <TextView
+                        style="@style/App.Theme.TextAppearance.ww.normal.black666"
+                        android:paddingLeft="@dimen/app.padding.normal"
+                        tools:text="任务价格" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/app.padding.large">
+
+                    <TextView
+                        style="@style/App.Theme.TextAppearance.ww.normal.black666"
+                        tools:text="@string/app.servicedetail.time" />
+
+                    <TextView
+                        style="@style/App.Theme.TextAppearance.ww.normal.black666"
+                        android:paddingLeft="@dimen/app.padding.normal"
+                        tools:text="任务价格" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/app.padding.large">
+
+                    <TextView
+                        style="@style/App.Theme.TextAppearance.ww.normal.black666"
+                        tools:text="@string/app.servicedetail.addr" />
+
+                    <TextView
+                        style="@style/App.Theme.TextAppearance.ww.normal.black666"
+                        android:paddingLeft="@dimen/app.padding.normal"
+                        tools:text="任务价格" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/app.padding.large">
+
+                    <TextView
+                        style="@style/App.Theme.TextAppearance.ww.normal.black666"
+                        tools:text="@string/app.servicedetail.type" />
+
+                    <TextView
+                        style="@style/App.Theme.TextAppearance.ww.normal.black666"
+                        android:paddingLeft="@dimen/app.padding.normal"
+                        tools:text="任务价格" />
+                </LinearLayout>
+
+                <include layout="@layout/include_line_h_padding" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/app.padding.large">
+
+                    <TextView
+                        style="@style/App.Theme.TextAppearance.ww.normal.black666"
+                        android:layout_weight="1"
+                        tools:text="@string/app.servicedetail.content" />
+
+                    <TextView
+                        style="@style/App.Theme.TextAppearance.ww.normal.black666"
+                        android:drawableRight="@mipmap/icon_servicedetail_open"
+                        android:paddingLeft="@dimen/app.padding.normal"
+                        android:text="@string/app.servicedetail.info"
+                        android:textColor="@color/app.theme.colorPrimary"
+                        tools:text="任务价格" />
+                </LinearLayout>
+
+                <include layout="@layout/include_line_h_padding" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app.theme.background_f3f3f3"
+                    android:padding="@dimen/app.padding.large"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/App.Theme.TextAppearance.ww.normal.black999"
+                        android:drawableLeft="@mipmap/icon_servicedetail_chat"
+                        android:drawablePadding="@dimen/app.padding.normal"
+                        android:text="沟通修改条件"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/icon_service_jag" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app.theme.background"
+            android:padding="@dimen/app.padding.normal">
+
+            <TextView
+                android:id="@+id/btn_pay"
+                style="@style/App.Theme.TextAppearance.Button.ww.blue"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/app.padding.normal"
+                android:text="去支付"
+                android:gravity="center" />
+
+            <TextView
+                style="@style/App.Theme.TextAppearance.Button.ww.blue"
+                android:layout_toLeftOf="@id/btn_pay"
+                android:padding="@dimen/app.padding.normal"
+                android:layout_marginRight="@dimen/app.margin.large"
+                android:textColor="@color/app.text.black666"
+                android:text="淘汰"
+                android:background="@drawable/selector_bg_white_1111_0"
+                android:gravity="center" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

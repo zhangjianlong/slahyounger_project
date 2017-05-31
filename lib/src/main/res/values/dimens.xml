@@ -1,0 +1,174 @@
+<resources>
+    <!-- Common -->
+    <dimen name="app.divider.line">1px</dimen>
+    <dimen name="app.divider.small">4dp</dimen>
+    <dimen name="app.divider.normal">8dp</dimen>
+    <dimen name="app.divider.large">16dp</dimen>
+    <dimen name="app.divider.xlarge">24dp</dimen>
+
+    <dimen name="app.elevation.normal">3dp</dimen>
+    <dimen name="app.elevation.xlarge">10dp</dimen>
+
+    <dimen name="app.padding.small">4dp</dimen>
+    <dimen name="app.padding.normal">8dp</dimen>
+    <dimen name="app.padding.large13">13dp</dimen>
+    <dimen name="app.padding.large12">12dp</dimen>
+    <dimen name="app.padding.large">16dp</dimen>
+    <dimen name="app.padding.large30">30dp</dimen>
+    <dimen name="app.padding.xlarge">24dp</dimen>
+    <dimen name="app.padding.xxlarge">48dp</dimen>
+
+    <dimen name="app.margin.tiny">2dp</dimen>
+    <dimen name="app.margin.small">4dp</dimen>
+    <dimen name="app.margin.small5">5dp</dimen>
+    <dimen name="app.margin.normal">8dp</dimen>
+    <dimen name="app.margin.large">16dp</dimen>
+    <dimen name="app.margin.large12">12dp</dimen>
+    <dimen name="app.margin.xlarge">24dp</dimen>
+    <dimen name="app.margin.xxlarge">48dp</dimen>
+    <dimen name="app.margin.xxxlarge">60dp</dimen>
+
+    <dimen name="app.navigation.width">350dp</dimen>
+    <dimen name="app.navigation.title.minwidth">56dp</dimen>
+    <dimen name="app.navigation.head.height">350dp</dimen>
+
+    <dimen name="app.cardview.corner.radius.normal">2dp</dimen>
+    <dimen name="app.cardview.elevation.normal">4dp</dimen>
+    <dimen name="app.cardview.height.normal">190dp</dimen>
+
+    <dimen name="app.banner.height.normal">126dp</dimen>
+
+    <dimen name="app.head.width.tiny">30dp</dimen>
+    <dimen name="app.head.height.tiny">30dp</dimen>
+    <dimen name="app.head.width.small">34dp</dimen>
+    <dimen name="app.head.height.small">34dp</dimen>
+    <dimen name="app.head.width.normal">48dp</dimen>
+    <dimen name="app.head.height.normal">48dp</dimen>
+    <dimen name="app.head.width.large">84dp</dimen>
+    <dimen name="app.head.height.large">84dp</dimen>
+    <dimen name="app.head.border.width.small">1dp</dimen>
+
+    <dimen name="app.image.width.normal40">40dp</dimen>
+    <dimen name="app.image.height.normal40">40dp</dimen>
+    <dimen name="app.image.width.normal">50dp</dimen>
+    <dimen name="app.image.height.normal">50dp</dimen>
+    <dimen name="app.image.width.normal58">58dp</dimen>
+    <dimen name="app.image.height.normal58">58dp</dimen>
+    <dimen name="app.image.width.small">20dp</dimen>
+    <dimen name="app.image.height.small">20dp</dimen>
+    <dimen name="app.image.height.xxlarge">120dp</dimen>
+    <dimen name="app.image.height.xxlarge.140">140dp</dimen>
+
+    <dimen name="app.text.tiny4">4sp</dimen>
+    <dimen name="app.text.tiny8">8sp</dimen>
+    <dimen name="app.text.tiny10">10sp</dimen>
+    <dimen name="app.text.tiny">12sp</dimen>
+    <dimen name="app.text.small">14sp</dimen>
+    <dimen name="app.text.normal">16sp</dimen>
+    <dimen name="app.text.large">18sp</dimen>
+    <dimen name="app.text.xlarge">20sp</dimen>
+    <dimen name="app.text.xxlarge">22sp</dimen>
+    <dimen name="app.text.xxxlarge">24sp</dimen>
+    <dimen name="app.text.height.normal">50dp</dimen>
+
+    <dimen name="app.text.list.title">14sp</dimen>
+    <dimen name="app.text.list.hint">12sp</dimen>
+    <dimen name="app.text.hint">12sp</dimen>
+
+
+    <dimen name="app.video.height.normal">280dp</dimen>
+
+    <dimen name="app.tablayout.height.normal">48dp</dimen>
+    <dimen name="app.tablayout.indicator.height.normal">2dp</dimen>
+    <dimen name="app.tablayout.indicator.width.normal">40dp</dimen>
+    <dimen name="app.tablayout.indicator.corner.radius.tiny">1dp</dimen>
+    <dimen name="app.tablayout.indicator.corner.radius.normal">1.5dp</dimen>
+
+    <dimen name="app.toolbar.paddingTop">25dp</dimen>
+
+    <dimen name="app.material.marginLeft">72dp</dimen>
+
+    <dimen name="app.list.itemHeight">54dp</dimen>
+    <dimen name="app.list.scrollbarSize">4dp</dimen>
+
+    <dimen name="app.timeline.icon.width">12dp</dimen>
+    <dimen name="app.timeline.icon.height">12dp</dimen>
+
+    <dimen name="app.emoji.background.width">49dp</dimen>
+    <dimen name="app.emoji.background.height">49dp</dimen>
+
+
+    <dimen name="bottom_navigation_elevation">8dp</dimen>
+
+    <dimen name="bottom_navigation_min_width">104dp</dimen>
+    <dimen name="bottom_navigation_max_width">168dp</dimen>
+    <dimen name="bottom_navigation_height">56dp</dimen>
+    <dimen name="bottom_navigation_icon">24dp</dimen>
+
+    <dimen name="bottom_navigation_margin_top_active">6dp</dimen>
+    <dimen name="bottom_navigation_margin_top_inactive">8dp</dimen>
+    <dimen name="bottom_navigation_margin_bottom">7dp</dimen>
+    <dimen name="bottom_navigation_padding_left">12dp</dimen>
+    <dimen name="bottom_navigation_padding_right">12dp</dimen>
+
+    <dimen name="bottom_navigation_text_size_active">14sp</dimen>
+    <dimen name="bottom_navigation_text_size_inactive">12sp</dimen>
+
+    <dimen name="bottom_navigation_text_size_forced_active">11sp</dimen>
+    <dimen name="bottom_navigation_text_size_forced_inactive">10sp</dimen>
+
+    <!-- Small -->
+    <dimen name="bottom_navigation_small_active_min_width">96dp</dimen>
+    <dimen name="bottom_navigation_small_active_max_width">168dp</dimen>
+    <dimen name="bottom_navigation_small_inactive_min_width">64dp</dimen>
+    <dimen name="bottom_navigation_small_inactive_max_width">96dp</dimen>
+
+    <dimen name="bottom_navigation_small_margin_top_active">6dp</dimen>
+    <dimen name="bottom_navigation_small_margin_top">16dp</dimen>
+    <dimen name="bottom_navigation_small_margin_bottom">16dp</dimen>
+
+    <dimen name="bottom_navigation_small_selected_width_difference">10dp</dimen>
+
+    <!-- Notifications -->
+    <dimen name="bottom_navigation_notification_width">16dp</dimen>
+    <dimen name="bottom_navigation_notification_height">16dp</dimen>
+    <dimen name="bottom_navigation_notification_radius">8dp</dimen>
+    <dimen name="bottom_navigation_notification_elevation">1dp</dimen>
+    <dimen name="bottom_navigation_notification_padding">3dp</dimen>
+    <dimen name="bottom_navigation_notification_margin_top_classic">4dp</dimen>
+    <dimen name="bottom_navigation_notification_margin_left">16dp</dimen>
+    <dimen name="bottom_navigation_notification_margin_left_active">16dp</dimen>
+    <dimen name="bottom_navigation_notification_margin_top">14dp</dimen>
+    <dimen name="bottom_navigation_notification_margin_top_active">3dp</dimen>
+    <dimen name="bottom_navigation_notification_text_size">9sp</dimen>
+
+    <!--cookie bar-->
+    <dimen name="default_padding">16dp</dimen>
+
+    <!--mis 相机相册-->
+    <dimen name="mis_image_size">120dp</dimen>
+    <dimen name="mis_space_size">2dp</dimen>
+    <dimen name="mis_folder_cover_size">72dp</dimen>
+
+    <!--uCrop Activity-->
+    <dimen name="ucrop_padding_crop_frame">16dp</dimen>
+    <dimen name="ucrop_size_dot_scale_text_view">8dp</dimen>
+    <dimen name="ucrop_height_horizontal_wheel_progress_line">20dp</dimen>
+    <dimen name="ucrop_width_horizontal_wheel_progress_line">2dp</dimen>
+    <dimen name="ucrop_margin_horizontal_wheel_progress_line">10dp</dimen>
+    <dimen name="ucrop_height_wrapper_controls">64dp</dimen>
+    <dimen name="ucrop_height_wrapper_states">72dp</dimen>
+    <dimen name="ucrop_height_divider_shadow">3dp</dimen>
+    <dimen name="ucrop_text_size_widget_text">13sp</dimen>
+    <dimen name="ucrop_margit_top_widget_text">10sp</dimen>
+    <dimen name="ucrop_size_wrapper_rotate_button">50dp</dimen>
+    <dimen name="ucrop_height_crop_aspect_ratio_text">40dp</dimen>
+    <dimen name="ucrop_progress_size">30dp</dimen>
+
+    <!--Crop View-->
+    <dimen name="ucrop_default_crop_grid_stoke_width">1dp</dimen>
+    <dimen name="ucrop_default_crop_frame_stoke_width">1dp</dimen>
+    <dimen name="ucrop_default_crop_rect_corner_touch_threshold">30dp</dimen>
+    <dimen name="ucrop_default_crop_rect_min_size">100dp</dimen>
+    <dimen name="ucrop_default_crop_rect_corner_touch_area_line_length">10dp</dimen>
+</resources>

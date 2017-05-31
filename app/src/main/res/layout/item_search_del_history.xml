@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.search.SeachItemViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                style="@style/App.Theme.Linear.ww"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/app.margin.xxlarge"
+                app:clickCommand="@{viewModel.delHistory}">
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/App.Theme.TextAppearance.ww.normal"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/btn_white_background"
+                    android:drawableLeft="@mipmap/search_delete_icon"
+                    android:drawablePadding="@dimen/app.padding.normal"
+                    android:padding="@dimen/app.padding.normal"
+                    android:text="@string/app.search.del.hint"
+                    android:textColor="@color/app.text.black666" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

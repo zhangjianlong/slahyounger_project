@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.main.order.mission.MissionItemViewModel" />
+
+    </data>
+
+    <LinearLayout
+        style="@style/App.Theme.Linear"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app.padding.large"
+            android:background="@color/app.theme.background_f3f3f3"/>
+    <LinearLayout
+        style="@style/App.Theme.Linear"
+        android:orientation="vertical">
+        <LinearLayout
+            style="@style/App.Theme.Linear"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/app.padding.xlarge"
+            android:paddingLeft="@dimen/app.padding.normal"
+            android:gravity="center_vertical">
+
+            <TextView style="@style/App.Theme.TextAppearance.ww.small.black999"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/app.padding.normal"
+                android:drawableLeft="@mipmap/time_icon"
+                android:text="2小时前"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/app.padding.normal"
+                android:src="@mipmap/icon_mine_dot"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/App.Theme.Linear"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/app.padding.large"
+            android:paddingLeft="@dimen/app.padding.normal"
+            android:gravity="center_vertical">
+
+            <TextView style="@style/App.Theme.TextAppearance.ww.normal.black333"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="公众号粉丝数"/>
+            <TextView style="@style/App.Theme.TextAppearance.ww.small.black999"
+                android:layout_marginRight="@dimen/app.padding.normal"
+                android:background="@drawable/selector_white_1111_0_gray"
+                android:paddingLeft="@dimen/app.padding.small"
+                android:paddingRight="@dimen/app.padding.small"
+                android:text="苏州"/>
+        </LinearLayout>
+        <TextView style="@style/App.Theme.TextAppearance.ww.small.black999"
+            android:paddingTop="@dimen/app.padding.large"
+            android:paddingBottom="@dimen/app.padding.large"
+            android:paddingLeft="@dimen/app.padding.normal"
+            android:text="300元/篇"/>
+
+        <include layout="@layout/include_line_h_padding"/>
+        <TextView style="@style/App.Theme.TextAppearance.mw"
+            android:paddingTop="@dimen/app.padding.large"
+            android:paddingBottom="@dimen/app.padding.large"
+            android:textColor="@color/app.text.black999"
+            android:gravity="center"
+            android:textSize="@dimen/app.text.small"
+            android:paddingLeft="@dimen/app.padding.normal"
+            android:text="查看详情"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentNavigation">false</item><!--导航栏透明-->
+        <item name="android:windowTranslucentStatus">true</item><!--状态栏透明-->
+
+        <item name="android:colorPrimary">@color/app.theme.colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/app.theme.colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/app.theme.colorAccent</item>
+    </style>
+</resources>

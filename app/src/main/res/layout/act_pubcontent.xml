@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.pubcontent.PubContentViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app.theme.background_f3f3f3"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/include_white_toolbar_alpha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorPrimary="@color/app.text.black.alpha.66"
+            app:toolTitle="@{viewModel.title}" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/app.margin.normal"
+            android:background="@color/app.theme.background_fcfcfc"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatEditText
+                style="@style/App.Theme.TextAppearance.mw.normal"
+                android:height="@dimen/app.image.height.xxlarge.140"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="@string/app.pub.content.remind"
+                android:maxLength="300"
+                android:padding="@dimen/app.padding.normal"
+                android:text="@={viewModel.templateInput}"
+                android:textColor="@color/app.text.blackCCC"
+                android:textColorHint="@color/app.text.blackCCC"
+                app:textWatcher="@{viewModel.templateWatch}" />
+
+            <include layout="@layout/include_line_h_margin"></include>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="@dimen/app.padding.large13">
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/App.Theme.TextAppearance.ww"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/app.profile.template.reference"
+                    android:textColor="@color/app.text.31C5E4" />
+
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/App.Theme.TextAppearance.ww"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right|center_vertical"
+                    android:hint="@{viewModel.templateSize}"
+                    android:textColor="@color/app.text.blackCCC"
+                    android:textColorHint="@color/app.text.blackCCC" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/app.margin.normal"
+            android:background="@drawable/bg"
+            android:padding="@dimen/app.padding.large13">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_change"
+                style="@style/App.Theme.TextAppearance.ww"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/app.margin.large12"
+                android:gravity="right|center_vertical"
+                android:text="@string/app.profile.change"
+                android:textColor="@color/app.text.31C5E4"
+                app:clickCommand="@{viewModel.changeTemplate}" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_template_hint"
+                style="@style/App.Theme.TextAppearance.ww"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_change"
+                android:layout_marginTop="@dimen/app.margin.normal"
+                android:gravity="center"
+                android:text="@{viewModel.pubContentTemplate}"
+                android:textColor="@color/app.text.blackCCC" />
+
+            <android.support.v7.widget.AppCompatButton
+                style="@style/App.Theme.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_template_hint"
+                android:gravity="center"
+                android:text="@string/app.pub.content.use.template"
+                app:clickCommand="@{viewModel.useTemplate}" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</layout>

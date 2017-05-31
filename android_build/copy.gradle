@@ -1,0 +1,13 @@
+task copyBuildFile(type: Copy) {
+    def outputApk = file("${projectDir}/temp/outputApk.txt").text
+    def channelProductFlavors = file("${projectDir}/temp/productFlavor.txt").text
+    file("${projectDir}/appBuild.gradle")
+    from "${projectDir}"
+    include 'appBuild.gradle'
+    into "${projectDir.parent}/app"
+    rename { 'build.gradle' }
+    expand([
+            outputApk            : outputApk,
+            channelProductFlavors: channelProductFlavors,
+    ])
+}

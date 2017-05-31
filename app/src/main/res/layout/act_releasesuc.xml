@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.slash.youth.v2.feature.release.ReleaseSucViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app.theme.background"
+        android:orientation="vertical">
+
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/include_white_toolbar_alpha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorPrimary="@color/app.text.black.alpha.66"
+            app:toolTitle="@{viewModel.title}" />
+
+
+        <include layout="@layout/include_line_h" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/app.margin.xlarge"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/release_success_icon" />
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/App.Theme.TextAppearance.mw"
+            android:gravity="center"
+            android:padding="@dimen/app.divider.large"
+            android:text="@string/app.release.suc"
+            android:textColor="@color/app.text.5c5c5c"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/App.Theme.TextAppearance.mw"
+            android:gravity="center"
+            android:paddingLeft="@dimen/app.margin.large"
+            android:paddingRight="@dimen/app.margin.large"
+            android:text="@string/app.release.suc.hint"
+            android:textColor="@color/app.text.31C5E4" />
+
+        <android.support.v7.widget.AppCompatButton
+            style="@style/App.Theme.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/app.divider.xlarge"
+            android:text="@string/app.release.complete"
+            app:clickCommand="@{viewModel.complete}" />
+
+        <android.support.v7.widget.AppCompatButton
+            style="@style/App.Theme.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/app.divider.xlarge"
+            android:background="@drawable/btn_white_background"
+            android:text="@string/app.release.review"
+            android:textColor="@color/app.text.black333"
+            app:clickCommand="@{viewModel.review}" />
+    </LinearLayout>
+</layout>
